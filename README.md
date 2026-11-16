@@ -17,7 +17,8 @@
 
 <br/><br/>
 
-<img src="docs/assets/dashboard-preview.png" alt="핑바오 엔터프라이즈 통합 관제 콘솔" width="100%" />
+<img src="docs/assets/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
+<sub><b>▲ 핑바오(Pingbao) 대시보드: 디스플레이 가동률, 스케줄 배포 현황 및 시스템 헬스 관제</b></sub>
 
 </div>
 
@@ -41,13 +42,15 @@
   * PostgreSQL + Redis + MinIO/S3 기반 고효율 구조
   * 온프레미스(Docker / Synology DSM) 및 클라우드 배포 지원
 
-<br/>
+---
 
-<div align="center">
-  <img src="docs/assets/simulator-wall-preview.png" alt="삼성 Tizen 6.5+ 스마트 사이니지 월 시뮬레이터" width="100%" />
-  <br/>
-  <sub><b>▲ 삼성 스마트 사이니지(Tizen 6.5+) 다중 단말 실시간 관제 및 5대 동시 시뮬레이션 월</b></sub>
-</div>
+## 📸 주요 시스템 화면 (System Previews)
+
+| 대시보드 (Dashboard) | 장치 관리 (Fleet Management) |
+| :---: | :---: |
+| <img src="docs/assets/dashboard.png" width="100%" /> | <img src="docs/assets/device-management.png" width="100%" /> |
+| **모니터링 관제 (Monitoring / Operations)** | **스케줄 관리 (Timeline Scheduling)** |
+| <img src="docs/assets/monitoring.png" width="100%" /> | <img src="docs/assets/schedules.png" width="100%" /> |
 
 ---
 
@@ -75,11 +78,6 @@ flowchart LR
     C --> D["자동 테스트 & 빌드\n(CI/CD)"]
     D --> E["해결 및 릴리즈 배포\n(Release Notes)"]
 ```
-
-1. **이슈 등록**: 사용자가 버그나 개선점을 등록합니다.
-2. **관리자 승인 (`accepted`)**: 관리자가 이슈를 검토하고 `accepted` 라벨을 부여합니다.
-3. **자동 개발 및 검증**: 개발 에이전트가 승인된 이슈를 감지하여 기능 브랜치를 생성하고 자동 구현 및 테스트/빌드를 수행합니다.
-4. **릴리즈 반영**: 검증 완료된 기능은 다음 버전에 패키징되어 릴리즈 노트와 함께 공개됩니다.
 
 ---
 

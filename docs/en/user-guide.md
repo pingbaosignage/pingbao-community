@@ -11,18 +11,18 @@
 2. Sign in with your administrator or operator credentials.
 3. Switch your preferred language (**English / 한국어 / 简体中文**) via the profile dropdown in the top-right corner.
 
-### 1.2 Dashboard & Navigation
+### 1.2 Dashboard Overview
 * **Dashboard**: Real-time overview of online/offline display statuses, total registered units, and recent activities.
 * **Device Management**: Display approval, remote panel On/Off, volume control, reboot, and live screen capture.
 * **Media Library**: Upload and tag media assets (MP4, WebM, PNG, JPEG, GIF, WebP).
 * **Playlists**: Assemble media assets with playback sequences, transitions, and image durations.
 * **Timeline Scheduling**: Drag-and-drop playlist scheduling across dates and hours with 1-click publishing.
-* **System Settings**: Role-based access control (RBAC), audit logs, and backup settings.
+* **Operations & Monitoring**: Real-time long-polling command queues, latency, anomaly detection, and audit logs.
 
 <br/>
 
-![Pingbao Enterprise Console](../assets/dashboard-preview.png)
-*▲ Pingbao Enterprise Digital Signage Console Interface*
+![Pingbao Dashboard](../assets/dashboard.png)
+*▲ [Screen 1] Pingbao Dashboard: Fleet Availability, Schedule Status, and System Health Summary*
 
 ---
 
@@ -34,29 +34,28 @@
 3. In the Pingbao Web Console, click **Device Management > Register Device** and enter the PIN.
 4. Assign an installation location (e.g., "HQ Lobby 1F") and group to approve and bind.
 
-### 2.2 Remote Controls & Multi-Monitor Signage Wall
+### 2.2 Remote Controls
 * **Panel Screen On/Off**: Energy-saving display panel toggle outside business hours.
 * **Remote Screen Capture**: Real-time visual verification of what is currently playing on site.
 * **Reboot & Emergency Notices**: One-click remote device reboot and immediate emergency broadcast overlay.
 
 <br/>
 
-![Multi-Device Signage Wall Simulator](../assets/simulator-wall-preview.png)
-*▲ Samsung Smart Signage (Tizen 6.5+) 5-Player Multi-Monitor Wall Simulator & Monitoring*
+![Pingbao Fleet Management](../assets/device-management.png)
+*▲ [Screen 2] Pingbao Device Management: Display Fleet, DUIDs, Power Controls & Volume Sliders*
 
 ---
 
-## 3. Media & Playlist Creation
+## 3. Real-Time Operations & Monitoring
 
-### 3.1 Uploading Media
-1. In the **Media Library**, drag and drop your media files.
-2. Supported formats: MP4, 3GP, WebM, PNG, JPEG, GIF, WebP.
-3. Video durations are automatically extracted from file metadata upon streaming upload.
+### 3.1 Command Queue & Heartbeat Telemetry
+* **Desired State Synchronization**: Real-time tracking of applied configuration vs. desired snapshot versions.
+* **Latency & Anomaly Alarms**: Instant alerts for offline transitions or delayed media asset downloads.
 
-### 3.2 Building Playlists
-1. Click **Create Playlist** and enter a name and description.
-2. Select the media assets to include.
-3. Reorder items via drag-and-drop, and specify display duration (seconds) for still images.
+<br/>
+
+![Pingbao Monitoring](../assets/monitoring.png)
+*▲ [Screen 3] Pingbao Operations & Monitoring: Long-Polling Command Queues, Heartbeats & Hardware Telemetry*
 
 ---
 
@@ -70,3 +69,8 @@
 * When you click **Publish**, a snapshot is transmitted to all assigned displays.
 * Displays download required media in the background and perform seamless, atomic playback switching.
 * Even during network outages, displays continue playing autonomously using cached schedules and local storage indefinitely.
+
+<br/>
+
+![Pingbao Timeline Scheduling](../assets/schedules.png)
+*▲ [Screen 4] Pingbao Timeline Scheduling: 24-Hour Base Fallback Loop and Peak Event Timeslots*

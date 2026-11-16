@@ -17,7 +17,8 @@
 
 <br/><br/>
 
-<img src="docs/assets/dashboard-preview.png" alt="屏宝企业级数字标牌统一运维控制台" width="100%" />
+<img src="docs/assets/dashboard.png" alt="屏宝系统仪表盘" width="100%" />
+<sub><b>▲ 屏宝 (Pingbao) 运行仪表盘：屏幕在线率、排期下发进展及系统资源总览</b></sub>
 
 </div>
 
@@ -41,13 +42,15 @@
   * 基于 PostgreSQL + Redis + MinIO/S3 组合
   * 支持私有化物理部署、群晖 NAS (Docker) 及主流公有云环境
 
-<br/>
+---
 
-<div align="center">
-  <img src="docs/assets/simulator-wall-preview.png" alt="三星商用标牌多屏实时播控墙" width="100%" />
-  <br/>
-  <sub><b>▲ 三星商用智能标牌 (Tizen 6.5+) 5 联屏多端多排期实时播控与时间旅行仿真墙</b></sub>
-</div>
+## 📸 核心系统界面全景 (System Previews)
+
+| 运行仪表盘 (Dashboard) | 设备集中管理 (Fleet Management) |
+| :---: | :---: |
+| <img src="docs/assets/dashboard.png" width="100%" /> | <img src="docs/assets/device-management.png" width="100%" /> |
+| **实时运维监看 (Operations / Monitoring)** | **时间轴排期调度 (Timeline Scheduling)** |
+| <img src="docs/assets/monitoring.png" width="100%" /> | <img src="docs/assets/schedules.png" width="100%" /> |
 
 ---
 
