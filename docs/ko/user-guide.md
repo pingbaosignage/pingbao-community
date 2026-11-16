@@ -21,7 +21,7 @@
 
 <br/>
 
-![핑바오 대시보드](../assets/dashboard.png)
+![핑바오 대시보드](../assets/ko/dashboard.png)
 *▲ [화면 1] 핑바오 대시보드: 디스플레이 가동률, 스케줄 배포 현황 및 시스템 헬스 요약*
 
 ---
@@ -41,7 +41,7 @@
 
 <br/>
 
-![핑바오 장치 관리](../assets/device-management.png)
+![핑바오 장치 관리](../assets/ko/device-management.png)
 *▲ [화면 2] 핑바오 장치 관리: 등록된 디스플레이 목록, 상태, DUID 및 원격 전원/볼륨 제어*
 
 ---
@@ -54,7 +54,7 @@
 
 <br/>
 
-![핑바오 운영 모니터링](../assets/monitoring.png)
+![핑바오 운영 모니터링](../assets/ko/monitoring.png)
 *▲ [화면 3] 핑바오 운영 모니터링: 실시간 단말 상태, 롱폴링 명령 큐 및 하드웨어 텔레메트리 관제*
 
 ---
@@ -72,5 +72,5 @@
 
 <br/>
 
-![핑바오 스케줄 편성](../assets/schedules.png)
+![핑바오 스케줄 편성](../assets/ko/schedules.png)
 *▲ [화면 4] 핑바오 스케줄 편성: 24시간 Base Fallback 루프 및 피크 이벤트 타임라인 스케줄링*

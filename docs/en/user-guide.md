@@ -21,7 +21,7 @@
 
 <br/>
 
-![Pingbao Dashboard](../assets/dashboard.png)
+![Pingbao Dashboard](../assets/en/dashboard.png)
 *▲ [Screen 1] Pingbao Dashboard: Fleet Availability, Schedule Status, and System Health Summary*
 
 ---
@@ -41,7 +41,7 @@
 
 <br/>
 
-![Pingbao Fleet Management](../assets/device-management.png)
+![Pingbao Fleet Management](../assets/en/device-management.png)
 *▲ [Screen 2] Pingbao Device Management: Display Fleet, DUIDs, Power Controls & Volume Sliders*
 
 ---
@@ -54,7 +54,7 @@
 
 <br/>
 
-![Pingbao Monitoring](../assets/monitoring.png)
+![Pingbao Monitoring](../assets/en/monitoring.png)
 *▲ [Screen 3] Pingbao Operations & Monitoring: Long-Polling Command Queues, Heartbeats & Hardware Telemetry*
 
 ---
@@ -72,5 +72,5 @@
 
 <br/>
 
-![Pingbao Timeline Scheduling](../assets/schedules.png)
+![Pingbao Timeline Scheduling](../assets/en/schedules.png)
 *▲ [Screen 4] Pingbao Timeline Scheduling: 24-Hour Base Fallback Loop and Peak Event Timeslots*

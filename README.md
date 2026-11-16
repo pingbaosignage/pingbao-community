@@ -17,7 +17,7 @@
 
 <br/><br/>
 
-<img src="docs/assets/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
+<img src="docs/assets/ko/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
 <sub><b>▲ 핑바오(Pingbao) 대시보드: 디스플레이 가동률, 스케줄 배포 현황 및 시스템 헬스 관제</b></sub>
 
 </div>
@@ -44,13 +44,13 @@
 
 ---
 
-## 📸 주요 시스템 화면 (System Previews)
+## 📸 주요 시스템 화면 (한국어 UI)
 
 | 대시보드 (Dashboard) | 장치 관리 (Fleet Management) |
 | :---: | :---: |
-| <img src="docs/assets/dashboard.png" width="100%" /> | <img src="docs/assets/device-management.png" width="100%" /> |
+| <img src="docs/assets/ko/dashboard.png" width="100%" /> | <img src="docs/assets/ko/device-management.png" width="100%" /> |
 | **모니터링 관제 (Monitoring / Operations)** | **스케줄 관리 (Timeline Scheduling)** |
-| <img src="docs/assets/monitoring.png" width="100%" /> | <img src="docs/assets/schedules.png" width="100%" /> |
+| <img src="docs/assets/ko/monitoring.png" width="100%" /> | <img src="docs/assets/ko/schedules.png" width="100%" /> |
 
 ---
 

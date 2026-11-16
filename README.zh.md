@@ -17,7 +17,7 @@
 
 <br/><br/>
 
-<img src="docs/assets/dashboard.png" alt="屏宝系统仪表盘" width="100%" />
+<img src="docs/assets/zh/dashboard.png" alt="屏宝系统仪表盘" width="100%" />
 <sub><b>▲ 屏宝 (Pingbao) 运行仪表盘：屏幕在线率、排期下发进展及系统资源总览</b></sub>
 
 </div>
@@ -44,13 +44,13 @@
 
 ---
 
-## 📸 核心系统界面全景 (System Previews)
+## 📸 核心系统界面全景 (中文操作界面)
 
 | 运行仪表盘 (Dashboard) | 设备集中管理 (Fleet Management) |
 | :---: | :---: |
-| <img src="docs/assets/dashboard.png" width="100%" /> | <img src="docs/assets/device-management.png" width="100%" /> |
+| <img src="docs/assets/zh/dashboard.png" width="100%" /> | <img src="docs/assets/zh/device-management.png" width="100%" /> |
 | **实时运维监看 (Operations / Monitoring)** | **时间轴排期调度 (Timeline Scheduling)** |
-| <img src="docs/assets/monitoring.png" width="100%" /> | <img src="docs/assets/schedules.png" width="100%" /> |
+| <img src="docs/assets/zh/monitoring.png" width="100%" /> | <img src="docs/assets/zh/schedules.png" width="100%" /> |
 
 ---
 

@@ -21,7 +21,7 @@
 
 <br/>
 
-![屏宝运行仪表盘](../assets/dashboard.png)
+![屏宝运行仪表盘](../assets/zh/dashboard.png)
 *▲ [界面 1] 屏宝系统仪表盘：标牌在线率、排期发布进展及系统健康度总览*
 
 ---
@@ -41,7 +41,7 @@
 
 <br/>
 
-![屏宝设备集中管控](../assets/device-management.png)
+![屏宝设备集中管控](../assets/zh/device-management.png)
 *▲ [界面 2] 屏宝设备集中管控：已注册屏幕列表、运行状态、DUID 与面板远程开关/音量滑块*
 
 ---
@@ -54,7 +54,7 @@
 
 <br/>
 
-![屏宝运维监看](../assets/monitoring.png)
+![屏宝运维监看](../assets/zh/monitoring.png)
 *▲ [界面 3] 屏宝运维监看中心：长轮询指令队列、单机网络心跳与硬件遥测明细*
 
 ---
@@ -72,5 +72,5 @@
 
 <br/>
 
-![屏宝时间轴排期](../assets/schedules.png)
+![屏宝时间轴排期](../assets/zh/schedules.png)
 *▲ [界面 4] 屏宝时间轴排期：24小时常态兜底轮播与高峰活动排期可视化编排*

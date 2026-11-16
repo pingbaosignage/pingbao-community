@@ -16,7 +16,7 @@
 
 <br/><br/>
 
-<img src="docs/assets/dashboard.png" alt="Pingbao Dashboard Preview" width="100%" />
+<img src="docs/assets/en/dashboard.png" alt="Pingbao Operations Dashboard" width="100%" />
 <sub><b>▲ Pingbao Operations Dashboard: Display Fleet Availability, Schedule Status, and System Health</b></sub>
 
 </div>
@@ -43,13 +43,13 @@
 
 ---
 
-## 📸 System Previews
+## 📸 System Previews (English UI)
 
 | Dashboard | Fleet Management |
 | :---: | :---: |
-| <img src="docs/assets/dashboard.png" width="100%" /> | <img src="docs/assets/device-management.png" width="100%" /> |
+| <img src="docs/assets/en/dashboard.png" width="100%" /> | <img src="docs/assets/en/device-management.png" width="100%" /> |
 | **Real-time Monitoring & Operations** | **Timeline Scheduling** |
-| <img src="docs/assets/monitoring.png" width="100%" /> | <img src="docs/assets/schedules.png" width="100%" /> |
+| <img src="docs/assets/en/monitoring.png" width="100%" /> | <img src="docs/assets/en/schedules.png" width="100%" /> |
 
 ---
 
