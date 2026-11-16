@@ -86,7 +86,7 @@ Starting with Pingbao v2.4, an extensible sub-navigation tab structure is introd
 
 ### 5.1 Sub-navigation Structure
 * **License & Quotas (`LICENSE`)**: Offline Ed25519 commercial license activation, quota monitoring, and `.lic-req` generation.
-* **Admin System Settings (`ADMIN_SETTINGS`)**: System automation, error telemetry, and community feedback portal.
+* **Error Reporting & Community (`ADMIN_SETTINGS`)**: System error telemetry automated reporting, local log persistence, and community issue portal.
 
 ### 5.2 Automated Error Telemetry (Opt-in & Strict Consent)
 * **Objective**: Collect runtime exceptions on server and displays, automatically posting sanitized issues to the public community repo (`pingbaosignage/pingbao-community`) for rapid troubleshooting.
