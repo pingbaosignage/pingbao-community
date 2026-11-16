@@ -15,6 +15,10 @@
 
 **[ 한국어 ]** | **[ English ](README.en.md)** | **[ 简体中文 ](README.zh.md)**
 
+<br/><br/>
+
+<img src="docs/assets/dashboard-preview.png" alt="핑바오 엔터프라이즈 통합 관제 콘솔" width="100%" />
+
 </div>
 
 ---
@@ -36,6 +40,14 @@
 * **검증된 엔터프라이즈 경량 아키텍처**
   * PostgreSQL + Redis + MinIO/S3 기반 고효율 구조
   * 온프레미스(Docker / Synology DSM) 및 클라우드 배포 지원
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/simulator-wall-preview.png" alt="삼성 Tizen 6.5+ 스마트 사이니지 월 시뮬레이터" width="100%" />
+  <br/>
+  <sub><b>▲ 삼성 스마트 사이니지(Tizen 6.5+) 다중 단말 실시간 관제 및 5대 동시 시뮬레이션 월</b></sub>
+</div>
 
 ---
 

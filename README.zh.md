@@ -15,6 +15,10 @@
 
 **[ 简体中文 ]** | **[ English ](README.en.md)** | **[ 한국어 ](README.md)**
 
+<br/><br/>
+
+<img src="docs/assets/dashboard-preview.png" alt="屏宝企业级数字标牌统一运维控制台" width="100%" />
+
 </div>
 
 ---
@@ -36,6 +40,14 @@
 * **经过生产检验的轻量高并发架构**
   * 基于 PostgreSQL + Redis + MinIO/S3 组合
   * 支持私有化物理部署、群晖 NAS (Docker) 及主流公有云环境
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/simulator-wall-preview.png" alt="三星商用标牌多屏实时播控墙" width="100%" />
+  <br/>
+  <sub><b>▲ 三星商用智能标牌 (Tizen 6.5+) 5 联屏多端多排期实时播控与时间旅行仿真墙</b></sub>
+</div>
 
 ---
 

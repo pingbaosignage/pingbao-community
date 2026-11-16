@@ -14,6 +14,10 @@
 
 **[ English ]** | **[ 한국어 ](README.md)** | **[ 简体中文 ](README.zh.md)**
 
+<br/><br/>
+
+<img src="docs/assets/dashboard-preview.png" alt="Pingbao Enterprise Signage Console" width="100%" />
+
 </div>
 
 ---
@@ -35,6 +39,14 @@
 * **Field-Proven Lightweight Architecture**
   * Optimized stack powered by PostgreSQL + Redis + MinIO/S3
   * On-Premise (Docker / Synology DSM) and Cloud hosting options
+
+<br/>
+
+<div align="center">
+  <img src="docs/assets/simulator-wall-preview.png" alt="Samsung Tizen 6.5+ Signage Wall Simulator" width="100%" />
+  <br/>
+  <sub><b>▲ Samsung Smart Signage (Tizen 6.5+) 5-Player Multi-Monitor Wall Simulator & Monitoring</b></sub>
+</div>
 
 ---
 

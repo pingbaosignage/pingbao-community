@@ -19,6 +19,11 @@
 * **Timeline Scheduling**: Drag-and-drop playlist scheduling across dates and hours with 1-click publishing.
 * **System Settings**: Role-based access control (RBAC), audit logs, and backup settings.
 
+<br/>
+
+![Pingbao Enterprise Console](../assets/dashboard-preview.png)
+*▲ Pingbao Enterprise Digital Signage Console Interface*
+
 ---
 
 ## 2. Device Management & Control
@@ -29,10 +34,15 @@
 3. In the Pingbao Web Console, click **Device Management > Register Device** and enter the PIN.
 4. Assign an installation location (e.g., "HQ Lobby 1F") and group to approve and bind.
 
-### 2.2 Remote Controls
+### 2.2 Remote Controls & Multi-Monitor Signage Wall
 * **Panel Screen On/Off**: Energy-saving display panel toggle outside business hours.
 * **Remote Screen Capture**: Real-time visual verification of what is currently playing on site.
 * **Reboot & Emergency Notices**: One-click remote device reboot and immediate emergency broadcast overlay.
+
+<br/>
+
+![Multi-Device Signage Wall Simulator](../assets/simulator-wall-preview.png)
+*▲ Samsung Smart Signage (Tizen 6.5+) 5-Player Multi-Monitor Wall Simulator & Monitoring*
 
 ---
 
