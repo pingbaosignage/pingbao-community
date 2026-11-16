@@ -53,6 +53,23 @@
 
 ---
 
+## 📋 Full Feature Matrix
+
+> For extensive technical specifications, please refer to the 📘 [User Guide Full Feature Matrix](docs/en/user-guide.md#5-full-feature-matrix).
+
+| Functional Module | Key Capabilities & Descriptions | Architecture & Standards |
+| :--- | :--- | :--- |
+| **1. Central Dashboard** | Scope-aware fleet stats, schedule sync percentage, anomaly triage ribbon, storage meters | Multi-tenant organization scoping, MinIO/S3 storage |
+| **2. Device Management** | Multi-dimensional search (inch/series/IP), hardware specs, power On/Off timers, remote controls | Samsung Tizen 6.5+ b2bapis, Redis persistent zero-loss queue |
+| **3. Operations & Monitoring** | Single-pane-of-glass status & command queue, 1-click failure filters, batch retry, export | 1-Click Batch Retry, LLM Markdown report generator |
+| **4. Media Library** | Large MP4/WebM/PNG streaming uploads, magic bytes check, auto-metadata, deletion locks | Multi-chunk streaming pipeline, SHA-256 signature checks |
+| **5. Playlist Authoring** | Drag-and-drop sequencing, image exposure timers, Cut/Fade transitions, schedule locks | Hardware-accelerated WebGL/CSS transitions, browser preview |
+| **6. Timeline Scheduling** | 24-Hour Base Fallback loop, peak event slots, 🚨 1-Click Emergency Override broadcast | Autonomous Offline Loop (indefinite disconnected playback) |
+| **7. Proof of Play (PoP)** | Second-accurate playback logs, completion vs. interruption analysis, local timezone views | 15-minute encrypted batch reports, advertiser-grade stats |
+| **8. Security & Licensing** | Corporate hierarchy tree, RBAC matrix, 2FA (TOTP), 5-strike lockout, offline airgap licensing | RFC 6238 TOTP, Argon2id hashing, Ed25519 digital signatures |
+
+---
+
 ## 📖 Documentation
 
 * 📘 [User Guide](docs/en/user-guide.md) - Device registration, media upload, playlist creation, timeline scheduling

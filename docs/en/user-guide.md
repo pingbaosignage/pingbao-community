@@ -74,3 +74,52 @@
 
 ![Pingbao Timeline Scheduling](../assets/en/schedules.png)
 *▲ [Screen 4] Pingbao Timeline Scheduling: 24-Hour Base Fallback Loop and Peak Event Timeslots*
+
+---
+
+## 5. Full Feature Matrix
+
+Complete functional breakdown of the Pingbao enterprise digital signage management platform.
+
+| Category | Feature | Description | Technical Specifications & Capabilities |
+| :--- | :--- | :--- | :--- |
+| **Central Dashboard** | Scope-Aware Fleet Summary | Real-time counts of online, offline, and total displays under current org | Multi-tenant organization scoping |
+| | Snapshot Sync Status | Percentage gauge of displays successfully synchronized with desired schedule | Live visual percentage indicator |
+| | Anomaly Triage Ribbon | Immediate alerts for offline drops, download lags, disk fullness, or high heat | 1-click drill down to malfunctioning display |
+| | Storage & Resources | Real-time monitoring of media asset storage volume and server capacity | MinIO/S3 object storage integration |
+| **Device Management** | Multi-Dimensional Search | Search displays by org tree, screen size (32"~98"), model series, S/N, MAC/IP | Millisecond-level filtering across thousands of displays |
+| | Deep Hardware Specs | Panel power-on hours, firmware/SSSP versions, RAM/disk usage, internal temp | Tizen `b2bapis` hardware sensor telemetry |
+| | Remote Power On/Off Timers | Schedule automatic daily or weekly business opening/closing hours | Hardware cold power-off vs. panel backlight toggle |
+| | Live Hardware Controls | Panel On/Off, volume/mute, reboot, app restart, and instant clock sync | Redis-backed persistent, zero-loss command queue |
+| | Screen Capture Gallery | Real-time snapshot capture of what is physically displayed on screen | High-res pinch-zoom image inspection |
+| | Mutual-Trust Pairing | 1-second pairing via 6-digit on-screen PIN code | Ed25519 public key pinning + HMAC token auth |
+| | 1-Click Display Replacement | Instantly transfer all configurations, schedules, and timers to a replacement unit | Reduces site servicing downtime by over 90% |
+| | WGT & Firmware OTA | Remote batch upgrades for Tizen player packages (`.wgt`) and Samsung firmware | Step-by-step progress tracking (Downloading/Installing/OK) |
+| **Operations & Monitoring** | Single-Pane-of-Glass View | Monitor schedule playback states, config updates, and remote commands in one view | Unified real-time operational dashboard |
+| | 1-Click Anomaly Filters | Instant triage chips: `[Failed Only]`, `[In-Progress / Delayed]`, `[Playback Mismatch]` | Immediately isolate and focus on problematic units |
+| | 1-Click Batch Retry | Batch resend commands or download requests that failed due to transient outages | Automated zero-touch recovery pipeline |
+| | Multi-Format Export | Export triage logs and error reasons to CSV, Excel, JSON, and LLM Markdown | Ready-to-use Markdown reports for AI analysis |
+| **Media Library** | High-Capacity Streaming Upload | Upload high-resolution MP4, WebM, PNG, JPG, WebP, and GIF assets | Chunked streaming upload with progress feedback |
+| | Binary Integrity Check | File validation via magic bytes binary signatures and SHA-256 hashes | Blocks corrupt or tampered media files |
+| | Automatic Metadata Extraction | Duration, resolution, video codec, and FPS automatically extracted on upload | Instant runtime duration calculation |
+| | Reference Integrity Protection | Deletion blocked for media currently in active playlists or schedules | Prevents broadcast interruptions |
+| **Playlist Authoring** | Drag-and-Drop Sequencing | Select media library assets and reorder them via intuitive drag-and-drop | Total runtime calculation and live browser preview |
+| | Image Exposure Duration | Customize display duration for static images (default 10s, 3s to unlimited) | Second-level precision timing |
+| | Transition Effects | Configure smooth Cut or Fade transitions between media clips | Hardware-accelerated WebGL/CSS transitions |
+| | Schedule Integrity Lock | Prevents accidental deletion of playlists actively referenced by schedules | Safe single and batch deletion pipelines |
+| **Timeline Scheduling** | 24-Hour Base Fallback Loop | Default background loop running 24/7/365 when no higher-priority event is active | Eliminates black screens or broadcast gaps |
+| | Peak & Event Scheduling | Schedule high-priority content blocks for specific hours (e.g. lunch rush) or days | Priority-driven multi-layer timeline overlay |
+| | 🚨 Emergency Broadcast | Instantly override all displays with disaster or critical emergency messages | Highest-priority instant broadcast pipeline |
+| | Autonomous Offline Loop | Displays continue playing indefinitely from local cache even during internet outages | Built-in offline autonomous loop architecture |
+| | Immutable Versioned Publish | Generates immutable `ScheduleVersion` snapshots applied atomically | Seamless background pre-fetching |
+| **Proof of Play (PoP)** | Second-Accurate Verification | Local real-time logging aggregated and reported on 15-minute intervals | Tamper-proof runtime playback logs |
+| | Completion vs. Interruption | Differentiates full plays (`completed`) from early skips (`interrupted`) | Accurate completion rate (%) for ad billing |
+| | Local Display Time Analysis | Group playback data by display local hours (`0~23h`) across global timezones | Accurate local peak audience analysis |
+| | Multi-Dimensional Reports | Cross-tabulate by store, schedule, or media with CSV, Excel, and LLM MD exports | 1-click executive and advertiser reporting |
+| **Security & Multi-Tenancy** | Hierarchical Organization Tree | Multi-tier corporate structure (Headquarters > Subsidiary > Store) | Recursive role and permission inheritance |
+| | Fine-Grained RBAC Matrix | Per-menu permissions for Read (R), Create (C), Update (U), Delete (D), Execute (X) | Custom operator role definitions |
+| | 2-Factor Authentication (TOTP) | RFC 6238 standard Google Authenticator 2FA with 10 emergency backup codes | Banking-grade credential security |
+| | 5-Strike Brute Force Defense | Automatic account lockout after 5 consecutive failed login attempts | Argon2id password hashing |
+| | Immutable System Audit Log | Tamper-proof append-only logging of logins, publishes, controls, and config changes | Comprehensive compliance audit trail |
+| | Offline Airgap Licensing | Asymmetric Ed25519 digital signature licensing for closed/air-gapped networks | `.lic-req` export & permanent `.lic` activation |
+| | Real-Time Tri-Lingual UI | Instant UI and data translation across English, 한국어, and 简体中文 | Full global deployment readiness |
