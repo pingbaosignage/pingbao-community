@@ -77,3 +77,32 @@ In case of unforeseen issues, instantly revert to the previous snapshot:
 * **Database Backups**: Nightly PostgreSQL dumps recommended.
 * **Storage Replication**: Mirror MinIO/S3 volumes for media asset preservation.
 * **Health Checks**: Monitor server health via `GET /api/v1/health`.
+
+---
+
+## 5. Admin Settings & Automated Error Telemetry
+
+Starting with Pingbao v2.4, an extensible sub-navigation tab structure is introduced under **[License / Settings]** to easily accommodate administrative features.
+
+### 5.1 Sub-navigation Structure
+* **License & Quotas (`LICENSE`)**: Offline Ed25519 commercial license activation, quota monitoring, and `.lic-req` generation.
+* **Admin System Settings (`ADMIN_SETTINGS`)**: System automation, error telemetry, and community feedback portal.
+
+### 5.2 Automated Error Telemetry (Opt-in & Strict Consent)
+* **Objective**: Collect runtime exceptions on server and displays, automatically posting sanitized issues to the public community repo (`pingbaosignage/pingbao-community`) for rapid troubleshooting.
+* **Data Security & Sanitization**:
+  * Passwords, JWT tokens, API keys, and private file paths are strictly replaced with `***MASKED***` prior to transmission.
+  * SHA-256 fingerprinting deduplicates identical issues and aggregates occurrence counts.
+* **Strict Admin Consent**:
+  * Disabled by default (`DISABLED`).
+  * Requires an explicit review of the privacy notice and checking the consent box before activation.
+* **Configurable Options**:
+  * Toggle: ON / OFF
+  * Reporting Interval: 30m, 1h (Recommended), 6h, 24h
+  * Immediate Dispatch: "Dispatch Pending Errors Now" button triggers immediate sync.
+  * Local Error Log Viewer: Inspect locally persisted runtime errors and click direct links to created GitHub Issues.
+
+### 5.3 Community Issue & Feedback Portal
+* Report defects or submit product enhancements directly from the web console without leaving the platform:
+  * `[🐛 Submit Bug Report]`: File an operational defect with reproduction steps directly to GitHub.
+  * `[💡 Request a Feature]`: Suggest product enhancements and new capabilities to the core team.
