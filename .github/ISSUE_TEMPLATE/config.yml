@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 핑바오 사용자 매뉴얼 (User Manual)
+    url: https://github.com/pingbaosignage/pingbao-community/blob/main/docs/user-guide.md
+    about: 핑바오 사용법 및 화면 안내는 매뉴얼을 먼저 확인해 보세요.
+  - name: 🚀 릴리즈 노트 (Release Notes)
+    url: https://github.com/pingbaosignage/pingbao-community/releases
+    about: 최신 버전 변경 사항과 배포 노트를 확인하세요.
