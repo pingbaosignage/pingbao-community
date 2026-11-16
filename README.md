@@ -1,14 +1,19 @@
 <div align="center">
 
-# 📺 핑바오 (Pingbao)
+# 📺 핑바오 (Pingbao / 屏宝)
 ### Enterprise Digital Signage Management Platform
 
 **핑바오(Pingbao)**는 수천 대의 스마트 사이니지 디스플레이를 원격으로 통합 관제하고,  
 타임라인 드래그 앤 드롭으로 콘텐츠를 무중단 자율 스케줄링하는 엔터프라이즈 디지털 사이니지 플랫폼(CMS)입니다.
 
+[![Language](https://img.shields.io/badge/Language-한국어%20|%20English%20|%20简体中文-brightgreen.svg)](#)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
 [![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](#)
+
+<br/>
+
+**[ 한국어 ]** | **[ English ](README.en.md)** | **[ 简体中文 ](README.zh.md)**
 
 </div>
 
@@ -25,9 +30,9 @@
 * **고성능 미디어 & 플레이리스트 파이프라인**
   * 대용량 고화질 비디오(MP4, WebM) 및 이미지 실시간 스트리밍 업로드
   * 매직 바이트 바이너리 시그니처 무결성 검증
-* **반응형 관제 웹 콘솔 & 다국어 지원**
+* **반응형 관제 웹 콘솔 & 3개 국어 완벽 지원**
   * 데스크톱 관제실 대화면부터 모바일 현장 제어 화면까지 완벽 반응형 UI
-  * 한국어, English, 中文 3개 국어 실시간 전환 지원
+  * **한국어, English, 简体中文** 실시간 다국어 전환 지원
 * **검증된 엔터프라이즈 경량 아키텍처**
   * PostgreSQL + Redis + MinIO/S3 기반 고효율 구조
   * 온프레미스(Docker / Synology DSM) 및 클라우드 배포 지원
@@ -36,16 +41,16 @@
 
 ## 📖 문서 및 매뉴얼 (Documentation)
 
-* 📘 [사용자 매뉴얼 (User Guide)](docs/user-guide.md) - 디스플레이 등록, 미디어 업로드, 플레이리스트 편성, 스케줄링 방법
-* 🛠️ [관리자 및 설치 가이드 (Admin Guide)](docs/admin-guide.md) - Docker 환경 구성, 환경변수 설정, 업그레이드 및 롤백
-* ❓ [자주 묻는 질문 (FAQ)](docs/faq.md) - 오프라인 재생, 지원 규격 및 트러블슈팅
+* 📘 [사용자 매뉴얼 (User Guide)](docs/ko/user-guide.md) - 디스플레이 등록, 미디어 업로드, 플레이리스트 편성, 스케줄링 방법
+* 🛠️ [관리자 및 설치 가이드 (Admin Guide)](docs/ko/admin-guide.md) - Docker 환경 구성, 환경변수 설정, 업그레이드 및 롤백
+* ❓ [자주 묻는 질문 (FAQ)](docs/ko/faq.md) - 오프라인 재생, 지원 규격 및 트러블슈팅
 * 📜 [변경 이력 (Changelog)](CHANGELOG.md) - 버전별 변경 사항 및 개선 내역
 
 ---
 
 ## 💡 이슈 등록 및 제안 (Issue & Feature Request)
 
-핑바오를 사용하시면서 버그를 발견하셨거나 새로운 기능이 필요하신 경우 언제든 이슈를 등록해 주세요!
+핑바오를 사용하시면서 버그를 발견하셨거나 새로운 기능이 필요하신 경우 언제든 이슈를 등록해 주세요! (한국어, English, 中文 모두 작성 가능합니다)
 
 * [🐛 버그 리포트 등록하기](https://github.com/pingbaosignage/pingbao-community/issues/new?template=bug_report.md)
 * [💡 기능 제안 등록하기](https://github.com/pingbaosignage/pingbao-community/issues/new?template=feature_request.md)
