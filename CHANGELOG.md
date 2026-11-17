@@ -7,13 +7,20 @@
 
 ## [v1.1.0] - 2026-11-17
 ### 신규 기능 (New Features)
-* **스케줄링 엔진 4계층 고도화 (4-Tier Smart Scheduling)**:
+* **삼성 스마트 사이니지 (Samsung Smart Signage) 단일 하드웨어 집중 최적화**:
+  * 삼성 Tizen 6.5+ SSSP 10+ 전 라인업(QMB, QBB, QHB, QMC, QBC, QHC 등) 네이티브 b2bapis 드라이버 완벽 제어
+  * 패널 전원 백라이트 On/Off, 볼륨 제어, 원격 재부팅, 1초 단위 실시간 화면 캡처 회신
+* **개방형 REST API 및 AI 에이전트 MCP (Model Context Protocol) 공식 지원**:
+  * 60+ 엔드포인트 OpenAPI 3.0 RESTful 규격 완성
+  * AI 에이전트(Claude Desktop, Cursor, Antigravity, LLM 자율 에이전트)를 위한 네이티브 MCP 서버(`pingbao`) 기본 탑재
+  * API Key 발급, 스코프 분리 및 시간대별 토큰/호출량 모니터링 콘솔 연동
+* **전 자동 멀티스크린 싱크 (SyncPlay Auto-Activation)**:
+  * 별도 하드웨어 스플리터나 복잡한 수동 설정 없이 **【같은 그룹】 + 【같은 스케줄】 + 【같은 네트워크(동일 LAN)】** 환경에서 100% 자동 프레임 동기화 및 동시 화면 전환 활성화
+  * 카운터 3~5연속 전자메뉴판 밀리초 단위 프레임 싱크 및 5760x1080 울트라 와이드 분할 렌더링 지원
+* **스케줄링 엔진 4계층 우선순위 고도화 (4-Tier Smart Scheduling)**:
   * `EMERGENCY` (비상 재난/VIP 전 화면 즉시 독점) > `EVENT` (피크 프로모션) > `REGULAR` (일상 타임파팅) > `DEFAULT` (24/7 배경 베이스) 4계층 우선순위 선점 구현
   * Dayparting(조식/중식/티타임/석식/야간) 시각 도달 시 자동 무결점 전환 및 선점 종료 후 자연스러운 자동 복귀
   * 유효 방송 구간(Effective Broadcast Windows) 시각화 분석
-* **다중 디스플레이 프레임 동기화 (SyncPlay)**:
-  * 로컬 NTP 시계 정렬 기반 카운터 3~5연속 전자메뉴판 밀리초 단위 동시 페이드 전환
-  * 5760x1080 울트라 와이드 비디오 3분할 렌더링 지원
 * **오류 보고 & 커뮤니티 자동화 텔레메트리 (Error Telemetry & Community Portal)**:
   * 관리자 명시적 동의(Opt-in) 기반 런타임 오류 수집
   * 개인정보 및 비밀정보(비밀번호, 토큰, IP, 전화번호) 자동 마스킹 필터링

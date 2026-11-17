@@ -1,10 +1,10 @@
 <div align="center">
 
 # 📺 Pingbao (屏宝 / 핑바오)
-### Enterprise Digital Signage Full-Domain Smart Management Platform (CMS)
+### Enterprise Smart Management Platform for Samsung Smart Signage (Samsung CMS)
 
-**Pingbao (屏宝 / 핑바오)** is an enterprise-grade cloud digital signage management platform (CMS) designed for retail chains, restaurant chains, smart commercial complexes, and public hubs.  
-It delivers hardware-level IoT remote control for tens of thousands of smart displays (Samsung SSSP/Tizen, Android, Linux, Windows), 24-hour visual timeline dayparting, millisecond-level multi-display synchronization (SyncPlay), and 100% autonomous offline playback.
+**Pingbao (屏宝 / 핑바오)** is an enterprise-grade cloud digital signage management platform exclusively tailored for the **Samsung Smart Signage** ecosystem.  
+With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage Platform), Pingbao enables centralized IoT remote control for tens of thousands of Samsung commercial screens, 24-hour visual timeline dayparting, fully automated multi-screen synchronization (SyncPlay), and 100% autonomous offline playback. Furthermore, it provides comprehensive enterprise REST API and AI Agent MCP (Model Context Protocol) support.
 
 [![Language](https://img.shields.io/badge/Language-English%20|%20简体中文%20|%20한국어-brightgreen.svg)](#)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
@@ -18,7 +18,7 @@ It delivers hardware-level IoT remote control for tens of thousands of smart dis
 <br/><br/>
 
 <img src="docs/assets/zh/dashboard.png" alt="Pingbao Operations Dashboard" width="100%" />
-<sub><b>▲ Pingbao Operations Dashboard: Display Fleet Availability, Schedule Deployment Progress, Storage Consumption, and Fleet Health (Live Oracle Cloud Cluster Metrics)</b></sub>
+<sub><b>▲ Pingbao Operations Dashboard: Samsung Signage Fleet Availability, Schedule Deployment Progress, Storage Consumption, and Fleet Health (Live Oracle Cloud Cluster Metrics)</b></sub>
 
 </div>
 
@@ -26,19 +26,22 @@ It delivers hardware-level IoT remote control for tens of thousands of smart dis
 
 ## 🌟 Core Value Propositions
 
-1. **Hardware Standardization & Deep IoT Remote Control**
-   * Native deep integration with Samsung Smart Signage (Tizen 6.5 / SSSP 10+) and commercial Android players.
+1. **Dedicated to Samsung Smart Signage & Deep IoT Control**
+   * Exclusively engineered for **Samsung Smart Signage (Tizen 6.5+ / SSSP 10+)** standalone displays.
    * Remote LCD backlight panel On/Off, volume control, scheduled reboot, operating temperature tracking, and 1-second live screen capture retrieval.
 2. **Autonomous Offline Playback (No Duration Limits)**
-   * Powered by local edge pre-caching and an embedded SQLite state engine, displays seamlessly continue scheduled 24/7/365 broadcasting even during prolonged network outages without black screens or crashes.
+   * Powered by local edge pre-caching and an embedded SQLite state engine on Samsung displays, screens seamlessly continue scheduled 24/7/365 broadcasting even during prolonged network outages without black screens or crashes.
 3. **4-Tier Priority Timeline Scheduling Engine**
    * Hierarchical preemption architecture: `EMERGENCY` (instant disaster/VIP takeover) > `EVENT` (dayparted peak promotions) > `REGULAR` (daily schedule) > `DEFAULT` (24/7 fallback base playlist).
    * Dayparting (Breakfast / Lunch / Tea / Dinner / Night) auto-transitions smoothly without screen blinks or glitches.
-4. **Multi-Display Frame-Accurate Synchronization (SyncPlay)**
-   * LAN-based precision clock alignment (NTP/PTP) ensures synchronized transitions across 3 to 5 multi-screen digital menu boards and cross-screen ultra-wide video rendering.
-5. **Auditable Proof-of-Play (PoP) & Business Settlement Reports**
+4. **Fully Automated Multi-Screen Synchronization (SyncPlay)**
+   * **100% Automatic**: When multiple Samsung signage displays share the **same device group, same assigned schedule, and same local network (LAN)**, SyncPlay automatically activates millisecond-accurate frame synchronization and simultaneous transitions without specialized hardware matrix switchers or manual pairing.
+5. **Standard REST API & AI Agent MCP (Model Context Protocol) Support**
+   * 60+ OpenAPI 3.0 RESTful endpoints with API Key scoped permissions and usage telemetry.
+   * Built-in standardized **MCP server (`pingbao`)** empowering modern AI agents (Claude, Cursor, Antigravity, LLM-based autonomous operations) to manage devices, distribute schedules, and diagnose fleet health via natural language.
+6. **Auditable Proof-of-Play (PoP) & Business Settlement Reports**
    * Exact second-level playback audit logs, Completion Rate (%) computation, tamper-evident signatures, and one-click Excel/CSV export.
-6. **Self-Healing Operations & Automated Community Error Telemetry**
+7. **Self-Healing Operations & Automated Community Error Telemetry**
    * Automatically captures backend exceptions, sanitizes sensitive data (PII/secrets), deduplicates by SHA-256 fingerprint, and dispatches error reports directly to GitHub Community Issues.
 
 ---
@@ -47,13 +50,13 @@ It delivers hardware-level IoT remote control for tens of thousands of smart dis
 
 ### 1. Operations Dashboard (Dashboard)
 <img src="docs/assets/zh/dashboard.png" alt="Dashboard" width="100%" />
-Consolidated fleet metrics: display online/offline percentages, schedule synchronization rate, object storage usage, and active alert ribbons.
+Consolidated fleet metrics: Samsung display online/offline percentages, schedule synchronization rate, object storage usage, and active alert ribbons.
 
 ---
 
-### 2. Fleet & Device Management (Device Management)
+### 2. Samsung Signage Fleet Management (Device Management)
 <img src="docs/assets/zh/device-management.png" alt="Device Management" width="100%" />
-Control thousands of screens across hierarchical organizations (HQ, Retail Center, Flagship Stores) with backlight control, volume adjustment, remote reboot, and live screenshot feedback.
+Control thousands of Samsung screens across hierarchical organizations (HQ, Retail Center, Flagship Stores) with backlight control, volume adjustment, remote reboot, and live screenshot feedback.
 
 ---
 
@@ -139,11 +142,19 @@ Hierarchical multi-tenant organization trees, granular CRUDX permission matrix, 
 * **Dinner & Party (17:30 ~ 21:30)**: Family dining sets & craft beer specials (`EVENT`, P:85)
 * **Night / Closing (21:30 ~ 24:00)**: Closing notice & low-power posters (`DEFAULT`, P:0)
 
-### 3. SyncPlay Multi-Display Synchronization
-* NTP-synchronized display clusters ensure seamless simultaneous transitions and synchronized ultra-wide (5760x1080) video rendering across concatenated screens.
+### 3. SyncPlay: Automatic Multi-Screen Synchronization
+* **Automatic Activation**: Whenever multiple Samsung smart signage displays share the **same device group, the same assigned schedule, and the same local network (LAN)**, SyncPlay automatically activates without manual pairing or hardware switchers.
+* **Frame-Accurate Simultaneous Transitions**: Displays transition at the exact same millisecond, and ultra-wide (5760x1080) video is rendered seamlessly across concatenated screens.
 
 ### 4. Autonomous Offline Loop
-* All media assets are pre-cached locally on edge devices prior to broadcast. An embedded SQLite dispatcher executes schedules based on local hardware RTC clocks, ensuring continuous playback even during prolonged network isolation.
+* All media assets are pre-cached locally on Samsung display storage prior to broadcast. An embedded SQLite dispatcher executes schedules based on local hardware RTC clocks, ensuring continuous playback even during prolonged network isolation.
+
+---
+
+## 🤖 REST API & AI Agent MCP Support
+
+* **Standard OpenAPI 3.0 RESTful API**: Comprehensive endpoints covering device commands, schedule publishing, playlist management, and monitoring.
+* **Built-in Model Context Protocol (MCP) Server**: AI agents such as Claude Desktop, Cursor, Antigravity, and autonomous LLM agents can directly inspect displays, issue commands, and resolve alerts via natural language.
 
 ---
 
@@ -152,15 +163,16 @@ Hierarchical multi-tenant organization trees, granular CRUDX permission matrix, 
 | Functional Module | Key Capabilities & Descriptions | Architecture & Standards |
 | :--- | :--- | :--- |
 | **1. Dashboard** | Fleet overview, schedule sync rate, anomaly ribbons, storage telemetry | Multi-tenant scope isolation, MinIO/S3 metrics |
-| **2. Fleet Management** | Hierarchical device tree, multi-filter, remote panel On/Off, volume, reboot | Samsung Tizen 6.5+ SSSP drivers, Redis command queue |
+| **2. Samsung Signage Control** | Exclusively Samsung SSSP (Tizen 6.5+), remote panel On/Off, volume, reboot | Samsung Tizen b2bapis drivers, Redis command queue |
 | **3. Scheduling Engine** | 4-tier preemption, Dayparting timeline tracks, Effective Windows analysis | SQLite local autonomous engine, atomic rollback |
-| **4. Multi-Screen Sync** | Frame-accurate synchronization for multi-display menu boards, split-view rendering | LAN NTP/PTP synchronization, simultaneous transitions |
-| **5. Playlist Authoring** | Video/image mixing, per-item duration, GPU crossfade transitions, loop timing | WebGL/CSS GPU acceleration, playlist schema integrity |
-| **6. Media Assets** | 4K streaming upload, binary magic bytes validation, auto metadata, delete locks | MinIO/S3 object storage, SHA-256 checksums |
-| **7. Monitoring & Operations** | Long-polling latency, command queue tracking, 1-Click Batch Retry, Markdown reports | Single-device fault tracing, automated self-healing |
-| **8. Proof-of-Play (PoP)** | 1-second precision play audit logs, Completion Rate (%) metrics, Excel/CSV export | Edge transaction logging, audit compliance |
-| **9. Security & RBAC** | Organization hierarchy, CRUDX role matrix, RFC 6238 TOTP two-factor authentication | Argon2id password hashing, enterprise security baseline |
-| **10. License & Telemetry** | Ed25519 digital signature licensing, PII-sanitized error telemetry, GitHub sync | Opt-in consent required, SHA-256 error deduplication |
+| **4. Automatic SyncPlay** | Same group, same schedule, same network -> 100% automatic frame sync | Lightweight LAN broadcast, zero external hardware |
+| **5. REST API & MCP** | 60+ API endpoints & native MCP server for AI agent autonomous operations | OpenAPI 3.0, deep Claude/Cursor/Antigravity integration |
+| **6. Playlist Authoring** | Video/image mixing, per-item duration, GPU crossfade transitions, loop timing | WebGL/CSS GPU acceleration, playlist schema integrity |
+| **7. Media Assets** | 4K streaming upload, binary magic bytes validation, auto metadata, delete locks | MinIO/S3 object storage, SHA-256 checksums |
+| **8. Monitoring & Operations** | Long-polling latency, command queue tracking, 1-Click Batch Retry, Markdown reports | Single-device fault tracing, automated self-healing |
+| **9. Proof-of-Play (PoP)** | 1-second precision play audit logs, Completion Rate (%) metrics, Excel/CSV export | Edge transaction logging, audit compliance |
+| **10. Security & RBAC** | Organization hierarchy, CRUDX role matrix, RFC 6238 TOTP two-factor authentication | Argon2id password hashing, enterprise security baseline |
+| **11. License & Telemetry** | Ed25519 digital signature licensing, PII-sanitized error telemetry, GitHub sync | Opt-in consent required, SHA-256 error deduplication |
 
 ---
 
