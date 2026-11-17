@@ -190,7 +190,7 @@
 
 | 상용 라이선스 (Commercial License) | 오류 보고 & 커뮤니티 (Error Telemetry) |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/telemetry.png" width="100%" /> |
+| <img src="../assets/zh/license.png" width="100%" /> | <img src="../assets/zh/telemetry.png" width="100%" /> |
 
 * **Ed25519 전자서명 기반 상용 라이선스**: 폐쇄망(Air-gap) 환경에서도 변조 불가능한 비대칭 서명으로 활성화 쿼터를 검증합니다.
 * **자동화 오류 텔레메트리 (Community Issue Telemetry)**:

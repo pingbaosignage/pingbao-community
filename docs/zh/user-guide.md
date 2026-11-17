@@ -210,7 +210,7 @@
 
 | 商业授权概览 (Commercial License) | 错误自动遥测与社区工单 (Error Telemetry) |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/telemetry.png" width="100%" /> |
+| <img src="../assets/zh/license.png" width="100%" /> | <img src="../assets/zh/telemetry.png" width="100%" /> |
 
 ### 9.1 Ed25519 离线数字签名授权
 * 采用现代高强度密码学（Ed25519 非对称签名技术），支持私有化部署和完全物理隔离（Air-gap）网络环境下的无缝授权。

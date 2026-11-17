@@ -186,7 +186,7 @@ The scheduling engine is Pingbao's flagship capability, architected to eliminate
 
 | Commercial License (Ed25519) | Error Telemetry & Community Portal |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/telemetry.png" width="100%" /> |
+| <img src="../assets/zh/license.png" width="100%" /> | <img src="../assets/zh/telemetry.png" width="100%" /> |
 
 * **Ed25519 Digital Signature Licensing**: Validates fleet quotas and validity periods in air-gapped offline environments.
 * **Automated Error Telemetry & Community Bug Tracking**:
