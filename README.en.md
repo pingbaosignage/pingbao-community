@@ -153,8 +153,21 @@ Hierarchical multi-tenant organization trees, granular CRUDX permission matrix, 
 
 ## 🤖 REST API & AI Agent MCP Support
 
-* **Standard OpenAPI 3.0 RESTful API**: Comprehensive endpoints covering device commands, schedule publishing, playlist management, and monitoring.
-* **Built-in Model Context Protocol (MCP) Server**: AI agents such as Claude Desktop, Cursor, Antigravity, and autonomous LLM agents can directly inspect displays, issue commands, and resolve alerts via natural language.
+Pingbao natively integrates a standardized **Model Context Protocol (MCP)** server (`pingbao` toolset), empowering modern AI agents such as Claude Desktop, Cursor, Antigravity, and autonomous LLM workflows to interact directly with digital signage infrastructure.
+
+### 🌟 Key Capability: LLM-Generated Content Direct Upload & Scheduling
+> **💡 Can an AI agent upload newly generated visuals and schedule them directly?**  
+> **Yes, 100% supported!** Through the `pingbao_upload_media` tool, an AI agent can upload LLM-generated SVG banners, HTML dynamic widgets, Base64-encoded images, or remote asset URLs straight into Pingbao's media repository. The agent can then call `pingbao_create_playlist`, `pingbao_create_schedule`, and `pingbao_assign_schedule` to execute an autonomous loop from creative generation to on-screen playback without manual steps.
+
+### 💬 5 Real-World Autonomous Scenarios & AI Prompts
+
+| # | Operational Scenario | MCP Tools Used | Example AI Agent Prompt |
+| :---: | :--- | :--- | :--- |
+| **01** | **Natural Language Device Diagnostics**<br/>(Device Status & Health) | `pingbao_list_devices`<br/>`pingbao_get_device_detail` | *"Check the operational status of all Samsung signage displays in the Shanghai Flagship and Gangnam branches. Report any screens that have been offline for over 10 minutes or experiencing playback errors."* |
+| **02** | **LLM Content Generation & Scheduling**<br/>(Content Upload & Scheduling) | `pingbao_upload_media`<br/>`pingbao_create_playlist`<br/>`pingbao_create_schedule`<br/>`pingbao_assign_schedule` | *"I just generated a vertical 1080x1920 promotional SVG banner for a weekend rainy-day special. Upload this asset to the media library as 'Rainy Day Special', create a playlist, and schedule it on the Gangnam Kiosk group for Fri-Sun lunch hours (11:30~14:00) with EVENT priority (50)."* |
+| **03** | **Emergency Screen Takeover & Alert**<br/>(Emergency Broadcast Takeover) | `pingbao_upload_media`<br/>`pingbao_create_schedule`<br/>`pingbao_control_device` | *"A severe typhoon warning has been issued. Immediately broadcast an urgent notification banner 'Early Store Closure at 20:00 Due to Severe Weather' across all counter displays with EMERGENCY (Priority 100) priority, overriding regular programming right now."* |
+| **04** | **Eco-Mode & Remote Hardware Timers**<br/>(Eco-Mode & Power Timers) | `pingbao_control_device`<br/>`pingbao_configure_power_timers` | *"Store closing time (22:00) has passed. Set volume to 0 (mute) on all active displays, and configure weekday hardware power timers (Panel On at 08:30, Panel Off at 22:30 Monday-Friday) across all headquarters screens starting tomorrow."* |
+| **05** | **Proof-of-Play (PoP) & Anomaly Triage**<br/>(Proof-of-Play Audit) | `pingbao_verify_playback`<br/>`pingbao_get_device_detail` | *"Audit playback logs for the 'New Burger Launch Campaign' video over the last 24 hours. Summarize completion rate (%) by store, and highlight any screens below 95% completion or reporting network latency frame drops."* |
 
 ---
 

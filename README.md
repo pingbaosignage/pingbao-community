@@ -225,14 +225,21 @@
 
 ## 🤖 开放 REST API 与 AI 智能体 MCP 支持
 
-屏宝提供完备的开发者与智能化生态接入能力：
+屏宝提供完备的开发者与智能化生态接入能力，原生内置标准 **MCP (Model Context Protocol)** 协议服务器（`pingbao` 工具包），支持与 Claude Desktop、Cursor、Antigravity 以及企业自定义 LLM 自动化 Agent 无缝对接。
 
-1. **标准 RESTful OpenAPI 3.0**：
-   * 覆盖设备管理、排期编排、素材上传、播放列表及实时监控等全部 60+ API 端点。
-   * 支持通过 Bearer Token 与 API Key 进行权限验证，提供细粒度的只读/读写 Scope 隔离与小时级调用量监控。
-2. **MCP (Model Context Protocol) 协议服务器**：
-   * 原生内置标准的 MCP 服务端（`pingbao` 工具包），为各类现代化 AI Agent（Claude Desktop, Cursor, Antigravity, LLM 自动化运维工作流）赋能。
-   * AI 智能体可直接通过自然语言下发指令，执行查询在线设备、调整音量与电源、切换节目排期及排查异常日志等复杂运维任务。
+### 🌟 核心特性：支持 LLM 生成内容直传与排期编排
+> **💡 支持 AI 生成内容自动上传吗？**  
+> **完全支持！** 智能体可通过 `pingbao_upload_media` 接口直接上传由大语言模型实时生成的 SVG 矢量海报、HTML 动态组件、Base64 编码图片或媒体 URL，并可自动装配为播放列表（`pingbao_create_playlist`）及下发到指定分组的时间轴排期（`pingbao_create_schedule`）。从“创意生成”到“屏幕播发”全链路无需人工干预。
+
+### 💬 5 大核心实战场景与 AI 提示词 (Prompts) 示例
+
+| 场景序号 | 运维管控场景 | 适用 MCP 工具 | 推荐 AI 智能体提示词 (Prompt) 示例 |
+| :---: | :--- | :--- | :--- |
+| **01** | **自然语言状态巡检与异常排查**<br/>(Device Status & Health) | `pingbao_list_devices`<br/>`pingbao_get_device_detail` | *"请检查上海旗舰店和首尔江南店所有三星商用标牌的运行状态。列出所有离线超过 10 分钟或当前排期播放失败的屏幕，并分析可能的原因。"* |
+| **02** | **LLM 生成内容自动上传与编排**<br/>(Content Upload & Scheduling) | `pingbao_upload_media`<br/>`pingbao_create_playlist`<br/>`pingbao_create_schedule`<br/>`pingbao_assign_schedule` | *"我刚刚为雨天促销生成了一张 1080x1920 竖版促销海报（附 SVG/Base64）。请将其上传至屏宝素材库，命名为'雨天特惠'，新建播放列表，并将其发布为本周五至周日午市高峰期 (11:30~14:00) 的 EVENT 级排期，下发给江南店点餐屏组。"* |
+| **03** | **突发事件/紧急广播全网秒级抢播**<br/>(Emergency Broadcast Takeover) | `pingbao_upload_media`<br/>`pingbao_create_schedule`<br/>`pingbao_control_device` | *"发布台风暴雨防汛紧急通知！立即将全门店收银台标牌画面切换为'因恶劣天气提前至 20:00 闭店公告'，设为最高 EMERGENCY 优先级（抢占级别 100），立即生效中断当前常规节目。"* |
+| **04** | **绿色节能与硬件定时开关机批处理**<br/>(Eco-Mode & Power Timers) | `pingbao_control_device`<br/>`pingbao_configure_power_timers` | *"营业时间（22:00）已结束。请将全网正在运行的屏幕音量统一静音（Volume 0），并为总部所有展示屏配置工作日硬件定时器（周一至周五每日 08:30 自动开机点亮屏幕，22:30 自动切断面板背光）。"* |
+| **05** | **播发存证 (PoP) 审计与广告履约核验**<br/>(Proof-of-Play Audit) | `pingbao_verify_playback`<br/>`pingbao_get_device_detail` | *"请调取过去 24 小时内'新品汉堡上市推广'视频在各门店的播发存证记录。统计各设备的完播率 (Completion Rate %)，并标出完播率低于 95% 或存在卡顿跳帧的异常屏幕名单。"* |
 
 ---
 

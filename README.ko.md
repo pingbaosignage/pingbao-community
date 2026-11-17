@@ -155,8 +155,21 @@
 
 ## 🤖 개방형 REST API 및 AI 에이전트 MCP 지원
 
-* **OpenAPI 3.0 RESTful API**: 장치 상태, 스케줄 배포, 재생목록 관리 및 모니터링을 위한 풍부한 엔드포인트 제공.
-* **MCP (Model Context Protocol) 서버 내장**: Claude, Cursor, Antigravity 등 자율형 AI 에이전트가 핑바오의 장치 제어 및 스케줄링 도구를 직접 호출하여 자동화된 관제 센터를 운영할 수 있습니다.
+핑바오는 현대적인 개발자 및 인공지능 생태계를 위해 표준 **MCP (Model Context Protocol)** 서버(`pingbao` 툴킷)를 기본 내장하고 있습니다. Claude Desktop, Cursor, Antigravity 및 독자적인 LLM 기반 자율 관제 에이전트와 완벽하게 연동됩니다.
+
+### 🌟 핵심 기능: LLM 생성 콘텐츠 자동 업로드 및 스케줄링 완벽 지원
+> **💡 LLM이 제작한 비주얼 콘텐츠를 직접 업로드하고 편성할 수 있나요?**  
+> **네, 100% 완벽하게 지원됩니다!** AI 에이전트는 `pingbao_upload_media` 도구를 호출하여 생성형 AI가 만든 SVG 벡터 배너, HTML 위젯, Base64 인코딩 이미지, 또는 원격 미디어 URL을 핑바오 미디어 라이브러리에 즉시 업로드할 수 있습니다. 이어서 `pingbao_create_playlist`와 `pingbao_create_schedule`을 순차 실행하여 특정 매장 스크린에 편성 배포하는 전 과정을 자율적으로 완수합니다.
+
+### 💬 5대 핵심 실전 시나리오 및 AI 에이전트 프롬프트 (Prompts) 예시
+
+| 번호 | 운영 시나리오 | 연동 MCP 도구 | 추천 AI 에이전트 자연어 프롬프트 (Prompt) 예시 |
+| :---: | :--- | :--- | :--- |
+| **01** | **자연어 장치 상태 및 이상 진단**<br/>(Device Status & Health) | `pingbao_list_devices`<br/>`pingbao_get_device_detail` | *"현재 상하이 플래그십 매장과 강남점의 모든 삼성 사이니지 전원 상태와 네트워크 연결 상태를 확인해줘. 10분 이상 오프라인 상태이거나 스케줄 재생 오류가 발생한 스크린이 있으면 목록과 원인을 보고해줘."* |
+| **02** | **LLM 생성 콘텐츠 업로드 & 스케줄링**<br/>(Content Upload & Scheduling) | `pingbao_upload_media`<br/>`pingbao_create_playlist`<br/>`pingbao_create_schedule`<br/>`pingbao_assign_schedule` | *"이번 주말 비 오는 날 특별 할인 프로모션을 위한 세로형(1080x1920) SVG 배너를 방금 생성했어. 이 배너를 미디어 라이브러리에 '우천 스페셜 할인'으로 업로드하고, 이번 주 금/토/일 점심 피크(11:30~14:00) EVENT 우선순위(50) 스케줄로 강남점 키오스크 그룹에 편성해줘."* |
+| **03** | **긴급 비상 방송/재난 공지 즉각 송출**<br/>(Emergency Broadcast Takeover) | `pingbao_upload_media`<br/>`pingbao_create_schedule`<br/>`pingbao_control_device` | *"현재 태풍 경보가 발령되었어. 전 매장의 카운터 사이니지에 '기상 악화에 따른 조기 마감(20:00) 안내' 긴급 공지 배너를 EMERGENCY(최고 우선순위 100)로 기존 방송을 즉시 중단하고 지금 즉시 띄워줘."* |
+| **04** | **에너지 절감 및 전원/볼륨 하드웨어 제어**<br/>(Eco-Mode & Power Timers) | `pingbao_control_device`<br/>`pingbao_configure_power_timers` | *"영업 종료 시간인 밤 10시가 지났어. 영업 중인 디스플레이 중 음향 볼륨이 켜져 있는 기기는 0(음소거)으로 바꾸고, 내일부터 적용할 평일 자동 전원 타이머(매일 08:30 패널 켜짐, 22:30 패널 꺼짐)를 본사 매장 전체에 일괄 등록해줘."* |
+| **05** | **재생 증빙(PoP) 감사 및 방영 이상 감지**<br/>(Proof-of-Play Audit) | `pingbao_verify_playback`<br/>`pingbao_get_device_detail` | *"지난 24시간 동안 송출된 '신제품 버거 런칭 캠페인' 광고 영상의 매장별 방영 횟수와 완주율(Completion Rate %)을 분석해줘. 완주율이 95% 미만이거나 네트워크 지연으로 프레임 드랍이 발생한 디바이스가 있다면 그 원인과 로그를 정리해줘."* |
 
 ---
 
