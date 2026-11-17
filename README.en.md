@@ -7,6 +7,7 @@
 With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage Platform), Pingbao enables centralized IoT remote control for tens of thousands of Samsung commercial screens, 24-hour visual timeline dayparting, fully automated multi-screen synchronization (SyncPlay), and 100% autonomous offline playback. Furthermore, it provides comprehensive enterprise REST API and AI Agent MCP (Model Context Protocol) support.
 
 [![Language](https://img.shields.io/badge/Language-English%20|%20简体中文%20|%20한국어-brightgreen.svg)](#)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20Experience-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
 [![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](#)
@@ -15,7 +16,12 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 
 **[ English (EN) ]** | **[ 简体中文 (ZH) ](README.md)** | **[ 한국어 (KO) ](README.ko.md)**
 
-<br/><br/>
+<br/>
+
+> 🎮 **1-Click Live Demo**: Experience the full Pingbao Enterprise Signage Console live in your browser without registration:  
+> 👉 **[Launch Pingbao Live Demo Console (https://cms.pingbao.workers.dev)](https://cms.pingbao.workers.dev)** (Pre-seeded with 116 Samsung Signage displays, multi-tier schedules, and Commercial license)
+
+<br/>
 
 <img src="docs/assets/zh/dashboard.png" alt="Pingbao Operations Dashboard" width="100%" />
 <sub><b>▲ Pingbao Operations Dashboard: Samsung Signage Fleet Availability, Schedule Deployment Progress, Storage Consumption, and Fleet Health (Live Oracle Cloud Cluster Metrics)</b></sub>

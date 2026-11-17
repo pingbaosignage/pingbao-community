@@ -7,6 +7,7 @@
 삼성 Tizen 6.5+ SSSP(Samsung Smart Signage Platform)를 네이티브로 지원하여 수만 대의 삼성 상용 디스플레이를 원격으로 제어하고, 24시간 타임라인 드래그 앤 드롭으로 콘텐츠를 무중단 자율 스케줄링하며, 전 자동 다중 화면 싱크(SyncPlay) 및 오프라인 영구 자율 재생을 완벽하게 보장합니다. 나아가 표준 REST API 및 AI 에이전트를 위한 MCP(Model Context Protocol) 지원을 전면 제공합니다.
 
 [![Language](https://img.shields.io/badge/Language-한국어%20|%20简体中文%20|%20English-brightgreen.svg)](#)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-온라인%20체험하기-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
 [![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](#)
@@ -15,7 +16,12 @@
 
 **[ 한국어 (KO) ]** | **[ 简体中文 (ZH) ](README.md)** | **[ English (EN) ](README.en.md)**
 
-<br/><br/>
+<br/>
+
+> 🎮 **온라인 라이브 데모 / 1-Click Live Demo**: 별도 회원가입 없이 클릭 한 번으로 핑바오(Pingbao) 엔터프라이즈 CMS 전 워크스페이스를 실시간으로 직접 체험해보실 수 있습니다:  
+> 👉 **[핑바오 온라인 라이브 데모 체험하기 (https://cms.pingbao.workers.dev)](https://cms.pingbao.workers.dev)** (116대 삼성 사이니지 가상 클러스터, 복합 스케줄 편성 매트릭스, 커머셜 영구 라이선스 사전 탑재)
+
+<br/>
 
 <img src="docs/assets/zh/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
 <sub><b>▲ 핑바오(Pingbao) 실시간 관제 대시보드: 삼성 사이니지 가동률, 스케줄 배포 진척률, 스토리지 점유율 및 시스템 헬스 관제 (오라클 클라우드 운영 환경 실측 데이터)</b></sub>

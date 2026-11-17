@@ -7,6 +7,7 @@
 原生深度适配三星 Tizen SSSP (Samsung Smart Signage Platform) 硬件生态，支持数万台三星商用大屏的集中智控、24小时可视化时间轴时段编排、全自动多屏同步轮播（SyncPlay）、断网永续自主离线播放，并全面开放企业级 REST API 与 AI 智能体 MCP (Model Context Protocol) 协议支持。
 
 [![Language](https://img.shields.io/badge/Language-简体中文%20|%20한국어%20|%20English-brightgreen.svg)](#)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-在线免登录体验-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
 [![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](#)
@@ -15,7 +16,12 @@
 
 **[ 简体中文 (ZH) ](README.md)** | **[ 한국어 (KO) ](README.ko.md)** | **[ English (EN) ](README.en.md)**
 
-<br/><br/>
+<br/>
+
+> 🎮 **在线体验 / 1-Click Live Demo**：无需注册，点击直接体验屏宝企业级云端播控中台全功能：  
+> 👉 **[立即进入屏宝在线体验环境 (https://cms.pingbao.workers.dev)](https://cms.pingbao.workers.dev)** （已预装 116 台三星标牌集群、多级排期矩阵与商业授权）
+
+<br/>
 
 <img src="docs/assets/zh/dashboard.png" alt="屏宝系统仪表盘" width="100%" />
 <sub><b>▲ 屏宝 (Pingbao) 实时运营仪表盘：全网三星商用屏幕在线率、排期部署进度、存储用量与设备健康状态总览（Oracle 生产集群实测数据）</b></sub>
