@@ -267,6 +267,35 @@
 
 ---
 
+## 🚀 主流云厂商与 AI 智能体一键部署指南 (Deployment Guide)
+
+屏宝支持从企业内网私有化服务器到各大主流公有云（甲骨文云 OCI、AWS、Google Cloud、Azure、阿里云、腾讯云）的交钥匙部署，并提供 **基于 Claude Code, Cursor, Antigravity, Gemini 等 AI 智能体的“一句话”全自动无感安装**。
+
+### 1. 支持的主流服务器环境
+* **☁️ 甲骨文云 (Oracle Cloud / OCI)**：终身免费 (Always Free) A1.Flex/E2.1 高性能算力 + Cloudflare 边缘代理免证书 SSL
+* **☁️ 亚马逊云 (AWS)**：EC2 Ubuntu 22.04 LTS + 弹性公网 IP (Elastic IP) 绑定
+* **☁️ 谷歌云 (Google Cloud)**：Compute Engine E2 虚拟机 + VPC 防火墙入站自动化
+* **☁️ 微软云 (Microsoft Azure)**：Virtual Machines B2s + NSG 网络安全组端口开放
+* **☁️ 阿里云与腾讯云**：ECS / CVM 实例，提供中国大陆境内 ICP 备案指导及中国香港/新加坡免备案即刻上线方案
+* **🏢 本地物理服务器与群晖 NAS**：企业局域网闭环服务器及群晖 Synology DSM 7+ Container Manager
+
+### 2. 🤖 AI 智能体一键部署黄金提示词 (Golden Prompt)
+在服务器终端中启动您熟悉的 AI 智能体 CLI（如 `claude`, `cursor`, `agy` 等），直接发送以下提示词，AI 将自动完成 Docker 安装、环境初始化及容器集群拉起：
+
+```markdown
+你是企业级数字标牌系统“屏宝 (Pingbao)”的专业 DevOps 工程师。
+请在这台 Linux 服务器上完全搭建最新的屏宝运行环境，并完成最终的健康检查验证：
+1. 检查操作系统环境，若未安装 Docker Engine 与 Docker Compose v2，通过官方源进行静默安装。
+2. 确认 80 与 443 端口空闲，并在系统防火墙（ufw, firewalld, iptables）中放行入站流量。
+3. 在 pingbaosignage/pingbao-community 目录中根据 `.env.example` 复制生成包含 64 位强随机密钥的 `.env`。
+4. 执行 `docker compose -f docker-compose.onprem.yml up -d` 启动容器集群。
+5. 访问 `curl -s http://localhost/api/v1/health` 验证服务状态（status: ok）并输出 Web 管控台地址。
+```
+
+👉 **各云平台专属配置与排障技巧**：[📖 查看屏宝管理员与多云/AI 部署指南完整文档 (docs/zh/admin-guide.md)](docs/zh/admin-guide.md)
+
+---
+
 ## 📖 官方文档指引 (Documentation)
 
 * 📘 [用户使用手册 (User Guide)](docs/zh/user-guide.md) - 从设备注册配对、素材管理、排期编排到监控运维全流程操作指引

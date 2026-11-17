@@ -195,6 +195,35 @@ Pingbao natively integrates a standardized **Model Context Protocol (MCP)** serv
 
 ---
 
+## 🚀 Multi-Cloud & AI Agent Automated Deployment Guide
+
+Pingbao provides turnkey deployment across on-premises environments, enterprise data centers, and major cloud providers (Oracle Cloud, AWS, GCP, Azure, Alibaba/Tencent Cloud), featuring **1-Prompt Automated Deployment via AI Coding Agents** such as **Claude Code, Cursor, Antigravity, and Gemini**.
+
+### 1. Supported Server Environments
+* **☁️ Oracle Cloud (OCI)**: High-performance Always Free A1.Flex/E2.1 instances + Cloudflare Edge Proxy (free SSL & DDoS mitigation)
+* **☁️ AWS (Amazon Web Services)**: EC2 Ubuntu 22.04 LTS + Elastic IP static address binding
+* **☁️ GCP (Google Cloud)**: Compute Engine E2 VM + VPC firewall rule automation
+* **☁️ Microsoft Azure**: Virtual Machines B2s + NSG inbound ports (80, 443)
+* **☁️ Alibaba & Tencent Cloud**: ECS/CVM with mainland China ICP compliance or instant Hong Kong/Singapore regions
+* **🏢 On-Premises & Synology NAS**: Air-gapped private network bare-metal Linux servers and Synology DSM 7+ Container Manager
+
+### 2. 🤖 AI Agent 1-Click Installation (Golden Prompt)
+Launch your preferred AI CLI (`claude`, `cursor`, `agy`, etc.) in the server terminal and deliver the following prompt. The AI autonomously installs Docker, configures environment keys, boots containers, and verifies server health:
+
+```markdown
+You are an expert DevOps engineer for the enterprise digital signage platform "Pingbao".
+Please deploy the latest Pingbao operating environment on this Linux host and perform end-to-end health verification:
+1. Inspect the host OS and unattended-install Docker Engine & Docker Compose v2 from upstream repos if missing.
+2. Verify ports 80 and 443 and allow inbound traffic in host firewalls (ufw, firewalld, iptables).
+3. In the pingbaosignage/pingbao-community release directory, copy `.env.example` to `.env` with strong 64-char random keys.
+4. Launch the container stack with `docker compose -f docker-compose.onprem.yml up -d`.
+5. Query `curl -s http://localhost/api/v1/health` to verify normal operation (`status: ok`) and output the web console URL.
+```
+
+👉 **Detailed Platform Configurations & Troubleshooting**: [📖 Full Admin & Multi-Cloud/AI Deployment Guide (docs/en/admin-guide.md)](docs/en/admin-guide.md)
+
+---
+
 ## 📖 Documentation
 
 * 📘 [User Guide](docs/en/user-guide.md) - Device pairing, media curation, schedule authoring, and monitoring workflows

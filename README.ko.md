@@ -197,6 +197,35 @@
 
 ---
 
+## 🚀 다중 클라우드 & AI 에이전트 자동 설치 가이드 (Deployment Guide)
+
+핑바오는 온프레미스 폐쇄망부터 주요 글로벌 클라우드(Oracle Cloud, AWS, GCP, Azure, Alibaba/Tencent)까지 완벽하게 지원하며, **Claude Code, Cursor, Antigravity, Gemini** 등 최신 AI 코딩 에이전트를 통한 **1-프롬프트 무인 자동 설치**를 제공합니다.
+
+### 1. 주요 지원 서버 환경
+* **☁️ 오라클 클라우드 (OCI)**: 평생 무료(Always Free) A1.Flex/E2.1 인스턴스 + Cloudflare Edge Proxy(무료 SSL/DDoS 방어) 연동
+* **☁️ AWS (Amazon Web Services)**: EC2 Ubuntu 22.04 + 탄력적 IP(Elastic IP) 바인딩
+* **☁️ GCP (Google Cloud)**: Compute Engine E2 VM + VPC 방화벽 자동 연동
+* **☁️ Microsoft Azure**: Virtual Machines B2s + NSG 포트(80, 443) 개방
+* **☁️ 알리바바/텐센트 클라우드**: ECS/CVM + 중국 본토 ICP 비안(备案) 및 홍콩/싱가포르 즉시 배포 지원
+* **🏢 온프레미스 & 시놀로지 NAS**: 매장 내부 폐쇄망 베어메탈 서버 및 Synology DSM 7+ Container Manager
+
+### 2. 🤖 AI 에이전트 원클릭 설치 (Golden Prompt)
+서버 터미널에서 선호하는 AI 에이전트(`claude`, `cursor`, `agy` 등)를 실행하고 아래 골든 프롬프트를 입력하면, OS 감지부터 Docker 환경 구성 및 핑바오 컨테이너 가동까지 100% 전자동으로 완료됩니다:
+
+```markdown
+당신은 엔터프라이즈 디지털 사이니지 "핑바오(Pingbao)"의 전문 데브옵스 엔지니어입니다.
+현재 리눅스 서버에 핑바오 최신 운영 환경을 완전히 구축하고 서비스 헬스체크까지 완료해 주세요:
+1. OS 환경을 점검하고 Docker Engine 및 Docker Compose v2가 없다면 공식 저장소로 무인 설치하세요.
+2. 80, 443번 포트를 확인하고 OS 방화벽(ufw, firewalld, iptables)에서 허용하세요.
+3. pingbaosignage/pingbao-community 릴리즈 패키지 디렉터리에서 `.env.example`을 복사하여 64자리 암호화 키가 포함된 `.env`를 생성하세요.
+4. `docker compose -f docker-compose.onprem.yml up -d`로 컨테이너 스택을 가동하세요.
+5. `curl -s http://localhost/api/v1/health`를 호출하여 정상 가동(status: ok) 여부를 검증하고 웹 콘솔 URL을 출력해 주세요.
+```
+
+👉 **환경별 상세 설정 및 문제 해결**: [📖 핑바오 관리자 및 다중 클라우드/AI 설치 가이드 전문 보기 (docs/ko/admin-guide.md)](docs/ko/admin-guide.md)
+
+---
+
 ## 📖 문서 및 매뉴얼 (Documentation)
 
 * 📘 [사용자 매뉴얼 (User Guide)](docs/ko/user-guide.md) - 디스플레이 등록, 미디어 업로드, 플레이리스트 편성, 스케줄링 방법
