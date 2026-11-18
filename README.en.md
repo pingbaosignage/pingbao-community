@@ -49,16 +49,17 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 <!-- ============================================================================== -->
 <div align="center">
 
-### 🎬 Pingbao 2-Minute Product Demo Video & 6 Smart Operational Highlights
+### 🎬 Pingbao 2-Minute Product Demo Video (Official Showcase)
 
-> 📺 **Watch Online in Browser**: [▶ Watch 2-Minute Demo Video (GitHub Video Player)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_en.mp4)  
-> 🌐 **Switch Voiceover Language**: [한국어 음성 영상 (KO)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_ko.mp4) | [中文解说视频 (ZH)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)
+* 🇺🇸 **English Voiceover Video**: [▶ Watch Video (pingbao_smart_operations_demo_en.mp4)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4)
+* 🇰🇷 **한국어 음성 데모 영상**: [▶ 영상 보기 (pingbao_smart_operations_demo_ko.mp4)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)
+* 🇨🇳 **中文普通话解说视频**: [▶ 观看视频 (pingbao_smart_operations_demo_zh.mp4)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)
 
-<a href="https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_en.mp4" target="_blank">
-  <img src="docs/assets/demo/en/en_scene_01.png" alt="Pingbao English Demo Video (Click to Watch Online)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
-</a>
 <br/>
-<sub><b>▲ Click to stream the video instantly in your browser without downloading. (1080P Full HD with English voiceover and integrated subtitle cards)</b></sub>
+
+<a href="docs/assets/videos/pingbao_smart_operations_demo_en.mp4">
+  <img src="docs/assets/demo/en/en_scene_01.png" alt="Pingbao English Demo Video" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+</a>
 
 <br/><br/>
 

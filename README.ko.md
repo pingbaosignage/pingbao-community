@@ -49,16 +49,17 @@
 <!-- ============================================================================== -->
 <div align="center">
 
-### 🎬 핑바오 2분 핵심 데모 영상 & 6대 스마트 운영 하이라이트
+### 🎬 핑바오 2분 핵심 데모 영상 (Official Product Video)
 
-> 📺 **온라인 영상 바로 재생**: [▶ 핑바오 2분 데모 영상 시청하기 (GitHub 플레이어)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)  
-> 🌐 **언어별 영상 전환**: [English Video (EN)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_en.mp4) | [中文解说视频 (ZH)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)
+* 🇰🇷 **한국어 음성 데모 영상**: [▶ 영상 보기 (pingbao_smart_operations_demo_ko.mp4)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)
+* 🇨🇳 **中文普通话解说视频**: [▶ 观看视频 (pingbao_smart_operations_demo_zh.mp4)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)
+* 🇺🇸 **English Voiceover Video**: [▶ Watch Video (pingbao_smart_operations_demo_en.mp4)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4)
 
-<a href="https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_ko.mp4" target="_blank">
-  <img src="docs/assets/demo/ko/ko_scene_01.png" alt="핑바오 한국어 데모 비디오 (클릭 시 브라우저에서 바로 재생)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
-</a>
 <br/>
-<sub><b>▲ 클릭 시 다운로드 없이 브라우저 비디오 플레이어에서 영상이 즉시 재생됩니다. (1080P Full HD, 한국어 음성 및 자막 카드 일체형)</b></sub>
+
+<a href="docs/assets/videos/pingbao_smart_operations_demo_ko.mp4">
+  <img src="docs/assets/demo/ko/ko_scene_01.png" alt="핑바오 한국어 데모 비디오" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+</a>
 
 <br/><br/>
 
