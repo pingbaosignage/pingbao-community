@@ -51,15 +51,14 @@
 
 ### 🎬 屏宝 2分钟核心演示视频 & 6大智能运营技术亮点
 
-> 📺 **中文普通话母语解说视频播放 / 下载**: [▶ pingbao_smart_operations_demo_zh.mp4 (1080P 超清)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)  
-> 🌐 **切换解说语言**: [한국어 음성 비디오 (KO)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4) | [English Voiceover (EN)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4)  
-> 📝 **精准时间轴字幕**: [简体中文字幕 (ZH)](docs/assets/videos/pingbao_smart_operations_zh.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_smart_operations_ko.srt) | [English Subtitles (EN)](docs/assets/videos/pingbao_smart_operations_en.srt)
+> 📺 **在线直接播放视频**: [▶ 立即在线观看 2分钟演示视频 (GitHub 播放器)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)  
+> 🌐 **切换解说语言**: [한국어 음성 비디오 (KO)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_ko.mp4) | [English Voiceover (EN)](https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_en.mp4)
 
-<a href="docs/assets/videos/pingbao_smart_operations_demo_zh.mp4">
-  <img src="docs/assets/demo/zh/zh_scene_01.png" alt="屏宝中文演示视频封面 (点击播放)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+<a href="https://github.com/pingbaosignage/pingbao-community/blob/main/docs/assets/videos/pingbao_smart_operations_demo_zh.mp4" target="_blank">
+  <img src="docs/assets/demo/zh/zh_scene_01.png" alt="屏宝中文演示视频 (点击在线播放)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 <br/>
-<sub><b>▲ 点击直接播放 2分钟中文演示视频（1920×1080 Full HD，含专业中文母语解说、SSSP 标准发音及中文全界面字幕卡）</b></sub>
+<sub><b>▲ 点击即可在浏览器网页播放器中直接流畅观看，无需下载。（1080P 超清，普通话解说、SSSP 标准发音及中文全字幕卡）</b></sub>
 
 <br/><br/>
 
