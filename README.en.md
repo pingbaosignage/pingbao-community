@@ -18,8 +18,61 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 
 <br/>
 
-> 🎮 **1-Click Live Demo**: Experience the full Pingbao Enterprise Signage Console live in your browser without registration:  
-> 👉 **[Launch Pingbao Live Demo Console (https://cms.pingbao.workers.dev)](https://cms.pingbao.workers.dev)** (Pre-seeded with 116 Samsung Signage displays, multi-tier schedules, and Commercial license)
+<!-- ============================================================================== -->
+<!-- 🚀 HIGH-VISIBILITY LIVE DEMO BANNER -->
+<!-- ============================================================================== -->
+<table width="100%" style="margin: 20px 0;">
+  <tr>
+    <td align="center" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 28px 20px; border-radius: 14px; border: 2px solid #3b82f6; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);">
+      <h2 style="margin: 0 0 12px 0; color: #60a5fa; font-size: 24px; letter-spacing: -0.5px;">
+        🚀 Pingbao Enterprise Cloud Interactive Live Demo
+      </h2>
+      <p style="font-size: 16px; margin: 0 0 20px 0; color: #f1f5f9; line-height: 1.6;">
+        <b>No installation, no login required.</b> Experience all enterprise workspaces directly in your web browser.<br/>
+        <span style="color: #94a3b8; font-size: 14px;">(Pre-seeded with 116 Samsung Signage displays, 24-hr schedule matrix, PoP analytics, and hardware IoT remote control)</span>
+      </p>
+      <a href="https://cms.pingbao.workers.dev" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/▶_Launch_Interactive_Live_Demo-https%3A%2F%2Fcms.pingbao.workers.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white" height="42" alt="Live Demo Button" />
+      </a>
+      <div style="margin-top: 14px;">
+        <span style="color: #38bdf8; font-size: 14px; font-weight: 600;">🔗 Official Demo Endpoint: </span>
+        <a href="https://cms.pingbao.workers.dev" target="_blank" style="color: #ffffff; text-decoration: underline; font-weight: bold; font-size: 14px;">https://cms.pingbao.workers.dev</a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- ============================================================================== -->
+<!-- 🎬 OFFICIAL 2-MIN PRODUCT VIDEO & 6 SMART HIGHLIGHTS -->
+<!-- ============================================================================== -->
+<div align="center">
+
+### 🎬 Pingbao 2-Minute Product Demo Video & 6 Smart Operational Highlights
+
+> 📺 **Direct Play / Download**: [▶ pingbao_smart_operations_demo.mp4 (1080P Full HD)](docs/assets/videos/pingbao_smart_operations_demo.mp4)  
+> 🌐 **Multi-Language Subtitles**: [English Subtitles (EN)](docs/assets/videos/pingbao_video2_en.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_video2_ko.srt) | [简体中文字幕 (ZH)](docs/assets/videos/pingbao_video2_zh.srt)
+
+<a href="docs/assets/videos/pingbao_smart_operations_demo.mp4">
+  <img src="docs/assets/demo/video2_scene_01_intro.png" alt="Pingbao Demo Video Thumbnail (Click to Play)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+</a>
+<br/>
+<sub><b>▲ Click to play the 2-minute product video (1920×1080 Full HD with voiceover and multilingual subtitles)</b></sub>
+
+<br/><br/>
+
+#### ⚡ 6 Killer Operational Breakthroughs (Why Pingbao?)
+
+| 01. Auto Error Detection & Self-Healing | 02. Precision Uptime & Store Analytics | 03. Zero-Visit 1080P/4K Live Screen Capture |
+| :---: | :---: | :---: |
+| <img src="docs/assets/demo/video2_scene_02_self_healing.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_03_uptime_workbench.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_04_live_capture.png" width="100%" /> |
+| **One-Click Batch Self-Healing**<br/>Detects network latency & desired-state gaps instantly | **Uptime-Driven Executive Decision Making**<br/>Monitors display operating hours & anomaly leaks | **Direct Framebuffer Capture**<br/>Inspects true rendered screens without site visits |
+| **04. Comprehensive User Audit Trails** | **05. Conversational AI Native (MCP)** | **06. Sub-Second Proof-of-Play (PoP)** |
+| <img src="docs/assets/demo/video2_scene_05_audit_logs.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_06_conversational_mcp.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_07_pop_analytics.png" width="100%" /> |
+| **Complete Audit Trails**<br/>Tracks who, when, and what schedule was modified | **Built-in Model Context Protocol (MCP)**<br/>Natural language health queries & auto scheduling | **Indisputable Billing Audit Reports**<br/>Logs true rendered frames, computes completion % |
+
+</div>
 
 <br/>
 

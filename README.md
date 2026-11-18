@@ -18,8 +18,61 @@
 
 <br/>
 
-> 🎮 **在线体验 / 1-Click Live Demo**：无需注册，点击直接体验屏宝企业级云端播控中台全功能：  
-> 👉 **[立即进入屏宝在线体验环境 (https://cms.pingbao.workers.dev)](https://cms.pingbao.workers.dev)** （已预装 116 台三星标牌集群、多级排期矩阵与商业授权）
+<!-- ============================================================================== -->
+<!-- 🚀 HIGH-VISIBILITY LIVE DEMO BANNER -->
+<!-- ============================================================================== -->
+<table width="100%" style="margin: 20px 0;">
+  <tr>
+    <td align="center" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 28px 20px; border-radius: 14px; border: 2px solid #3b82f6; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);">
+      <h2 style="margin: 0 0 12px 0; color: #60a5fa; font-size: 24px; letter-spacing: -0.5px;">
+        🚀 屏宝企业级云端在线免登录体验 (Live Interactive Demo)
+      </h2>
+      <p style="font-size: 16px; margin: 0 0 20px 0; color: #f1f5f9; line-height: 1.6;">
+        <b>无需安装、免注册登录</b>，直接在浏览器中即刻体验屏宝企业级云端播控平台全部功能。<br/>
+        <span style="color: #94a3b8; font-size: 14px;">（预置 116 台三星标牌集群、24小时可视化时间轴编排、PoP 结算、硬件级 IoT 远程智控）</span>
+      </p>
+      <a href="https://cms.pingbao.workers.dev" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/▶_立即进入在线免登录体验-https%3A%2F%2Fcms.pingbao.workers.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white" height="42" alt="Live Demo Button" />
+      </a>
+      <div style="margin-top: 14px;">
+        <span style="color: #38bdf8; font-size: 14px; font-weight: 600;">🔗 官方在线体验地址: </span>
+        <a href="https://cms.pingbao.workers.dev" target="_blank" style="color: #ffffff; text-decoration: underline; font-weight: bold; font-size: 14px;">https://cms.pingbao.workers.dev</a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- ============================================================================== -->
+<!-- 🎬 OFFICIAL 2-MIN PRODUCT VIDEO & 6 SMART HIGHLIGHTS -->
+<!-- ============================================================================== -->
+<div align="center">
+
+### 🎬 屏宝 2分钟核心演示视频 & 6大智能运营技术亮点
+
+> 📺 **视频直接播放 / 下载**: [▶ pingbao_smart_operations_demo.mp4 (1080P 超清)](docs/assets/videos/pingbao_smart_operations_demo.mp4)  
+> 🌐 **多语言字幕**: [简体中文字幕 (ZH)](docs/assets/videos/pingbao_video2_zh.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_video2_ko.srt) | [English Subtitles (EN)](docs/assets/videos/pingbao_video2_en.srt)
+
+<a href="docs/assets/videos/pingbao_smart_operations_demo.mp4">
+  <img src="docs/assets/demo/video2_scene_01_intro.png" alt="屏宝演示视频封面 (点击播放)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+</a>
+<br/>
+<sub><b>▲ 点击直接播放 2分钟核心演示视频（1920×1080 Full HD，含专业韩语语音解说及多语种字幕）</b></sub>
+
+<br/><br/>
+
+#### ⚡ 屏宝 6大独家差异化运维核心技术 (Why Pingbao?)
+
+| 01. 故障自动感知与一键自愈 | 02. 开机时长精准分析与敏捷运营 | 03. 零跑店 1080P/4K 实时截屏回传 |
+| :---: | :---: | :---: |
+| <img src="docs/assets/demo/video2_scene_02_self_healing.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_03_uptime_workbench.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_04_live_capture.png" width="100%" /> |
+| **一键批量自愈 (Self-Healing)**<br/>毫秒级感知通信延迟与终端状态偏差 | **运行时长 (Uptime) 高效辅助决策**<br/>实时掌控各门店大屏在线率与异常漏播 | **硬件帧缓冲区直通截屏**<br/>无需派工现场，足不出户真实画面 100% 验证 |
+| **04. 面向全员的全量审计日志** | **05. 自然语言 MCP 智能体接入** | **06. 秒级精准播量证明 (PoP)** |
+| <img src="docs/assets/demo/video2_scene_05_audit_logs.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_06_conversational_mcp.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_07_pop_analytics.png" width="100%" /> |
+| **全量追溯日志 (Audit Trails)**<br/>完整留存谁、在何时、修改了何种排期的证据链 | **行业首创标准 MCP 协议内置**<br/>一句话智能巡检，AI 自主生成海报并排程下发 | **无争议商业审计报表**<br/>仅记录真实渲染事实，精准计算完播率并导出 Excel |
+
+</div>
 
 <br/>
 
