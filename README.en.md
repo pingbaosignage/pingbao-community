@@ -51,14 +51,15 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 
 ### 🎬 Pingbao 2-Minute Product Demo Video & 6 Smart Operational Highlights
 
-> 📺 **Direct Play / Download**: [▶ pingbao_smart_operations_demo.mp4 (1080P Full HD)](docs/assets/videos/pingbao_smart_operations_demo.mp4)  
-> 🌐 **Multi-Language Subtitles**: [English Subtitles (EN)](docs/assets/videos/pingbao_video2_en.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_video2_ko.srt) | [简体中文字幕 (ZH)](docs/assets/videos/pingbao_video2_zh.srt)
+> 📺 **English Voiceover Video Play / Download**: [▶ pingbao_smart_operations_demo_en.mp4 (1080P Full HD)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4)  
+> 🌐 **Switch Voiceover Language**: [한국어 나레이션 (KO)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4) | [中文母语普通话解说 (ZH)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)  
+> 📝 **Precision Subtitles**: [English Subtitles (EN)](docs/assets/videos/pingbao_smart_operations_en.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_smart_operations_ko.srt) | [简体中文字幕 (ZH)](docs/assets/videos/pingbao_smart_operations_zh.srt)
 
-<a href="docs/assets/videos/pingbao_smart_operations_demo.mp4">
-  <img src="docs/assets/demo/video2_scene_01_intro.png" alt="Pingbao Demo Video Thumbnail (Click to Play)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+<a href="docs/assets/videos/pingbao_smart_operations_demo_en.mp4">
+  <img src="docs/assets/demo/en/en_scene_01.png" alt="Pingbao English Demo Video Thumbnail (Click to Play)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 <br/>
-<sub><b>▲ Click to play the 2-minute product video (1920×1080 Full HD with voiceover and multilingual subtitles)</b></sub>
+<sub><b>▲ Click to play the 2-minute product video (1920×1080 Full HD with native English voiceover by Brian and matching UI cards)</b></sub>
 
 <br/><br/>
 
@@ -66,10 +67,10 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 
 | 01. Auto Error Detection & Self-Healing | 02. Precision Uptime & Store Analytics | 03. Zero-Visit 1080P/4K Live Screen Capture |
 | :---: | :---: | :---: |
-| <img src="docs/assets/demo/video2_scene_02_self_healing.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_03_uptime_workbench.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_04_live_capture.png" width="100%" /> |
+| <img src="docs/assets/demo/en/en_scene_02.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_03.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_04.png" width="100%" /> |
 | **One-Click Batch Self-Healing**<br/>Detects network latency & desired-state gaps instantly | **Uptime-Driven Executive Decision Making**<br/>Monitors display operating hours & anomaly leaks | **Direct Framebuffer Capture**<br/>Inspects true rendered screens without site visits |
 | **04. Comprehensive User Audit Trails** | **05. Conversational AI Native (MCP)** | **06. Sub-Second Proof-of-Play (PoP)** |
-| <img src="docs/assets/demo/video2_scene_05_audit_logs.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_06_conversational_mcp.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_07_pop_analytics.png" width="100%" /> |
+| <img src="docs/assets/demo/en/en_scene_05.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_06.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_07.png" width="100%" /> |
 | **Complete Audit Trails**<br/>Tracks who, when, and what schedule was modified | **Built-in Model Context Protocol (MCP)**<br/>Natural language health queries & auto scheduling | **Indisputable Billing Audit Reports**<br/>Logs true rendered frames, computes completion % |
 
 </div>

@@ -51,14 +51,15 @@
 
 ### 🎬 핑바오 2분 핵심 데모 영상 & 6대 스마트 운영 하이라이트
 
-> 📺 **비디오 직접 재생 / 다운로드**: [▶ pingbao_smart_operations_demo.mp4 (1080P Full HD)](docs/assets/videos/pingbao_smart_operations_demo.mp4)  
-> 🌐 **글로벌 3개 국어 자막**: [한국어 자막 (KO)](docs/assets/videos/pingbao_video2_ko.srt) | [English Subtitles (EN)](docs/assets/videos/pingbao_video2_en.srt) | [简体中文字幕 (ZH)](docs/assets/videos/pingbao_video2_zh.srt)
+> 📺 **한국어 음성 비디오 재생 / 다운로드**: [▶ pingbao_smart_operations_demo_ko.mp4 (1080P Full HD)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)  
+> 🌐 **다국어 음성 버전 선택**: [English Voiceover (EN)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4) | [中文母语普通话解说 (ZH)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)  
+> 📝 **정밀 싱크 자막**: [한국어 자막 (KO)](docs/assets/videos/pingbao_smart_operations_ko.srt) | [English Subtitles (EN)](docs/assets/videos/pingbao_smart_operations_en.srt) | [简体中文字幕 (ZH)](docs/assets/videos/pingbao_smart_operations_zh.srt)
 
-<a href="docs/assets/videos/pingbao_smart_operations_demo.mp4">
-  <img src="docs/assets/demo/video2_scene_01_intro.png" alt="핑바오 데모 비디오 썸네일 (클릭 시 재생)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+<a href="docs/assets/videos/pingbao_smart_operations_demo_ko.mp4">
+  <img src="docs/assets/demo/ko/ko_scene_01.png" alt="핑바오 한국어 데모 비디오 썸네일 (클릭 시 재생)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 <br/>
-<sub><b>▲ 클릭 시 2분 핵심 데모 영상이 재생됩니다. (1920×1080 Full HD, 한국어 음성 나레이션 탑재)</b></sub>
+<sub><b>▲ 클릭 시 한국어 나레이션 데모 영상이 재생됩니다. (1920×1080 Full HD, 한국어 음성 및 SSSP 표준 발음 교정 탑재)</b></sub>
 
 <br/><br/>
 
@@ -66,10 +67,10 @@
 
 | 01. 장치 에러 자동 감지 & 자율 복구 | 02. 가동 시간 정밀 분석 & 매장 관리 | 03. 현장 무방문 1080P/4K 실시간 캡처 |
 | :---: | :---: | :---: |
-| <img src="docs/assets/demo/video2_scene_02_self_healing.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_03_uptime_workbench.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_04_live_capture.png" width="100%" /> |
+| <img src="docs/assets/demo/ko/ko_scene_02.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_03.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_04.png" width="100%" /> |
 | **원클릭 일괄 자율 치유 (Self-Healing)**<br/>통신 장애 및 서버-단말 상태 갭 감지 즉시 정상화 | **가동 시간(Uptime) 기반 빠른 경영 판단**<br/>매장별 디스플레이 실가동률 모니터링 & 영업 누수 차단 | **하드웨어 프레임버퍼 다이렉트 캡처**<br/>매장 방문 없이 실제 송출 화면 100% 실시간 점검 |
 | **04. 사용자별 전수 감사 로그 (Audit)** | **05. 자연어 기반 MCP AI 연동** | **06. 1초 단위 초정밀 PoP & 완주율** |
-| <img src="docs/assets/demo/video2_scene_05_audit_logs.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_06_conversational_mcp.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_07_pop_analytics.png" width="100%" /> |
+| <img src="docs/assets/demo/ko/ko_scene_05.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_06.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_07.png" width="100%" /> |
 | **전수 감사 로그 (Audit Trails)**<br/>누가, 언제, 어떤 스케줄을 바꿨는지 IP·전후값 전수 추적 | **AI 에이전트 표준 MCP 도구 내장**<br/>말 한마디로 현황 진단 & 배너 자동 편성 배포 | **무결점 상업 정산 감사 리포트**<br/>실제 렌더링 프레임만 기록, 완주율(%) 산출 및 엑셀 다운 |
 
 </div>

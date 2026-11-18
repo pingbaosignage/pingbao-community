@@ -51,14 +51,15 @@
 
 ### 🎬 屏宝 2分钟核心演示视频 & 6大智能运营技术亮点
 
-> 📺 **视频直接播放 / 下载**: [▶ pingbao_smart_operations_demo.mp4 (1080P 超清)](docs/assets/videos/pingbao_smart_operations_demo.mp4)  
-> 🌐 **多语言字幕**: [简体中文字幕 (ZH)](docs/assets/videos/pingbao_video2_zh.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_video2_ko.srt) | [English Subtitles (EN)](docs/assets/videos/pingbao_video2_en.srt)
+> 📺 **中文普通话母语解说视频播放 / 下载**: [▶ pingbao_smart_operations_demo_zh.mp4 (1080P 超清)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)  
+> 🌐 **切换解说语言**: [한국어 음성 비디오 (KO)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4) | [English Voiceover (EN)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4)  
+> 📝 **精准时间轴字幕**: [简体中文字幕 (ZH)](docs/assets/videos/pingbao_smart_operations_zh.srt) | [한국어 자막 (KO)](docs/assets/videos/pingbao_smart_operations_ko.srt) | [English Subtitles (EN)](docs/assets/videos/pingbao_smart_operations_en.srt)
 
-<a href="docs/assets/videos/pingbao_smart_operations_demo.mp4">
-  <img src="docs/assets/demo/video2_scene_01_intro.png" alt="屏宝演示视频封面 (点击播放)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+<a href="docs/assets/videos/pingbao_smart_operations_demo_zh.mp4">
+  <img src="docs/assets/demo/zh/zh_scene_01.png" alt="屏宝中文演示视频封面 (点击播放)" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 <br/>
-<sub><b>▲ 点击直接播放 2分钟核心演示视频（1920×1080 Full HD，含专业韩语语音解说及多语种字幕）</b></sub>
+<sub><b>▲ 点击直接播放 2分钟中文演示视频（1920×1080 Full HD，含专业中文母语解说、SSSP 标准发音及中文全界面字幕卡）</b></sub>
 
 <br/><br/>
 
@@ -66,10 +67,10 @@
 
 | 01. 故障自动感知与一键自愈 | 02. 开机时长精准分析与敏捷运营 | 03. 零跑店 1080P/4K 实时截屏回传 |
 | :---: | :---: | :---: |
-| <img src="docs/assets/demo/video2_scene_02_self_healing.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_03_uptime_workbench.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_04_live_capture.png" width="100%" /> |
+| <img src="docs/assets/demo/zh/zh_scene_02.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_03.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_04.png" width="100%" /> |
 | **一键批量自愈 (Self-Healing)**<br/>毫秒级感知通信延迟与终端状态偏差 | **运行时长 (Uptime) 高效辅助决策**<br/>实时掌控各门店大屏在线率与异常漏播 | **硬件帧缓冲区直通截屏**<br/>无需派工现场，足不出户真实画面 100% 验证 |
 | **04. 面向全员的全量审计日志** | **05. 自然语言 MCP 智能体接入** | **06. 秒级精准播量证明 (PoP)** |
-| <img src="docs/assets/demo/video2_scene_05_audit_logs.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_06_conversational_mcp.png" width="100%" /> | <img src="docs/assets/demo/video2_scene_07_pop_analytics.png" width="100%" /> |
+| <img src="docs/assets/demo/zh/zh_scene_05.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_06.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_07.png" width="100%" /> |
 | **全量追溯日志 (Audit Trails)**<br/>完整留存谁、在何时、修改了何种排期的证据链 | **行业首创标准 MCP 协议内置**<br/>一句话智能巡检，AI 自主生成海报并排程下发 | **无争议商业审计报表**<br/>仅记录真实渲染事实，精准计算完播率并导出 Excel |
 
 </div>
