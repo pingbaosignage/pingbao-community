@@ -1,6 +1,6 @@
 # 핑바오(Pingbao) 관리자 및 설치 가이드
 
-본 문서는 **핑바오(Pingbao)** 서버 환경을 온프레미스(On-Premise), NAS 또는 클라우드(Cloud) 환경에 구축하고 유지 관리하는 방법을 안내합니다.
+본 문서는 **핑바오(Pingbao)** 서버 환경을 온프레미스(On-Premise), NAS 또는 클라우드(Cloud) 환경에 구축하고, **빌트인 AI / LLM 자동화 엔진(글로벌·중국 클라우드 및 무료 사내 로컬 Ollama/vLLM)**을 설정·유지 관리하는 방법을 안내합니다.
 
 ---
 
@@ -17,6 +17,7 @@
 * **설치 옵션별 권장 사양 (`DB_MODE`)**:
   * **경량 / 단독형 (`DB_MODE=sqlite`, 기본값)**: CPU 2 Core 이상, **RAM 2GB~4GB**, 20GB+ SSD (`dscn-server` + `dscn-nginx` 2컨테이너 구성, NAS 및 1~300대 매장 환경 최적)
   * **엔터프라이즈 / 고가용성 (`DB_MODE=postgres`)**: CPU 4 Core 이상, **RAM 8GB 이상** (100대 이상 운영 시 16GB 권장), 100GB+ SSD (PostgreSQL 16 + Redis 7 Pub/Sub 클러스터 버스 포함 4컨테이너 구성, 다중 서버 HA 환경 최적)
+  * **(선택) 사내 로컬 LLM (`Ollama` / `vLLM`) 자체 구동 시**: GPU VRAM 8GB~16GB 이상 또는 Apple Silicon / 고성능 CPU 서버 (`gemma4:12b`, `qwen2.5:14b`, `qwen2.5vl:7b` 등 API 비용 없이 100% 폐쇄망 구동 가능; 외부 클라우드 LLM API 연동 시 추가 서버 사양 불필요)
 
 ---
 
@@ -42,7 +43,7 @@ nano .env
 * `DB_MODE`: 데이터베이스 엔진 선택 (`sqlite` 기본값 또는 `postgres`)
 * `DATA_DIR`: 격리된 데이터베이스 보관 경로 (기본값 `./data`, 외부 정적 서빙 경로인 `./storage`와 엄격 물리 분리)
 * `DATABASE_URL` / `REDIS_URL`: `DB_MODE=postgres` 선택 시 PostgreSQL 16 및 Redis 7 클러스터 접속 정보
-* `JWT_SECRET`: 관리자 인증 토큰 서명 키 (미지정 시 `SERVER_MASTER_KEY`에서 HKDF-SHA256으로 안전 파생)
+* `SERVER_MASTER_KEY`: `.env.secret`에 보관되는 64자 마스터 암호화 키 (JWT 서명 키 파생 및 LLM API 시크릿 키 AES-256-GCM 암호화 보관에 사용)
 
 ### 2.3 서비스 실행 (설치 시 DB 모드 선택)
 
@@ -67,7 +68,7 @@ nano .env
 ```bash
 ./upgrade.sh
 ```
-* 기존 데이터베이스(`./data/pingbao.sqlite` 또는 PostgreSQL 볼륨) 및 미디어 스토리지(`./storage`)는 안전하게 보존됩니다.
+* 기존 데이터베이스(`./data/pingbao.sqlite` 또는 PostgreSQL 볼륨), 암호화된 AI 설정 및 미디어 스토리지(`./storage`)는 안전하게 보존됩니다.
 
 ### 3.2 이전 버전 즉시 롤백
 
@@ -85,24 +86,28 @@ nano .env
 
 ---
 
-## 5. 시스템 설정 · 로그 보존 주기 · 원격 진단 · MCP 연동
+## 5. 시스템 설정 5대 관리 서브탭 & 빌트인 AI / LLM 자동화 구성
 
-**[시스템 설정 / 라이선스]** 워크스페이스는 4개의 전문 관리 서브탭으로 구성되어 있습니다.
+**[시스템 설정 / 라이선스]** 워크스페이스는 **5개의 전문 관리 서브탭**으로 구성되어 있습니다.
 
 <br/>
 
-![관리자 환경설정](../assets/ko/admin-settings.png)
-*▲ [시스템 설정 > 환경설정] 서버 접근 주소 자동 패키징 및 6개월 기본 로그 보존 주기 관리*
+| 관리자 환경설정 (`ADMIN_SETTINGS`) | 빌트인 AI / LLM 자동화 설정 (`AI_SETTINGS`) |
+| :---: | :---: |
+| <img src="../assets/ko/admin-settings.png" width="100%" /> | <img src="../assets/ko/ai-settings.png" width="100%" /> |
 
-### 5.1 4대 관리 서브탭 구조
-1. **라이선스 관리 (`LICENSE`)**: 오프라인/폐쇄망 완벽 대응 Ed25519 상용 라이선스(`.lic`) 서명 검증, 단말 쿼터 현황 및 `.lic-req` 요청 파일 발급
+### 5.1 5대 관리 서브탭 구조
+1. **라이선스 관리 (`LICENSE`)**: 오프라인/폐쇄망 완벽 대응 Ed25519 상용 라이선스(`.lic`) 서명 검증 및 단말 쿼터 현황 관리
 2. **환경설정 (`ADMIN_SETTINGS`)**:
-   * **서버 접근 주소 및 멀티 OS 설치 패키지 자동 생성**: 플레이어가 접속할 대표 서버 URL을 저장하면 삼성 Tizen USB(`.zip`), Windows(`.exe`), Android(`.apk`), Linux(`.deb`/`.sh`) 설치 패키지에 해당 서버 주소가 즉시 자동 내장(Stamping)되어 재패키징됩니다.
-   * **6개월 기본 로그 보존 주기 및 자동 정리(Auto-Purge Lifecycle)**: 운영 관제 이력(Operations), 장치 가동 시간(Uptime), 방송 송출 증빙(PoP), 사용자 감사 로그(Audit Logs)에 대해 **기본 6개월(180일) 보존 정책**과 자동 백그라운드 정리 주기가 작동하여 장기 운영 시 디스크 용량 포화를 방지합니다.
-3. **원격 진단 (`DIAGNOSTICS`)**: 단말 텔레메트리 사양 확인, Opt-in 기반 개인정보 자동 마스킹 에러 리포팅 및 커뮤니티 이슈 포털 연동
-4. **API & AI 연동 (`CONNECTIVITY`)**: 조직·역할·작업 범위(Scope) 제한 API 키 발급, 시간대별 API/MCP 호출량 및 인증 실패 모니터링, Claude Desktop / Cursor / Antigravity 원클릭 MCP 설정 JSON 제공
-
-### 5.2 자동 에러 텔레메트리 및 커뮤니티 포털 (`DIAGNOSTICS`)
-* **보안 및 개인정보 보호**: 모든 패스워드, JWT 토큰, API Secret, IP, 로컬 경로 등 민감 정보는 전송 전 메모리에서 즉시 `***MASKED***` 처리되며, SHA-256 지문으로 중복 제거됩니다.
-* **관리자 명시적 동의제 (Opt-in)**: 기본 비활성화(`DISABLED`) 상태이며, 최고 관리자가 주의사항 확인 후 동의 체크박스를 활성화해야만 동작합니다.
-* **콘솔 내 이슈 등록**: 브라우저를 벗어나지 않고 `[수동 버그 리포트 등록]` 및 `[기능 개선 제안 등록]`을 통해 `pingbaosignage/pingbao-community` 이슈를 즉시 생성할 수 있습니다.
+   * **서버 접근 주소 및 멀티 OS 설치 패키지 자동 생성**: 대표 서버 URL 저장 시 전 OS 플레이어 설치 패키지(`.zip`, `.exe`, `.apk`, `.deb`/`.sh`)에 서버 주소가 자동 내장(Stamping)되어 재패키징됩니다.
+   * **6개월 기본 로그 보존 주기 및 자동 정리(Auto-Purge Lifecycle)**: 운영 관제, 가동 시간, PoP 증빙, 감사 로그에 **기본 6개월(180일) 보존 및 자동 정리 주기**가 작동합니다.
+3. **★ AI / LLM 자동화 (`AI_SETTINGS` · 최고 관리자 전용)**:
+   * **10대 공식 LLM 프로바이더 프리셋 내장**:
+     * **중국 본토 직결 (GFW 프록시 불필요)**: Alibaba 통의천문(`qwen`), `deepseek`, 지푸 `zhipu` (GLM-4/4V), 바이트댄스 `doubao`, Moonshot `kimi`
+     * **글로벌 클라우드**: `qwen_intl`, `openai` (GPT-4o / mini), `gemini` (Gemini 2.5 Flash / Pro), `claude` (Claude Sonnet / Haiku)
+     * **사내 구축형 온프레미스 (무료 · 폐쇄망)**: `ollama` (`http://127.0.0.1:11434/v1` 또는 사내 GPU 서버 IP — Ollama, vLLM, SGLang 완벽 호환)
+   * **텍스트 + 비전 프로바이더 분리 조합 지원**: 예를 들어 텍스트/챗봇은 가성비가 뛰어난 `DeepSeek`으로, 이미지 비전 분석은 `Qwen-VL` 또는 `Gemini`로 혼합 구성할 수 있습니다.
+   * **강력한 키 보안 및 쿼터 통제**: 입력된 API 키는 `SERVER_MASTER_KEY` 기반 **AES-256-GCM**으로 암호화 저장되며 화면에는 마스킹(`sk-ab••••1234`)만 노출됩니다. 저장 전 **`[연결 테스트]`**로 실시간 응답 속도를 검증하고, **일일 최대 호출 제한(`daily_call_limit`)**으로 비용 폭주를 차단합니다.
+   * **4대 세부 기능 독립 스위치**: ① 컨텐츠 업로드 비전 자동 태깅, ② 장치 텔레메트리·로그 AI 진단, ③ 모닝 브리핑·감사·스케줄 AI 인사이트, ④ 우측 슬라이드 AI 오퍼레이터 챗봇(`Ctrl+J`)을 개별 ON/OFF 할 수 있습니다.
+4. **원격 진단 (`DIAGNOSTICS`)**: 단말 진단 로그 번들 수집, Opt-in 기반 민감정보 자동 마스킹(`***MASKED***`) 에러 리포팅 및 커뮤니티 이슈 포털 연동
+5. **API & AI 연동 (`CONNECTIVITY`)**: 스코프 제한 API 키 발급, 호출량 모니터링 및 외부 AI 에이전트(Claude Desktop, Cursor, Antigravity)용 표준 MCP 설정 JSON 제공

@@ -1,16 +1,16 @@
 <div align="center">
 
 # 📺 屏宝 (Pingbao / 핑바오)
-### 三星智能商用标牌与多系统企业级云端播控平台 (Enterprise Signage CMS)
+### 原生内置 AI 运维对话助手 · 三星智能商用标牌与多系统企业级云端播控平台
 
-**屏宝 (Pingbao)** 是一款以**三星智能商用标牌 (Samsung Smart Signage · Tizen 6.5+ / SSSP 6~10+)** 底层原生硬件智控为核心，同时统一纳管 **Windows、Android、Linux 与 Web** 播放终端的企业级数字标牌全域智能播控平台。  
-内置多系统硬件抽象层（HAL）自适应远控、24 小时可视化时间轴四级分时编排、全自动多屏同步轮播（SyncPlay）、断网永续离线播放、设备开机时长（Uptime）与秒级播放凭据（PoP）双工作台，并全面开放企业级 REST API 与 AI 智能体 MCP (Model Context Protocol) 协议支持。
+**屏宝 (Pingbao)** 是原生内置 **AI 运维对话助手 (`Ctrl+J`) 与五大核心智能自动化引擎**的新一代企业级数字标牌全域播控平台 (CMS)。系统以**三星智能商用标牌 (Samsung Smart Signage · Tizen 6.5+ / SSSP 6~10+)** 底层原生硬件智控为核心，同时在单一控制台统一纳管 **Windows、Android、Linux 与 Web** 播放终端。  
+只需一句自然语言对话，即可输出多系统大屏诊断表格并执行**零事故人工确认制 (HITL) 远程管控**；配合多模态视觉防过期质检、国内五大主流模型直连与 **100% 免费内网本地 Ollama 大模型**、全自动多屏同帧同步 (SyncPlay)、四级分时排程及秒级播放凭据 (PoP)，彻底重塑百城千店智能运维体验。
 
 [![Language](https://img.shields.io/badge/Language-简体中文%20|%20한국어%20|%20English-brightgreen.svg)](#)
+[![AI Copilot](https://img.shields.io/badge/Built--In%20AI-运维对话助手%20%26%20多模态视觉质检-7c3aed?style=flat-square)](#)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-在线免登录体验-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
-[![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](#)
 
 <br/>
 
@@ -25,11 +25,11 @@
   <tr>
     <td align="center" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 28px 20px; border-radius: 14px; border: 2px solid #3b82f6; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);">
       <h2 style="margin: 0 0 12px 0; color: #60a5fa; font-size: 24px; letter-spacing: -0.5px;">
-        🚀 屏宝企业级云端在线免登录体验 (Live Interactive Demo)
+        🚀 屏宝企业级云端 AI 在线免登录体验 (Live Interactive Demo)
       </h2>
       <p style="font-size: 16px; margin: 0 0 20px 0; color: #f1f5f9; line-height: 1.6;">
-        <b>无需安装、免注册登录</b>，直接在浏览器中即刻体验屏宝企业级云端播控平台全部功能。<br/>
-        <span style="color: #94a3b8; font-size: 14px;">（预置 116 台三星标牌集群、24小时可视化时间轴编排、PoP 结算、硬件级 IoT 远程智控）</span>
+        <b>无需安装、免注册登录</b>，直接在浏览器中即刻体验屏宝 AI 企业级云端播控平台全部核心能力。<br/>
+        <span style="color: #94a3b8; font-size: 14px;">（预置 119 台多系统标牌集群、内置 AI 智能自动化中心、24小时四级分时时间轴、PoP 结算与硬件级远控）</span>
       </p>
       <a href="https://cms.pingbao.workers.dev" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/▶_立即进入在线免登录体验-https%3A%2F%2Fcms.pingbao.workers.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white" height="42" alt="Live Demo Button" />
@@ -45,11 +45,11 @@
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🎬 OFFICIAL 2-MIN PRODUCT VIDEO & 6 SMART HIGHLIGHTS -->
+<!-- 🎬 OFFICIAL AI SPOTLIGHT VIDEO & HIGHLIGHTS -->
 <!-- ============================================================================== -->
 <div align="center">
 
-### 🎬 屏宝 2分钟核心演示视频 (Official Showcase)
+### 🎬 屏宝 AI 智能运维官方演示视频 (Official AI Spotlight Video)
 
 * 🇨🇳 **中文普通话解说视频**: [▶ 观看视频 (pingbao_smart_operations_demo_zh.mp4)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)
 * 🇰🇷 **한국어 음성 데모 영상**: [▶ 영상 보기 (pingbao_smart_operations_demo_ko.mp4)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)
@@ -58,208 +58,125 @@
 <br/>
 
 <a href="docs/assets/videos/pingbao_smart_operations_demo_zh.mp4">
-  <img src="docs/assets/demo/zh/zh_scene_01.png" alt="屏宝中文演示视频" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+  <img src="docs/assets/demo/zh/zh_scene_02.png" alt="屏宝 AI 运维助手中文演示视频" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 
 <br/><br/>
 
-#### ⚡ 屏宝 6大独家差异化运维核心技术 (Why Pingbao?)
+#### ⚡ 屏宝 6 大革命性 AI 与企业级运维核心技术 (Why Pingbao?)
 
-| 01. 故障自动感知与一键自愈 | 02. 开机时长精准分析与敏捷运营 | 03. 零跑店 1080P/4K 实时截屏回传 |
+| 01. ★ 右侧滑出式 AI 助手表格诊断 | 02. ★ 零事故审批制(HITL) AI 远程管控 | 03. ★ 视觉防过期质检 & 免费内网 Ollama |
 | :---: | :---: | :---: |
 | <img src="docs/assets/demo/zh/zh_scene_02.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_03.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_04.png" width="100%" /> |
-| **一键批量自愈 (Self-Healing)**<br/>毫秒级感知通信延迟与终端状态偏差 | **运行时长 (Uptime) 高效辅助决策**<br/>实时掌控各门店大屏在线率与异常漏播 | **硬件帧缓冲区直通截屏**<br/>无需派工现场，足不出户真实画面 100% 验证 |
-| **04. 面向全员的全量审计日志** | **05. 自然语言 MCP 智能体接入** | **06. 秒级精准播量证明 (PoP)** |
-| <img src="docs/assets/demo/zh/zh_scene_05.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_06.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_07.png" width="100%" /> |
-| **全量追溯日志 (Audit Trails)**<br/>完整留存谁、在何时、修改了何种排期的证据链 | **行业首创标准 MCP 协议内置**<br/>一句话智能巡检，AI 自主生成海报并排程下发 | **无争议商业审计报表**<br/>仅记录真实渲染事实，精准计算完播率并导出 Excel |
+| **原生内置 AI 运维对话助手 (`Ctrl+J`)**<br/>一句话输出服务器健康与多系统大屏表格报告 | **人工确认防线 + 精准目标隔离**<br/>严格锁定已选设备，点击确认后方才安全下发 | **多模态视觉识别 + 十大中外/本地大模型**<br/>自动识别活动截止日，支持零费用本地 Ollama |
+| **04. AI 终端根因解读 & 零跑店实时画面** | **05. 指令差异对比自愈 & 开机时长钻取** | **06. 全量不可篡改审计 & 秒级精准 PoP** |
+| <img src="docs/assets/demo/zh/zh_scene_05.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_06.png" width="100%" /> | <img src="docs/assets/demo/zh/zh_scene_08.png" width="100%" /> |
+| **底层报错通俗解读 + 三星 SSSP 实时截屏**<br/>非技术人员也能秒懂故障原因并足不出户验屏 | **BEFORE/AFTER 对比 & AI 节能建议**<br/>自动重试修复断网，精准消除夜间无效耗电 | **AI 安全审计总结 & 完播率(%)商业对账**<br/>全程留痕记录 IP 并一键导出 CSV/JSON 报表 |
 
 </div>
 
-<br/>
-
-<img src="docs/assets/zh/dashboard.png" alt="屏宝系统仪表盘" width="100%" />
-<sub><b>▲ 屏宝 (Pingbao) 实时运营仪表盘：全网三星商用屏幕在线率、排期部署进度、存储用量与设备健康状态总览（Oracle 生产集群实测数据）</b></sub>
-
 </div>
+
+---
+
+## 🧠 王牌核心升级：内置“屏宝 AI 运维对话助手”与五大智能自动化引擎
+
+无需安装任何外部客户端，只需点击控制台右上角 **【AI 助手】按钮（快捷键 `Ctrl+J`）**，即可通过自然语言对话完成千店大屏巡检、安全远控与智能排程。
+
+<img src="docs/assets/zh/ai-copilot-table.png" alt="屏宝 AI 运维助手表格诊断报表" width="100%" />
+<sub><b>▲ 右侧滑出式“屏宝 AI 运维助手”：支持拖拽左边缘自由调宽、一键快捷提问芯片、实时生成多系统在线汇总表格及目标页面快捷跳转</b></sub>
+
+<br/><br/>
+
+| ① 零事故审批制(HITL)管控与严格子集隔离 | ② 3 秒掌控全局的 `【AI 晨间简报】` 智能卡片 |
+| :---: | :---: |
+| <img src="docs/assets/zh/ai-copilot-chat.png" width="100%" /> | <img src="docs/assets/zh/ai-morning-briefing.png" width="100%" /> |
+| **100% 杜绝误发全网门店的播出事故**<br/>自动锁定当前勾选屏幕（`已选 3 台设备`），唯有管理员点击 **【确认并执行】** 才会真正下发并写入审计日志 | **全业务模块一键 AI 洞察并自动汇聚至对话窗**<br/>晨间简报、终端诊断、排程冲突校验、故障规律与安全审计总结一键展开并永久留存对话历史 |
+| **③ 多模态视觉自动打标与过期促销拦截** | **④ 国内五大模型直连 & 100% 免费内网 Ollama** |
+| <img src="docs/assets/zh/ai-vision-media.png" width="100%" /> | <img src="docs/assets/zh/ai-settings.png" width="100%" /> |
+| **从源头终结“过期活动海报仍在轮播”事故**<br/>上传即自动提取餐品品类、价目表 OCR、推荐时段及**活动截止日期 (`2026-12-31`)** | **零 API 费用 · 数据零出境企业级隐私保障**<br/>免代理直连通义千问、DeepSeek、智谱 GLM、字节豆包、Kimi、OpenAI、Gemini 及**免费本地 Ollama/vLLM** |
 
 ---
 
 ## 🌟 核心产品优势 (Core Value Propositions)
 
-1. **专注三星商用标牌深控 · 五大系统统一纳管 (Multi-OS)**
-   * 深度适配**三星智能商用标牌 (Tizen 6.5+ / SSSP 6~10+)** 底层硬件控制（液晶背光开关、面板电源、遥控/按键锁、HDMI 信号切换、硬件 RTC 定时器）。
-   * 全面支持 **Windows (`.exe`) · Android (`.apk`) · Linux (`.deb`/`.sh`) · Web (`/player`)** 多系统统一管控、HAL 自动路由、自动内嵌服务器地址的一键安装包弹窗及 **7 大指令专属批量远控弹窗**。
-2. **断网无忧·永续自主离线轮播 (Autonomous Offline Loop)**
-   * 依托终端本地高速存储预载与内置状态机，网络长期中断时依然依据排期计划 24/7/365 永续无缝轮播，告别黑屏与报错界面。
-3. **四级优先级时间轴智能排期引擎 (4-Tier Smart Scheduling Engine)**
-   * 支持 `EMERGENCY`（紧急插播）> `EVENT`（分时营销活动）> `REGULAR`（日常分时轮播）> `DEFAULT`（24小时底图兜底）四级抢占体系，零黑屏零闪烁自动回落。
+1. **内置 AI 运维对话助手 (`Ctrl+J`) 与多模态视觉全链路自动化**
+   * 自动感知当前界面焦点、长对话摘要记忆压缩、HITL 审批制远程控制、多模态视觉防过期拦截、3 秒生成中英韩三语应急广播文案、10 大国内外云与本地免费 Ollama 模型支持。
+2. **专注三星商用标牌深控 · 五大系统统一纳管 (Multi-OS)**
+   * 深度适配**三星智能商用标牌 (Tizen 6.5+ / SSSP 6~10+)** 底层硬件控制，同时支持 **Windows (`.exe`) · Android (`.apk`) · Linux (`.deb`/`.sh`) · Web (`/player`)** 自动内嵌服务器地址安装包弹窗及 **7 大指令专属批量远控**。
+3. **断网永续自治轮播 & 四级分时智能排程**
+   * 本地高速缓存保障断网零黑屏；`EMERGENCY > EVENT > REGULAR > DEFAULT` 四级抢占并配备 `【AI 排程与定时校验】`。
 4. **全自动多屏同步播放技术 (SyncPlay)**
-   * **全自动零配置**：满足**【同一设备分组】、【相同节目排期】、【同一局域网】**三个条件时，通过认证 SSE `sync-stream` 与时钟偏移自动校准实现毫秒级帧同步与联屏同时翻页。
-5. **企业级 REST API 与 AI 智能体 MCP 支持**
-   * 全面开放 60+ OpenAPI 3.0 RESTful 接口、细粒度 API 密钥调用量分析看板与内置 **MCP (Model Context Protocol)** 服务，支持 Claude、Cursor、Antigravity 等 AI 智能体自然语言巡检与自动排期。
-6. **开机时长工作台 (Uptime) 与秒级精准播放证明 (PoP)**
-   * 自动筛查低开机率异常门店并支持每日开关机会话明细下钻（区分 `POWER_TIMER` 与 `MANUAL`）；真实硬件渲染秒级存证，精准核算完播率 (%) 并一键导出审计对账单。
-7. **远程自愈、6 个月日志自动清理与社区错误遥测**
-   * 多状态/分类筛选与 `BEFORE/AFTER` 变更对比（`Op Diff`），内置**默认 6 个月（180 天）日志自动清理生命周期**，以及 Opt-in 严格脱敏的 GitHub 社区错误遥测。
+   * 满足**【同一分组 + 同一排程 + 同一局域网】**时，基于认证 SSE `sync-stream` 与时钟校准实现 100% 零配置毫秒级同帧翻页。
+5. **开机时长分析、秒级精准 PoP、6 个月日志自动清理与标准 MCP 接口**
+   * 每日开关机会话钻取、真实硬件渲染帧完播率统计、默认 180 天日志自动清理以及 60+ REST API 与内置 `pingbao` MCP 服务。
 
 ---
 
 ## 📸 全功能工作台全景介绍与系统界面 (简体中文原生界面)
 
-### 1. 运行仪表盘 (Dashboard)
+### 1. 运行仪表盘与 AI 晨间简报 (Dashboard)
 <img src="docs/assets/zh/dashboard.png" alt="运行仪表盘" width="100%" />
-集团全网运营指挥中心：实时呈现终端在线率、已发布排期、近 7 天 / 30 天低开机率异常屏幕预警面板及实时事件动态流。
 
 ---
 
-### 2. 多系统设备集中管理与一键安装包弹窗 (Device Management)
-<img src="docs/assets/zh/device-management.png" alt="设备管理" width="100%" />
-按组织、操作系统（TIZEN / WINDOWS / ANDROID / LINUX）、在线状态毫秒级筛选，支持 7 大指令批量远控及零跑店实时 1080P/4K 截屏监看。
+### 2. 多系统设备管理 · AI 终端根因诊断 · 一键安装包弹窗 (Device Management)
 
-<img src="docs/assets/zh/player-installer.png" alt="多系统播放器安装包下载弹窗" width="100%" />
-所有播放器安装包（三星 Tizen U 盘 `.zip`、Windows `.exe`、Android `.apk`、Linux `.deb`/`.sh`）均自动内嵌当前服务器访问地址，现场装好即连。
+| 多系统终端列表与零跑店实时截屏监看 | 右侧详情 `管控/控制` —— AI 终端深度根因诊断 |
+| :---: | :---: |
+| <img src="docs/assets/zh/device-management.png" width="100%" /> | <img src="docs/assets/zh/ai-device-diagnosis.png" width="100%" /> |
+| **多系统播放器安装包下载弹窗 (`自动内嵌服务器地址`)** | **7 项指令专属批量远程控制弹窗 (`Bulk Control`)** |
+| <img src="docs/assets/zh/player-installer.png" width="100%" /> | <img src="docs/assets/zh/bulk-control.png" width="100%" /> |
 
 ---
 
-### 3. 节目排期核心引擎 (Schedules) —— [核心特写]
+### 3. 四级节目排期核心引擎与 AI 冲突校验 (Schedules)
 <img src="docs/assets/zh/schedules.png" alt="节目排期总览" width="100%" />
-左右主从分栏视图，左侧管理全部草稿与已发布计划，右侧展开直观的 24 小时多轨道时间轴并支持原子化发布。
-
-#### 详细时段编排与优先级矩阵 (Schedule Detail & Slots)
 <img src="docs/assets/zh/schedule-detail.png" alt="排期时段编排详情" width="100%" />
-上下拖拽自由调整时段优先级，自动演算最终有效播发明细（Effective Windows），彻底消除重叠时段冲突。
 
 ---
 
 ### 4. 播放列表编排 (Playlists)
 <img src="docs/assets/zh/playlists.png" alt="播放列表管理" width="100%" />
-支持音视频与高清海报自由混排、独立停留秒数微调、GPU 平滑转场及单轮循环总时长自动核算。
 
 ---
 
-### 5. 媒体素材智能管家 (Media Assets)
-<img src="docs/assets/zh/media-assets.png" alt="媒体素材库" width="100%" />
-支持 4K 超大视频磁盘直连流式上传、64 字节二进制魔数安全校验、编码元数据解析与防误删引用锁保护。
+### 5. 媒体素材库与多模态 AI 视觉质检 (Media Assets)
+
+| 4K 媒体素材资源库 (`流式上传与文件头校验`) | AI 视觉元数据与活动截止日过期拦截 |
+| :---: | :---: |
+| <img src="docs/assets/zh/media-assets.png" width="100%" /> | <img src="docs/assets/zh/ai-vision-media.png" width="100%" /> |
 
 ---
 
 ### 6. 运维监控与状态差异对比 (Operations Monitoring)
 <img src="docs/assets/zh/monitoring.png" alt="运维监控" width="100%" />
-提供多状态（成功/进行中/失败）与任务分类筛选、实时指令同步队列追踪及 `BEFORE / AFTER` 配置差异对比（`Op Diff`）。
 
 ---
 
-### 7. 统计与分析：设备运行时间与播发合规证明 (Uptime & PoP)
+### 7. 统计与分析：设备运行时长与播发合规证明 (Uptime & PoP)
 
-| 设备运行时间工作台 (`Operating Times`) | 播发合规证明报表 (`Proof-of-Play`) |
+| 设备运行时长分析台 (`【AI 运行时长与节能建议】`) | 秒级精准播放凭据报表 (`完播率 % 与结算导出`) |
 | :---: | :---: |
 | <img src="docs/assets/zh/operating-times.png" width="100%" /> | <img src="docs/assets/zh/reports.png" width="100%" /> |
 
-主动定位低开机率异常门店并支持每日开关机会话明细下钻；基于终端真实渲染事实核算完播率 (%) 并一键导出 CSV / JSON / Markdown 审计报表。
-
 ---
 
-### 8. 用户、多租户组织权限与不可篡改审计日志 (Users & Audit)
+### 8. 多租户组织权限与不可篡改审计日志 (Users & Audit)
 
-| 多租户组织与 RBAC 权限 (`Users & RBAC`) | 全员操作不可篡改审计账本 (`Audit Logs`) |
+| 多租户组织与 RBAC 权限 (`Users & RBAC`) | 全员操作不可篡改审计账本 (`【AI 安全审计总结】`) |
 | :---: | :---: |
 | <img src="docs/assets/zh/users.png" width="100%" /> | <img src="docs/assets/zh/audit-logs.png" width="100%" /> |
 
-支持集团-区域-门店多级树形隔离、细粒度 CRUDX 角色矩阵、RFC 6238 双因子认证及全程留痕的不可篡改操作审计账本。
-
 ---
 
-### 9. 系统设置 · 商业授权 · 6 个月日志清理 · MCP 联动
+### 9. 系统设置 · AI 大模型自动化 · 6 个月日志清理 · MCP 联动
 
-| 商业授权概览 (`Ed25519 License`) | 环境设置与 6 个月日志自动清理 (`Preferences`) |
+| `AI / 大模型自动化`（国内五大直连与免费本地 Ollama） | 环境设置与 6 个月日志自动清理 (`Preferences`) |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/admin-settings.png" width="100%" /> |
-| **远程诊断与社区门户 (`Diagnostics`)** | **API 与 AI 智能体联动 (`MCP`)** |
-| <img src="docs/assets/zh/telemetry.png" width="100%" /> | <img src="docs/assets/zh/connectivity-mcp.png" width="100%" /> |
-
-* **Ed25519 非对称电子签名授权**：支持离线私有化环境授权，防伪造、防窜改，清晰呈现已激活终端配额与有效期。
-* **自动化错误遥测与社区直连 (Community Issue Telemetry)**：
-  * **隐私合规与主动知情**：默认严格遵循 Opt-in 机制，必须由超级管理员勾选同意方可启动。
-  * **敏感数据智能脱敏**：系统在收集服务器崩溃和通信异常时，自动过滤密码、Authorization 头部、公网私网 IP 及手机号等 PII 隐私数据。
-  * **SHA-256 指纹去重聚合**：自动聚合相同堆栈错误，防止向社区重复刷单，自动将错误派发到 [pingbaosignage/pingbao-community](https://github.com/pingbaosignage/pingbao-community/issues)。
-  * **内置手动社区工单表单**：管理员亦可在控制台内直接填写改善建议与 Bug 描述，一键直通开发团队 GitHub 议题看板。
-
----
-
-## 🎯 核心调度引擎深度解析 (Deep Dive: Scheduling Architecture)
-
-排期系统是企业数字标牌的核心灵魂。屏宝采用工业级状态机设计，确保在各种复杂的业务场景下内容播放精准无误。
-
-### 1. 四级优先级抢占模型 (4-Tier Priority Hierarchy)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Tier 1: EMERGENCY (P: 100 ~ 200)                           │
-│  紧急广播 / 台风防灾警报 / 消防疏散 / 领导视察全屏抢占      │
-├─────────────────────────────────────────────────────────────┤
-│  Tier 2: EVENT (P: 50 ~ 99)                                 │
-│  限时营销活动 / 午高峰特价推荐 / 晚市音乐派对促销           │
-├─────────────────────────────────────────────────────────────┤
-│  Tier 3: REGULAR (P: 10 ~ 49)                               │
-│  全天常态分时排期 / 早间问候 / 下午茶轮播                   │
-├─────────────────────────────────────────────────────────────┤
-│  Tier 4: DEFAULT (P: 0)                                     │
-│  24/7 底层兜底播放列表 (Base Fallback Playlist)             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-* **抢占与自愈逻辑**：
-  * 当高优先级时段到达时，终端硬件毫秒级切入高优先级内容，当前播放列表优雅淡出。
-  * 当高优先级时段结束或被管理员取消时，屏幕自动平滑回落至下一优先级的常态内容，**全程无需人工干预，无蓝屏、无加载图标**。
-
-### 2. 分时时段智能编排 (Dayparting Matrix)
-
-餐饮与零售行业典型的全天分时运营方案：
-
-| 运营时段 | 播放时段 (Time Window) | 推荐内容与业务场景 | 优先级等级 |
-| :--- | :--- | :--- | :--- |
-| **早餐黄金档** | `07:30 ~ 10:30` | 早餐套餐特惠、晨间醒脑咖啡推介、今日天气预报 | `EVENT` (P:60) |
-| **日常上午档** | `10:30 ~ 11:30` | 品牌形象大片、会员积分换购、当季主打商品轮播 | `REGULAR` (P:20) |
-| **午市高峰爆流** | `11:30 ~ 14:00` | 午餐爆款单人餐、热卖点单排行榜、翻台引导视频 | `EVENT` (P:80) |
-| **下午茶轻享** | `14:00 ~ 17:30` | 现烘烘焙甜点、特饮买一赠一、舒缓背景动效 | `REGULAR` (P:30) |
-| **晚市餐饮狂欢** | `17:30 ~ 21:30` | 晚餐多人家庭套餐、精酿生啤促销、晚间特调鸡尾酒 | `EVENT` (P:85) |
-| **夜间常态与打烊** | `21:30 ~ 24:00` | 打烊提示、明日预告、低能耗品牌静态海报 | `DEFAULT` (P:0) |
-
-### 3. 全自动多屏同步播放技术 (SyncPlay)
-在现代化连锁快餐和零售前台，通常由 3~5 块三星商用横屏拼接构成数字化电子餐牌（Digital Menu Board）。屏宝通过创新的 **SyncPlay 自动同步协议** 实现：
-* **全自动触发条件（零繁琐配置）**：
-  只要多台三星商用标牌满足以下三项条件，系统开机后即可**全自动触发 SyncPlay 毫秒级帧同步**：
-  1. **相同设备分组 (Same Device Group)**：屏幕归属于同一门店或同一区域分组；
-  2. **相同节目排期 (Same Assigned Schedule)**：被指派了相同的排期计划；
-  3. **相同局域网络 (Same Local Network)**：接入同一个门店局域网（有线或 Wi-Fi）。
-* **毫秒级时钟对齐与统一翻页**：基于局域网轻量心跳广播，各屏幕在切歌换图时**同一瞬间统一淡入、统一翻页**，彻底杜绝单台卡顿造成的视觉杂乱。
-* **超宽画卷跨屏协同**：支持将一段 5760x1080 超宽巨幅视频，根据各屏幕的物理点位自动裁切并精准同步播放，无需任何昂贵的外部拼接矩阵硬件。
-
-### 4. 离线断网自治循环机制 (Offline Autonomous Loop)
-屏宝采用“**配置先行，素材预载，本地自治**”架构：
-1. **预下载机制 (Pre-Caching)**：新排期发布后，三星终端播放器在后台以低优先级网络带宽静默下载未来时段所需的所有媒体文件。
-2. **原子化生效 (Atomic Activation)**：到达预定时间点瞬间，播放器直接从本地固态存储调入素材并无缝切换，不依赖即时网络连接。
-3. **极强容灾韧性**：即使门店因施工导致宽带断开数周，屏幕仍将严格依据设备内部高精度硬件实时时钟（RTC）按计划每日精准切换早市、午市与晚市内容。
-
----
-
-## 🤖 开放 REST API 与 AI 智能体 MCP 支持
-
-屏宝提供完备的开发者与智能化生态接入能力，原生内置标准 **MCP (Model Context Protocol)** 协议服务器（`pingbao` 工具包），支持与 Claude Desktop、Cursor、Antigravity 以及企业自定义 LLM 自动化 Agent 无缝对接。
-
-### 🌟 核心特性：支持 LLM 生成内容直传与排期编排
-> **💡 支持 AI 生成内容自动上传吗？**  
-> **完全支持！** 智能体可通过 `pingbao_upload_media` 接口直接上传由大语言模型实时生成的 SVG 矢量海报、HTML 动态组件、Base64 编码图片或媒体 URL，并可自动装配为播放列表（`pingbao_create_playlist`）及下发到指定分组的时间轴排期（`pingbao_create_schedule`）。从“创意生成”到“屏幕播发”全链路无需人工干预。
-
-### 💬 5 大核心实战场景与 AI 提示词 (Prompts) 示例
-
-| 场景序号 | 运维管控场景 | 适用 MCP 工具 | 推荐 AI 智能体提示词 (Prompt) 示例 |
-| :---: | :--- | :--- | :--- |
-| **01** | **自然语言状态巡检与异常排查**<br/>(Device Status & Health) | `pingbao_list_devices`<br/>`pingbao_get_device_detail` | *"请检查上海旗舰店和首尔江南店所有三星商用标牌的运行状态。列出所有离线超过 10 分钟或当前排期播放失败的屏幕，并分析可能的原因。"* |
-| **02** | **LLM 生成内容自动上传与编排**<br/>(Content Upload & Scheduling) | `pingbao_upload_media`<br/>`pingbao_create_playlist`<br/>`pingbao_create_schedule`<br/>`pingbao_assign_schedule` | *"我刚刚为雨天促销生成了一张 1080x1920 竖版促销海报（附 SVG/Base64）。请将其上传至屏宝素材库，命名为'雨天特惠'，新建播放列表，并将其发布为本周五至周日午市高峰期 (11:30~14:00) 的 EVENT 级排期，下发给江南店点餐屏组。"* |
-| **03** | **突发事件/紧急广播全网秒级抢播**<br/>(Emergency Broadcast Takeover) | `pingbao_upload_media`<br/>`pingbao_create_schedule`<br/>`pingbao_control_device` | *"发布台风暴雨防汛紧急通知！立即将全门店收银台标牌画面切换为'因恶劣天气提前至 20:00 闭店公告'，设为最高 EMERGENCY 优先级（抢占级别 100），立即生效中断当前常规节目。"* |
-| **04** | **绿色节能与硬件定时开关机批处理**<br/>(Eco-Mode & Power Timers) | `pingbao_control_device`<br/>`pingbao_configure_power_timers` | *"营业时间（22:00）已结束。请将全网正在运行的屏幕音量统一静音（Volume 0），并为总部所有展示屏配置工作日硬件定时器（周一至周五每日 08:30 自动开机点亮屏幕，22:30 自动切断面板背光）。"* |
-| **05** | **播发存证 (PoP) 审计与广告履约核验**<br/>(Proof-of-Play Audit) | `pingbao_verify_playback`<br/>`pingbao_get_device_detail` | *"请调取过去 24 小时内'新品汉堡上市推广'视频在各门店的播发存证记录。统计各设备的完播率 (Completion Rate %)，并标出完播率低于 95% 或存在卡顿跳帧的异常屏幕名单。"* |
+| <img src="docs/assets/zh/ai-settings.png" width="100%" /> | <img src="docs/assets/zh/admin-settings.png" width="100%" /> |
+| **商业离线数字签名授权 (`Ed25519 License`)** | **开放 REST API 与外部智能体 (`MCP`)** |
+| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/connectivity-mcp.png" width="100%" /> |
 
 ---
 
@@ -267,62 +184,23 @@
 
 | 核心模块 | 功能特性明细 | 技术规范与核心优势 |
 | :--- | :--- | :--- |
-| **1. 运营仪表盘** | 组织级在线/离线占比、排期部署进度条、实时磁盘与流量监控、健康告警卡片 | 毫秒级数据流更新，多租户视界自动隔离 |
-| **2. 三星标牌智控** | 专属适配三星商用标牌 (Tizen 6.5+ SSSP 10+)、硬件开/关、音量调节、远程重启 | 原生对接三星 Tizen b2bapis 驱动，Redis 指令持久化队列 |
-| **3. 时间轴排期引擎** | 4 级优先级抢占、Dayparting 分时多轨道时间轴、冲突可视化预检、原子草稿发布 | 离线自主播放状态机，无损层叠回落 |
-| **4. 全自动 SyncPlay** | 同一分组、同一排期、同一局域网全自动触发，多屏毫秒级帧同步无感翻页 | 局域网轻量广播时钟对齐，无需任何额外硬件矩阵 |
-| **5. 开放 API 与 MCP** | 60+ RESTful API 端点、标准 MCP 服务器，支持 AI Agent 自主化运维与调用监控 | OpenAPI 3.0 规范，Claude/Cursor/Antigravity 深度兼容 |
-| **6. 播放列表编排** | 视频与图片自由混排、自定义图片停留秒数、硬件加速淡入淡出、总播放时长统计 | WebGL / CSS GPU 加速转场，列表数据完整性约束 |
-| **7. 媒体资产库** | 4K 高清视频分段流式上传、二进制魔数校验、元数据自动提取、引用锁定防误删 | 支持 MinIO/S3 兼容对象存储，SHA-256 数字摘要 |
-| **8. 实时运维监控** | 长轮询心跳实时测速、下发失败指令清单、一键批量重新下发、Markdown 报告导出 | 故障精准定位至单台设备与具体文件，支持自动化诊断 |
-| **9. 播放证明 (PoP)** | 1 秒精度播控事实日志、完整播放率百分比计算、多维趋势图、商业审计报表导出 | 本地安全暂存抗断网，支持 Excel / CSV 审计格式导出 |
-| **10. 组织与 RBAC** | 多租户多层级组织架构树、模块级 CRUDX 权限配置、RFC 6238 TOTP 双因子认证 | 基于 Argon2id 密码哈希，企业级安全基线合规 |
-| **11. 授权与错误遥测** | Ed25519 非对称电子授权签名、崩溃异常自动脱敏捕获、指纹去重回传 GitHub | 严格遵循用户 Opt-in 授权机制，直通开源社区工单看板 |
-
----
-
-## 🚀 主流云厂商与 AI 智能体一键部署指南 (Deployment Guide)
-
-屏宝支持从企业内网私有化服务器到各大主流公有云（甲骨文云 OCI、AWS、Google Cloud、Azure、阿里云、腾讯云）的交钥匙部署，并提供 **基于 Claude Code, Cursor, Antigravity, Gemini 等 AI 智能体的“一句话”全自动无感安装**。
-
-### 1. 支持的主流服务器环境
-* **☁️ 甲骨文云 (Oracle Cloud / OCI)**：终身免费 (Always Free) A1.Flex/E2.1 高性能算力 + Cloudflare 边缘代理免证书 SSL
-* **☁️ 亚马逊云 (AWS)**：EC2 Ubuntu 22.04 LTS + 弹性公网 IP (Elastic IP) 绑定
-* **☁️ 谷歌云 (Google Cloud)**：Compute Engine E2 虚拟机 + VPC 防火墙入站自动化
-* **☁️ 微软云 (Microsoft Azure)**：Virtual Machines B2s + NSG 网络安全组端口开放
-* **☁️ 阿里云与腾讯云**：ECS / CVM 实例，提供中国大陆境内 ICP 备案指导及中国香港/新加坡免备案即刻上线方案
-* **🏢 本地物理服务器与群晖 NAS**：企业局域网闭环服务器及群晖 Synology DSM 7+ Container Manager
-
-### 2. 🤖 AI 智能体一键部署黄金提示词 (Golden Prompt)
-在服务器终端中启动您熟悉的 AI 智能体 CLI（如 `claude`, `cursor`, `agy` 等），直接发送以下提示词，AI 将自动完成 Docker 安装、环境初始化及容器集群拉起：
-
-```markdown
-你是企业级数字标牌系统“屏宝 (Pingbao)”的专业 DevOps 工程师。
-请在这台 Linux 服务器上完全搭建最新的屏宝运行环境，并完成最终的健康检查验证：
-1. 检查操作系统环境，若未安装 Docker Engine 与 Docker Compose v2，通过官方源进行静默安装。
-2. 确认 80 与 443 端口空闲，并在系统防火墙（ufw, firewalld, iptables）中放行入站流量。
-3. 在 pingbaosignage/pingbao-community 目录中根据 `.env.example` 复制生成包含 64 位强随机密钥的 `.env`。
-4. 执行 `docker compose -f docker-compose.onprem.yml up -d` 启动容器集群。
-5. 访问 `curl -s http://localhost/api/v1/health` 验证服务状态（status: ok）并输出 Web 管控台地址。
-```
-
-👉 **各云平台专属配置与排障技巧**：[📖 查看屏宝管理员与多云/AI 部署指南完整文档 (docs/zh/admin-guide.md)](docs/zh/admin-guide.md)
+| **1. 内置 AI 运维对话助手** | 右侧滑出对话窗 (`Ctrl+J`)、表格诊断、HITL 审批执行卡片、一键跳转 | 自动感知界面焦点、严格子集隔离杜绝全网误发 |
+| **2. 多模态视觉与全域 AI 洞察** | 晨间简报、终端日志解读、视觉自动打标防过期、三语应急文案秒级生成 | 原生支持国内五大模型与免费内网 Ollama、AES-256 加密 |
+| **3. 多系统终端集中管控** | 三星 Tizen SSSP 深度控制 + Windows / Android / Linux / Web + 7 项批量管控 | OS 自适应 HAL 路由、安装包自动写入服务器地址 |
+| **4. 四级排期与全自动 SyncPlay** | 紧急/活动/常规/垫片四级抢占、AI 排程冲突校验、零配置毫秒级多屏同步 | SSE `sync-stream` + EMA 时钟偏移自动对齐 |
+| **5. 自动自愈与开机率/PoP** | `BEFORE/AFTER` 差异比对、开关机会话钻取、秒级真实渲染帧完播率统计 | CSV/JSON/MD 商业对账导出、180 天日志自动清理 |
+| **6. 企业安全、审计与 MCP** | TOTP 双因素认证、RBAC、不可篡改审计、60+ REST API 与内置 MCP 服务 | Argon2id、Ed25519 离线授权、无缝直连外部智能体 |
 
 ---
 
 ## 📖 官方文档指引 (Documentation)
 
-* 📘 [用户使用手册 (User Guide)](docs/zh/user-guide.md) - 从设备注册配对、素材管理、排期编排到监控运维全流程操作指引
-* 🛠️ [管理员与私有化部署指南 (Admin Guide)](docs/zh/admin-guide.md) - Docker Compose 容器化部署、生产环境配置与运维升级
-* ❓ [常见问题解答 (FAQ)](docs/zh/faq.md) - 离线播放原理、网络防火墙端口要求与排障技巧
-* 📜 [版本发布日志 (Changelog)](CHANGELOG.md) - 各历史版本更新特性与修复列表
+* 📘 [用户运营手册 (User Guide)](docs/zh/user-guide.md) - AI 运维助手实战、多系统注册配对、视觉防过期质检与四级排期全流程
+* 🛠️ [管理员与大模型部署指南 (Admin Guide)](docs/zh/admin-guide.md) - Docker 部署、国内/国际/本地 Ollama 大模型配置与升级维护
+* ❓ [常见问题解答 (FAQ)](docs/zh/faq.md) - AI 审批制安全防护、免费内网私有化 AI、断网自治播放与 SyncPlay
+* 📜 [版本发布日志 (Changelog)](CHANGELOG.md) - 历史版本更新特性与架构演进记录
 
 ---
-
-## 🤝 社区交流与支持 (Community & Support)
-
-* **官方问题与建议反馈**：[GitHub Issues](https://github.com/pingbaosignage/pingbao-community/issues)
-* **商业支持与私有化咨询**：欢迎在控制台 **商业授权与错误汇报社区** 页面提交需求或联系商务支持。
 
 <div align="center">
 <sub>Pingbao (屏宝 / 핑바오) © 2026. All rights reserved. 官方技术社区：<a href="https://github.com/pingbaosignage/pingbao-community">pingbaosignage/pingbao-community</a></sub>

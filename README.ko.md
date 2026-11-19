@@ -1,16 +1,16 @@
 <div align="center">
 
 # 📺 핑바오 (Pingbao / 屏宝)
-### 삼성 스마트 사이니지 & 멀티 OS 엔터프라이즈 통합 관제 플랫폼 (Enterprise Signage CMS)
+### 빌트인 AI 오퍼레이터 챗봇 탑재 · 삼성 스마트 사이니지 & 멀티 OS 엔터프라이즈 통합 관제 플랫폼
 
-**핑바오(Pingbao)**는 **삼성 스마트 사이니지(Samsung Smart Signage · Tizen 6.5+ / SSSP 6~10+)** 심층 하드웨어 제어를 주력으로 **Windows, Android, Linux, Web** 플레이어까지 단일 콘솔에서 통합 제어하는 엔터프라이즈 디지털 사이니지 플랫폼입니다.  
-OS별 맞춤형 하드웨어 추상화 계층(HAL) 원격 제어, 24시간 멀티 티어 타임라인 스케줄링, 전 자동 다중 화면 싱크(SyncPlay), 오프라인 영구 자율 재생, 장치 가동 시간(Uptime) 및 초정밀 재생 증빙(PoP) 분석, 나아가 표준 REST API 및 AI 에이전트용 MCP(Model Context Protocol)를 전면 제공합니다.
+**핑바오(Pingbao)**는 **빌트인 AI 오퍼레이터 챗봇(`Ctrl+J`)과 5대 자율 관제 지능**을 기본 탑재하고, **삼성 스마트 사이니지(Samsung Smart Signage · Tizen 6.5+ / SSSP 6~10+)** 심층 하드웨어 제어를 주력으로 **Windows, Android, Linux, Web** 플레이어까지 단일 콘솔에서 통합 제어하는 차세대 엔터프라이즈 디지털 사이니지 플랫폼입니다.  
+자연어 대화 한마디로 전국 매장의 상태를 표(Table)로 진단하고 **사고 제로 승인형(HITL) 원격 제어**를 수행하며, 멀티모달 비전(Vision) 만료 배너 차단, 100% 무료 폐쇄망 로컬 LLM(Ollama/vLLM) 연동, 전 자동 SyncPlay, 4계층 타임파팅 스케줄링 및 초정밀 재생 증빙(PoP)을 전면 제공합니다.
 
 [![Language](https://img.shields.io/badge/Language-한국어%20|%20简体中文%20|%20English-brightgreen.svg)](#)
+[![AI Copilot](https://img.shields.io/badge/Built--In%20AI-Operator%20Copilot%20%26%20Vision%20QA-7c3aed?style=flat-square)](#)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-온라인%20체험하기-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
-[![License](https://img.shields.io/badge/license-Proprietary-orange.svg)](#)
 
 <br/>
 
@@ -28,8 +28,8 @@ OS별 맞춤형 하드웨어 추상화 계층(HAL) 원격 제어, 24시간 멀�
         🚀 핑바오 온라인 라이브 데모 (Live Interactive Demo)
       </h2>
       <p style="font-size: 16px; margin: 0 0 20px 0; color: #f1f5f9; line-height: 1.6;">
-        <b>별도 설치나 회원가입 없이</b> 브라우저에서 핑바오 엔터프라이즈 CMS의 전 기능을 즉시 체험해보실 수 있습니다.<br/>
-        <span style="color: #94a3b8; font-size: 14px;">(116대 삼성 사이니지 가상 클러스터, 24시간 스케줄 매트릭스, PoP 정산, 하드웨어 IoT 제어 사전 세팅 완료)</span>
+        <b>별도 설치나 회원가입 없이</b> 브라우저에서 핑바오 AI 엔터프라이즈 CMS의 전 기능을 즉시 체험해보실 수 있습니다.<br/>
+        <span style="color: #94a3b8; font-size: 14px;">(119대 멀티 OS 사이니지 클러스터, 빌트인 AI 관제 허브, 24시간 스케줄 매트릭스, PoP 정산, 하드웨어 IoT 제어 완비)</span>
       </p>
       <a href="https://cms.pingbao.workers.dev" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/▶_온라인_라이브_데모_체험하기-https%3A%2F%2Fcms.pingbao.workers.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white" height="42" alt="Live Demo Button" />
@@ -45,11 +45,11 @@ OS별 맞춤형 하드웨어 추상화 계층(HAL) 원격 제어, 24시간 멀�
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🎬 OFFICIAL 2-MIN PRODUCT VIDEO & 6 SMART HIGHLIGHTS -->
+<!-- 🎬 OFFICIAL PRODUCT VIDEO & AI SPOTLIGHT HIGHLIGHTS -->
 <!-- ============================================================================== -->
 <div align="center">
 
-### 🎬 핑바오 2분 핵심 데모 영상 (Official Product Video)
+### 🎬 핑바오 AI 스마트 관제 공식 데모 영상 (Official AI Spotlight Video)
 
 * 🇰🇷 **한국어 음성 데모 영상**: [▶ 영상 보기 (pingbao_smart_operations_demo_ko.mp4)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)
 * 🇨🇳 **中文普通话解说视频**: [▶ 观看视频 (pingbao_smart_operations_demo_zh.mp4)](docs/assets/videos/pingbao_smart_operations_demo_zh.mp4)
@@ -58,192 +58,147 @@ OS별 맞춤형 하드웨어 추상화 계층(HAL) 원격 제어, 24시간 멀�
 <br/>
 
 <a href="docs/assets/videos/pingbao_smart_operations_demo_ko.mp4">
-  <img src="docs/assets/demo/ko/ko_scene_01.png" alt="핑바오 한국어 데모 비디오" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+  <img src="docs/assets/demo/ko/ko_scene_02.png" alt="핑바오 AI 오퍼레이터 한국어 데모 비디오" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 
 <br/><br/>
 
-#### ⚡ 핑바오만의 6대 핵심 차별화 운영 기술 (Why Pingbao?)
+#### ⚡ 핑바오만의 핵심 AI & 엔터프라이즈 운영 기술 (Why Pingbao?)
 
-| 01. 장치 에러 자동 감지 & 자율 복구 | 02. 가동 시간 정밀 분석 & 매장 관리 | 03. 현장 무방문 1080P/4K 실시간 캡처 |
+| 01. ★ 빌트인 AI 챗봇 자연어 표 진단 | 02. ★ 사고 제로 승인형(HITL) AI 원격 제어 | 03. ★ 비전 AI 만료 차단 & 무료 로컬 LLM |
 | :---: | :---: | :---: |
 | <img src="docs/assets/demo/ko/ko_scene_02.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_03.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_04.png" width="100%" /> |
-| **원클릭 일괄 자율 치유 (Self-Healing)**<br/>통신 장애 및 서버-단말 상태 갭 감지 즉시 정상화 | **가동 시간(Uptime) 기반 빠른 경영 판단**<br/>매장별 디스플레이 실가동률 모니터링 & 영업 누수 차단 | **하드웨어 프레임버퍼 다이렉트 캡처**<br/>매장 방문 없이 실제 송출 화면 100% 실시간 점검 |
-| **04. 사용자별 전수 감사 로그 (Audit)** | **05. 자연어 기반 MCP AI 연동** | **06. 1초 단위 초정밀 PoP & 완주율** |
-| <img src="docs/assets/demo/ko/ko_scene_05.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_06.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_07.png" width="100%" /> |
-| **전수 감사 로그 (Audit Trails)**<br/>누가, 언제, 어떤 스케줄을 바꿨는지 IP·전후값 전수 추적 | **AI 에이전트 표준 MCP 도구 내장**<br/>말 한마디로 현황 진단 & 배너 자동 편성 배포 | **무결점 상업 정산 감사 리포트**<br/>실제 렌더링 프레임만 기록, 완주율(%) 산출 및 엑셀 다운 |
+| **우측 슬라이드 AI 오퍼레이터 (`Ctrl+J`)**<br/>말 한마디로 서버 헬스·멀티 OS 현황 표 브리핑 | **Human-in-the-Loop & 대상 격리 가드**<br/>선택 기기만 안전 격리 후 `[승인 및 실행]` 시 반영 | **멀티모달 비전 & 10대 클라우드/사내 Ollama**<br/>행사 종료일 자동 감지 및 API 비용 0원 폐쇄망 AI |
+| **04. AI 장치 정밀 해설 & 무방문 라이브 뷰** | **05. 자율 복구(Op Diff) & 가동시간 분석** | **06. 4계층 스케줄·AI 점검 & 초정밀 PoP** |
+| <img src="docs/assets/demo/ko/ko_scene_05.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_06.png" width="100%" /> | <img src="docs/assets/demo/ko/ko_scene_08.png" width="100%" /> |
+| **자연어 단말 로그 해석 + SSSP 실시간 화면**<br/>비개발자도 즉시 이해하는 원인 분석 및 현장 검증 | **명령 전후 상태 비교 & 저가동 매장 포착**<br/>통신 장애 자동 복구 및 심야 전력 낭비 차단 | **전수 불변 감사 로그 & 완주율(%) 정산**<br/>AI 승인 내역 감사 기록 및 1초 단위 렌더링 증빙 |
 
 </div>
 
-<br/>
-
-<img src="docs/assets/ko/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
-<sub><b>▲ 핑바오(Pingbao) 실시간 관제 대시보드: 전역 디스플레이 가동률, 스케줄 배포 현황, 저가동 이상 징후 트리아지 및 시스템 헬스 관제 (오라클 클라우드 운영 환경 실측 데이터)</b></sub>
-
 </div>
+
+---
+
+## 🧠 핵심 특집: 빌트인 ‘핑바오 AI 오퍼레이터 챗봇’ & 5대 자율 관제 지능
+
+핑바오는 별도의 외부 에이전트 설정 없이도 **웹 콘솔 우측 상단 `[AI 챗봇]` 버튼(`Ctrl+J`)** 하나로 수백 개 매장의 사이니지를 자연어 대화로 진단·제어·편성할 수 있는 압도적인 **빌트인 AI 코파일럿**을 제공합니다.
+
+<img src="docs/assets/ko/ai-copilot-table.png" alt="핑바오 AI 오퍼레이터 챗봇 마크다운 표 진단" width="100%" />
+<sub><b>▲ 우측 슬라이드 ‘핑바오 AI 오퍼레이터 챗봇’: 좌측 드래그 폭 조절, 원클릭 퀵 프롬프트, 멀티 OS 가동 현황 마크다운 표(Table) 렌더링 및 즉시 이동 점프 링크</b></sub>
+
+<br/><br/>
+
+| ① 승인형(HITL) 안전 원격 제어 & Strict Subsetting | ② 출근 3초 요약 `[AI 모닝 브리핑]` Knowledge Box |
+| :---: | :---: |
+| <img src="docs/assets/ko/ai-copilot-chat.png" width="100%" /> | <img src="docs/assets/ko/ai-morning-briefing.png" width="100%" /> |
+| **전체 매장 오발송 100% 원천 차단**<br/>체크박스로 선택한 기기(`선택 기기 3대`)로만 타깃을 잠그고 운영자가 **`[승인 및 실행]`**을 클릭할 때만 실제 반영 | **전 워크스페이스 원클릭 AI 도메인 인사이트**<br/>모닝 브리핑, 장치 정밀 진단, 편성·타이머 충돌 점검, 장애/감사 분석 결과가 챗봇 히스토리에 자동 수렴 |
+| **③ 멀티모달 비전(Vision) 자동 태깅 & 만료 배너 차단** | **④ 10대 글로벌·중국 직결 & 100% 무료 사내 Ollama** |
+| <img src="docs/assets/ko/ai-vision-media.png" width="100%" /> | <img src="docs/assets/ko/ai-settings.png" width="100%" /> |
+| **기한 지난 프로모션 오송출 방송 사고 예방**<br/>업로드 즉시 품목·가격표(OCR)·권장 시간대 및 **행사 종료일(`2026-12-31`)** 자동 추출 및 만료 경보 | **API 비용 0원 · 데이터 유출 0건 온프레미스 AI**<br/>Qwen, DeepSeek, GLM, Doubao, Kimi, OpenAI, Gemini, Claude 및 **무료 로컬 Ollama/vLLM** 직결 |
+
+### ✨ 왜 핑바오 AI 챗봇이 압도적인가요?
+1. **현재 화면 문맥을 읽는 지능형 대화 (`Active UI Focus` + `요약 메모리`)**: 현재 보고 있는 탭, 인스펙터에 열린 단말, 체크한 기기 목록을 실시간 인식하여 *"이 기기 에러 로그 쉽게 설명해줘"*, *"선택한 3대 매장 볼륨 25%로 줄여줘"*를 즉시 처리하며 긴 대화도 자동 요약 압축합니다.
+2. **사고 제로 Human-in-the-Loop + 엄격한 대상 격리 (`Strict Device Subsetting`)**: AI가 임의로 매장을 조작하지 않습니다. 반드시 **실행 미리보기 카드(`승인 대기`)**를 먼저 띄우고 운영자가 **`[승인 및 실행]`**을 누를 때만 실행되며, 선택 기기 외 전체 매장 브로드캐스트 사고를 원천 차단합니다.
+3. **3개 국어 비상 방송 3초 카피라이팅 (`[AI 다국어 문안 생성]`)**: 화재·지진·점검 등 긴급 상황 시 한국어·영어·중국어 표준 비상 안내 문구를 3초 만에 자동 생성하여 즉시 송출합니다.
+4. **외부 API 비용·보안 걱정 없는 100% 무료 로컬 LLM (`Ollama / vLLM`)**: 사내 미니 PC나 GPU 서버의 `Ollama`(`gemma4`, `qwen2.5`, `deepseek-r1`)와 연결하면 **외부 인터넷 없이 100% 무료**로 전 기능을 무제한 사용할 수 있습니다.
 
 ---
 
 ## 🌟 핵심 제품 특징 (Core Value Propositions)
 
-1. **삼성 스마트 사이니지 심층 특화 & 5대 멀티 OS 통합 관제**
-   * **삼성 스마트 사이니지 (Tizen 6.5+ / SSSP 6~10+)** 네이티브 하드웨어 제어(패널 백라이트, 전원, 리모컨/패널 잠금, HDMI 입력 전환, 하드웨어 RTC 타이머) 완벽 지원.
-   * **Windows(`.exe`) · Android(`.apk`) · Linux(`.deb`/`.sh`) · Web(`/player`)** 멀티 OS 통합 관제, OS별 HAL 자동 라우팅, 서버 URL 자동 내장 설치 패키지 모달 및 **7대 명령 전용 일괄 원격 제어** 지원.
-2. **단절 무관·영구 자율 오프라인 재생 (Autonomous Offline Loop)**
-   * 단말 로컬 스토리지 사전 프리캐싱과 내장 상태 머신을 통해 현장 네트워크가 장기간 단절되어도 스케줄에 맞춰 24/7/365 무중단 무결점 재생 보장.
-3. **4계층 우선순위 타임라인 스케줄링 엔진 (4-Tier Smart Scheduling)**
-   * `EMERGENCY`(비상 재난/VIP 의전) > `EVENT`(피크 타임 프로모션) > `REGULAR`(일상 타임파팅) > `DEFAULT`(24시간 배경 폴백) 4단계 자동 선점 구조.
-   * Dayparting(조식/중식/티타임/석식/야간) 시각 도달 시 자동 무결점 전환 및 선점 종료 후 자연스러운 자동 복귀.
-4. **전 자동 멀티스크린 싱크 재생 (SyncPlay)**
-   * 복수의 디스플레이가 **【같은 그룹】, 【같은 스케줄】, 【같은 네트워크(동일 LAN)】** 환경에 있으면, 실시간 SSE `sync-stream`과 시계 오프셋 보정으로 **100% 무설정 밀리초 단위 프레임 동기화 및 동시 화면 전환**이 작동합니다.
-5. **표준 REST API 및 AI 에이전트 MCP (Model Context Protocol) 지원**
-   * 60개 이상의 RESTful OpenAPI 3.0 엔드포인트 및 스코프 제한 API 키 호출량 모니터링 제공.
-   * **MCP 서버 (`pingbao`)** 기본 내장으로 Claude, Cursor, Antigravity 등 LLM 에이전트가 자연어로 장치 진단, 가동시간 조회, 스케줄 편성을 자율 수행합니다.
+1. **빌트인 AI 오퍼레이터 챗봇(`Ctrl+J`) & 멀티모달 비전 자율 관제**
+   * 자연어 마크다운 표 진단, HITL 승인형 원격 제어, 비전 자동 태깅·행사 만료일 차단, 10대 클라우드/중국/무료 로컬 Ollama 모델 완벽 지원.
+2. **삼성 스마트 사이니지 심층 특화 & 5대 멀티 OS 통합 관제**
+   * **삼성 스마트 사이니지 (Tizen 6.5+ / SSSP 6~10+)** 네이티브 하드웨어 제어(패널 백라이트, 전원, 리모컨/패널 잠금, 외부 입력 전환, 하드웨어 RTC 타이머) 완벽 지원.
+   * **Windows(`.exe`) · Android(`.apk`) · Linux(`.deb`/`.sh`) · Web(`/player`)** 통합 관제, 서버 URL 자동 스탬핑 설치 패키지 모달 및 **7대 명령 전용 일괄 원격 제어** 지원.
+3. **단절 무관·영구 자율 오프라인 재생 (Autonomous Offline Loop)**
+   * 로컬 스토리지 사전 프리캐싱과 내장 상태 머신으로 네트워크가 장기간 단절되어도 24/7/365 무중단 재생 보장.
+4. **4계층 우선순위 타임라인 스케줄링 & AI 편성 충돌 점검**
+   * `EMERGENCY`(긴급) > `EVENT`(피크 프로모션) > `REGULAR`(일상 타임파팅) > `DEFAULT`(24시간 폴백) 자동 선점 및 `[AI 편성·타이머 점검]` 지원.
+5. **전 자동 멀티스크린 싱크 재생 (SyncPlay)**
+   * **【같은 그룹】 + 【같은 스케줄】 + 【같은 LAN】** 충족 시 실시간 SSE `sync-stream`과 시계 오프셋 보정으로 **100% 무설정 밀리초 단위 동시 화면 전환**.
 6. **장치 가동 시간(Uptime) 워크벤치 & 초정밀 재생 증빙 (Proof-of-Play)**
-   * 매장별 일일 가동시간·저가동 급감 이상 장치 트리아지 및 회차별 켜짐/꺼짐(`POWER_TIMER`/`MANUAL`) 세션 드릴다운 분석.
-   * 1초 단위 실제 렌더링 프레임 기반 완주율(Completion Rate %) 산출 및 정산 감사 리포트 내보내기 지원.
-7. **무방문 자가 복구, 6개월 로그 자동 보존 & 커뮤니티 에러 텔레메트리**
-   * 상태/분류별 운영 관제 트리아지 및 `BEFORE/AFTER` 상태 비교(`Op Diff`), 기본 **6개월(180일) 로그 자동 정리 라이프사이클**, PII 마스킹 커뮤니티 이슈 자동 리포팅 지원.
+   * 저가동 이상 매장 조기 포착, `POWER_TIMER`/`MANUAL` 세션 드릴다운, `[AI 가동시간·절전 추천]` 및 1초 단위 렌더링 완주율(%) 정산 리포트 내보내기.
+7. **무방문 자가 복구, 6개월 로그 자동 보존 & 표준 REST API / 외부 MCP 연동**
+   * `BEFORE/AFTER` 상태 비교(`Op Diff`), **6개월(180일) 로그 자동 정리 주기**, 60+ OpenAPI 3.0 및 Claude/Cursor/Antigravity용 내장 `pingbao` MCP 서버 제공.
 
 ---
 
-## 📸 9대 전 기능 워크스페이스 소개 및 공식 운영 화면 (한국어 UI)
+## 📸 9대 전 기능 워크스페이스 소개 및 공식 운영 화면 (한국어 네이티브 UI)
 
-핑바오 관리 콘솔은 엔터프라이즈 운영에 필수적인 9개 독립 워크스페이스를 제공합니다:
-
-### 1. 통합 대시보드 (Dashboard)
+### 1. 통합 대시보드 & AI 모닝 브리핑 (Dashboard)
 <img src="docs/assets/ko/dashboard.png" alt="대시보드" width="100%" />
-전국 및 글로벌 매장의 가동률, 스케줄 배포 현황, 7일/30일 가동시간 최저 이상 징후 장치 및 실시간 활동 피드를 한 화면에서 관제합니다.
+전국 매장의 실시간 온라인 가동률, 스케줄 배포 현황, `[AI 모닝 브리핑]`, 7일/30일 저가동 이상 징후 장치를 한 화면에서 관제합니다.
 
 ---
 
-### 2. 멀티 OS 장치 관리 & 플레이어 원클릭 설치 (Device Management)
-<img src="docs/assets/ko/device-management.png" alt="장치 관리" width="100%" />
-삼성 Tizen SSSP 및 Windows·Android·Linux 디스플레이를 조직·OS·상태별로 필터링하고, 7대 일괄 원격 제어 및 무방문 실시간 라이브 화면 캡처를 수행합니다.
+### 2. 멀티 OS 장치 관리 · AI 장치 정밀 진단 · 원클릭 설치팩 (Device Management)
 
-<img src="docs/assets/ko/player-installer.png" alt="멀티 OS 플레이어 설치 패키지 모달" width="100%" />
-서버 접속 주소가 자동 내장된 삼성 Tizen USB(`.zip`), Windows(`.exe`), Android(`.apk`), Linux(`.deb`/`.sh`) 설치 패키지를 원클릭으로 배포합니다.
+| 멀티 OS 장치 관리 & 실시간 라이브 화면 캡처 | 우측 인스펙터 `관제/제어` — AI 장치 정밀 원인 분석 |
+| :---: | :---: |
+| <img src="docs/assets/ko/device-management.png" width="100%" /> | <img src="docs/assets/ko/ai-device-diagnosis.png" width="100%" /> |
+| **멀티 OS 플레이어 설치 패키지 모달 (`URL 자동 스탬핑`)** | **7대 명령 전용 일괄 원격 제어 모달 (`Bulk Control`)** |
+| <img src="docs/assets/ko/player-installer.png" width="100%" /> | <img src="docs/assets/ko/bulk-control.png" width="100%" /> |
+
+삼성 Tizen SSSP 및 Windows·Android·Linux 단말을 조직·OS·상태별로 관제하고, AI 단말 로그 원인 해설과 7대 명령 일괄 제어, 무방문 실시간 화면 검증을 수행합니다.
 
 ---
 
-### 3. 스케줄 편성 관리 (Schedules) —— [핵심 특화 엔진]
+### 3. 스케줄 편성 관리 & AI 편성·타이머 점검 (Schedules)
 <img src="docs/assets/ko/schedules.png" alt="스케줄 관리" width="100%" />
-좌측 마스터 스케줄 목록과 우측 24시간 타임라인이 결합된 직관적인 뷰를 통해 일상 방송과 프로모션 방송을 시각적으로 결합하고 원클릭 배포합니다.
+좌측 마스터 스케줄 목록과 우측 24시간 멀티 티어 타임라인, 상단 `[AI 편성·타이머 점검]`을 결합해 무결점 방송 편성을 원클릭 배포합니다.
 
-#### 상세 타임슬롯 편성 및 우선순위 매트릭스 (Schedule Detail & Slots)
 <img src="docs/assets/ko/schedule-detail.png" alt="스케줄 상세 편성" width="100%" />
-위·아래 드래그로 슬롯 우선순위를 변경하고, 시간대 중복 시 실제 송출되는 최종 송출 명세(Effective Windows)를 즉시 검증합니다.
 
 ---
 
 ### 4. 재생목록 저작 (Playlists)
 <img src="docs/assets/ko/playlists.png" alt="재생목록 관리" width="100%" />
-비디오(MP4/WebM)와 이미지(PNG/JPG)를 자유롭게 혼합하고 항목별 노출 초 및 하드웨어 가속 전환 효과를 적용합니다.
 
 ---
 
-### 5. 미디어 에셋 라이브러리 (Media Assets)
-<img src="docs/assets/ko/media-assets.png" alt="미디어 에셋" width="100%" />
-4K 대용량 영상의 디스크 직결 스트리밍 업로드, 바이너리 매직 바이트 위변조 검증 및 참조 무결성 삭제 방지 락을 지원합니다.
+### 5. 미디어 에셋 라이브러리 & AI 비전 검수 (Media Assets)
+
+| 미디어 에셋 라이브러리 (`4K 스트리밍 & 매직 바이트 검증`) | AI 비전 분석 메타데이터 & 행사 종료일 만료 차단 |
+| :---: | :---: |
+| <img src="docs/assets/ko/media-assets.png" width="100%" /> | <img src="docs/assets/ko/ai-vision-media.png" width="100%" /> |
 
 ---
 
-### 6. 실시간 운영 관제 (Operations Monitoring)
+### 6. 실시간 운영 관제 & AI 장애 패턴 요약 (Operations Monitoring)
 <img src="docs/assets/ko/monitoring.png" alt="운영 관제" width="100%" />
-상태별(`성공`/`진행중`/`실패`) 및 작업 분류별 다중 필터, 명령 동기화 큐 추적 및 `BEFORE / AFTER` 변경 내역 상세 비교(`Op Diff`)를 제공합니다.
 
 ---
 
 ### 7. 통계 및 분석: 장치 가동 시간 & 방송 송출 증빙 (Uptime & PoP)
 
-| 장치 가동 시간 워크벤치 (`Operating Times`) | 방송 송출 증빙 리포트 (`Proof-of-Play`) |
+| 장치 가동 시간 워크벤치 (`[AI 가동시간·절전 추천]`) | 방송 송출 증빙 리포트 (`1초 단위 완주율 PoP`) |
 | :---: | :---: |
 | <img src="docs/assets/ko/operating-times.png" width="100%" /> | <img src="docs/assets/ko/reports.png" width="100%" /> |
-
-저가동 급감 이상 매장 조기 포착 및 회차별 가동 세션 드릴다운 분석과 함께, 실제 렌더링 사실 기반 완주율(Completion Rate %) 및 정산 감사 리포트를 생성합니다.
 
 ---
 
 ### 8. 사용자 권한(RBAC) & 불변 감사 로그 (Users & Audit Logs)
 
-| 다중 테넌트 조직 및 권한 (`Users & RBAC`) | 사용자별 전수 불변 감사 로그 (`Audit Logs`) |
+| 다중 테넌트 조직 및 권한 (`Users & RBAC`) | 전수 불변 감사 로그 (`[AI 감사 분석]`) |
 | :---: | :---: |
 | <img src="docs/assets/ko/users.png" width="100%" /> | <img src="docs/assets/ko/audit-logs.png" width="100%" /> |
 
-본사-본부-매장 계층형 조직 트리, 역할별 권한 매트릭스, RFC 6238 TOTP 2단계 인증 및 전 운영자 활동에 대한 불변 감사 원장을 제공합니다.
-
 ---
 
-### 9. 시스템 설정 · 상용 라이선스 · 6개월 로그 보존 · MCP 연동
+### 9. 시스템 설정 · AI/LLM 자동화 · 6개월 로그 보존 · MCP 연동
 
-| 상용 라이선스 (`License`) | 환경설정 & 6개월 로그 보존 (`Preferences`) |
+| `AI / LLM 자동화` (10대 클라우드·중국·로컬 Ollama) | 환경설정 & 6개월 로그 자동 정리 (`Preferences`) |
 | :---: | :---: |
-| <img src="docs/assets/ko/license.png" width="100%" /> | <img src="docs/assets/ko/admin-settings.png" width="100%" /> |
-| **원격 진단 & 커뮤니티 (`Diagnostics`)** | **API & AI 연동 (`MCP Connectivity`)** |
-| <img src="docs/assets/ko/telemetry.png" width="100%" /> | <img src="docs/assets/ko/connectivity-mcp.png" width="100%" /> |
-
-* **Ed25519 전자서명 기반 상용 라이선스**: 에어갭(폐쇄망) 환경에서도 단말 활성화 쿼터를 안전하게 검증합니다.
-* **오류 보고 & 커뮤니티 포털**:
-  * 관리자 명시적 동의(Opt-in) 하에 서버 내부 오류를 자동 수집하고 민감정보(비밀번호, IP, 토큰)를 마스킹합니다.
-  * SHA-256 지문으로 동일 오류를 중복 없이 취합하여 GitHub 커뮤니티 이슈로 전송하거나, 관리자가 콘솔 내에서 직접 수동 이슈/개선사항을 등록할 수 있습니다.
+| <img src="docs/assets/ko/ai-settings.png" width="100%" /> | <img src="docs/assets/ko/admin-settings.png" width="100%" /> |
+| **상용 라이선스 (`Ed25519 License`)** | **개방형 REST API & 외부 AI 에이전트 (`MCP`)** |
+| <img src="docs/assets/ko/license.png" width="100%" /> | <img src="docs/assets/ko/connectivity-mcp.png" width="100%" /> |
 
 ---
 
-## 🎯 스케줄링 핵심 엔진 아키텍처 상세 (Deep Dive)
+## 🤖 개방형 REST API 및 외부 AI 에이전트 MCP 지원
 
-### 1. 4단계 우선순위 선점 계층
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Tier 1: EMERGENCY (P: 100 ~ 200)                           │
-│  긴급 재난 방송 / 화재 대피 안내 / VIP 영접 전 화면 즉시 점유  │
-├─────────────────────────────────────────────────────────────┤
-│  Tier 2: EVENT (P: 50 ~ 99)                                 │
-│  런치 피크 타임 타임세일 / 디너 파티 주류 프로모션             │
-├─────────────────────────────────────────────────────────────┤
-│  Tier 3: REGULAR (P: 10 ~ 49)                               │
-│  일상 조식 메뉴판 / 오후 애프터눈 티 세트 롤링                 │
-├─────────────────────────────────────────────────────────────┤
-│  Tier 4: DEFAULT (P: 0)                                     │
-│  24/7 배경 베이스 플레이리스트 (공백 발생 시 무조건 송출)        │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 2. 표준 타임파팅 매트릭스 (Dayparting Matrix)
-* **조식 (07:30 ~ 10:30)**: 모닝 세트 메뉴 및 모닝커피 프로모션 (`EVENT`, P:60)
-* **오전 (10:30 ~ 11:30)**: 브랜드 이미지 및 멤버십 혜택 (`REGULAR`, P:20)
-* **중식 피크 (11:30 ~ 14:00)**: 점심 특선 베스트셀러 및 주문 대기 가이드 (`EVENT`, P:80)
-* **티타임 (14:00 ~ 17:30)**: 베이커리 & 디저트 음료 1+1 (`REGULAR`, P:30)
-* **석식 파티 (17:30 ~ 21:30)**: 디너 패밀리 세트 & 수제 생맥주 행사 (`EVENT`, P:85)
-* **야간/마감 (21:30 ~ 24:00)**: 마감 안내 및 저전력 브랜드 포스터 (`DEFAULT`, P:0)
-
-### 3. SyncPlay 멀티스크린 자동 동기화 (전 자동 무설정)
-* **자동 트리거 원리**:
-  여러 대의 삼성 사이니지가 **【같은 그룹】 + 【같은 스케줄】 + 【같은 네트워크(동일 LAN)】** 에 연결되어 있으면, 사용자가 별도의 싱크 버튼을 누르거나 장비를 묶지 않아도 **시스템이 스스로 감지하여 100% 자동으로 SyncPlay 동기화를 활성화**합니다.
-* **프레임 단위 완벽 동시 전환**:
-  카운터 상단의 3~5연속 전자메뉴판이 동일한 찰나에 함께 페이드 아웃/인되며, 5760x1080 울트라 와이드 비디오도 분할 싱크로 매끄럽게 연결 재생됩니다.
-
-### 4. 오프라인 영구 자율 루프 (Autonomous Offline Loop)
-* 스케줄 배포 시 모든 미디어 파일은 삼성 단말의 로컬 고속 스토리지에 사전 다운로드되며, 내장 RTC 시계를 기준으로 로컬 SQLite 상태 머신이 스스로 판단하여 재생하므로 365일 통신이 두절되어도 완벽히 작동합니다.
-
----
-
-## 🤖 개방형 REST API 및 AI 에이전트 MCP 지원
-
-핑바오는 현대적인 개발자 및 인공지능 생태계를 위해 표준 **MCP (Model Context Protocol)** 서버(`pingbao` 툴킷)를 기본 내장하고 있습니다. Claude Desktop, Cursor, Antigravity 및 독자적인 LLM 기반 자율 관제 에이전트와 완벽하게 연동됩니다.
-
-### 🌟 핵심 기능: LLM 생성 콘텐츠 자동 업로드 및 스케줄링 완벽 지원
-> **💡 LLM이 제작한 비주얼 콘텐츠를 직접 업로드하고 편성할 수 있나요?**  
-> **네, 100% 완벽하게 지원됩니다!** AI 에이전트는 `pingbao_upload_media` 도구를 호출하여 생성형 AI가 만든 SVG 벡터 배너, HTML 위젯, Base64 인코딩 이미지, 또는 원격 미디어 URL을 핑바오 미디어 라이브러리에 즉시 업로드할 수 있습니다. 이어서 `pingbao_create_playlist`와 `pingbao_create_schedule`을 순차 실행하여 특정 매장 스크린에 편성 배포하는 전 과정을 자율적으로 완수합니다.
-
-### 💬 5대 핵심 실전 시나리오 및 AI 에이전트 프롬프트 (Prompts) 예시
-
-| 번호 | 운영 시나리오 | 연동 MCP 도구 | 추천 AI 에이전트 자연어 프롬프트 (Prompt) 예시 |
-| :---: | :--- | :--- | :--- |
-| **01** | **자연어 장치 상태 및 이상 진단**<br/>(Device Status & Health) | `pingbao_list_devices`<br/>`pingbao_get_device_detail` | *"현재 상하이 플래그십 매장과 강남점의 모든 삼성 사이니지 전원 상태와 네트워크 연결 상태를 확인해줘. 10분 이상 오프라인 상태이거나 스케줄 재생 오류가 발생한 스크린이 있으면 목록과 원인을 보고해줘."* |
-| **02** | **LLM 생성 콘텐츠 업로드 & 스케줄링**<br/>(Content Upload & Scheduling) | `pingbao_upload_media`<br/>`pingbao_create_playlist`<br/>`pingbao_create_schedule`<br/>`pingbao_assign_schedule` | *"이번 주말 비 오는 날 특별 할인 프로모션을 위한 세로형(1080x1920) SVG 배너를 방금 생성했어. 이 배너를 미디어 라이브러리에 '우천 스페셜 할인'으로 업로드하고, 이번 주 금/토/일 점심 피크(11:30~14:00) EVENT 우선순위(50) 스케줄로 강남점 키오스크 그룹에 편성해줘."* |
-| **03** | **긴급 비상 방송/재난 공지 즉각 송출**<br/>(Emergency Broadcast Takeover) | `pingbao_upload_media`<br/>`pingbao_create_schedule`<br/>`pingbao_control_device` | *"현재 태풍 경보가 발령되었어. 전 매장의 카운터 사이니지에 '기상 악화에 따른 조기 마감(20:00) 안내' 긴급 공지 배너를 EMERGENCY(최고 우선순위 100)로 기존 방송을 즉시 중단하고 지금 즉시 띄워줘."* |
-| **04** | **에너지 절감 및 전원/볼륨 하드웨어 제어**<br/>(Eco-Mode & Power Timers) | `pingbao_control_device`<br/>`pingbao_configure_power_timers` | *"영업 종료 시간인 밤 10시가 지났어. 영업 중인 디스플레이 중 음향 볼륨이 켜져 있는 기기는 0(음소거)으로 바꾸고, 내일부터 적용할 평일 자동 전원 타이머(매일 08:30 패널 켜짐, 22:30 패널 꺼짐)를 본사 매장 전체에 일괄 등록해줘."* |
-| **05** | **재생 증빙(PoP) 감사 및 방영 이상 감지**<br/>(Proof-of-Play Audit) | `pingbao_verify_playback`<br/>`pingbao_get_device_detail` | *"지난 24시간 동안 송출된 '신제품 버거 런칭 캠페인' 광고 영상의 매장별 방영 횟수와 완주율(Completion Rate %)을 분석해줘. 완주율이 95% 미만이거나 네트워크 지연으로 프레임 드랍이 발생한 디바이스가 있다면 그 원인과 로그를 정리해줘."* |
+빌트인 AI 오퍼레이터 챗봇에 더해, 핑바오는 표준 **MCP (Model Context Protocol)** 서버(`pingbao` 툴킷)를 기본 내장하여 Claude Desktop, Cursor, Antigravity 및 사내 자동화 에이전트가 생성형 배너 업로드(`pingbao_upload_media`)부터 플레이리스트·스케줄 배포까지 전자동으로 수행할 수 있습니다.
 
 ---
 
@@ -251,55 +206,23 @@ OS별 맞춤형 하드웨어 추상화 계층(HAL) 원격 제어, 24시간 멀�
 
 | 모듈 영역 | 핵심 기능 및 상세 명세 | 기술 규격 및 차별점 |
 | :--- | :--- | :--- |
-| **1. 통합 대시보드** | 조직별 관제 요약, 스케줄 동기화율(%), 이상 징후 알림 리본, 스토리지 모니터링 | 멀티 테넌트 스코프 자동 분리, MinIO/S3 연동 |
-| **2. 삼성 사이니지 관제** | 삼성 전용 Standalone (Tizen 6.5+ SSSP 10+), 전원 On/Off 타이머, 원격 제어 | 삼성 Tizen b2bapis 드라이버, Redis 영속 큐 |
-| **3. 타임라인 스케줄링** | 4계층 우선순위 선점, Dayparting 다중 트랙, 유효 방송 구간 분석, 원클릭 배포 | SQLite 로컬 자율 상태 머신, 무결점 폴백 복구 |
-| **4. 전 자동 SyncPlay** | 같은 그룹, 같은 스케줄, 같은 네트워크 시 100% 자동 프레임 동기화 및 동시 전환 | 로컬 경량 브로드캐스트 기반, 고가 분배기 불필요 |
-| **5. REST API & MCP** | 60+ API 엔드포인트 및 AI Agent용 표준 MCP 서버 내장, API Key 권한 관리 | OpenAPI 3.0 규격, Claude/Cursor/Antigravity 연동 |
-| **6. 플레이리스트 저작** | 직관적 D&D 저작, 이미지 노출 초 제어, 전환 효과(Fade/Cut), 총 재생시간 집계 | WebGL/CSS 하드웨어 가속 트랜지션, 가상 시뮬레이터 |
-| **7. 미디어 라이브러리** | MP4/WebM/PNG 대용량 스트리밍 업로드, 매직 바이트 검증, 자동 메타 추출, 삭제 보호 | 멀티 청크 분할 스트리밍, SHA-256 서명 무결성 |
-| **8. 운영 모니터링 & 진단** | 실시간 단말 상태·명령 큐 싱글 뷰, 원클릭 실패 필터, 일괄 재시도, 다포맷 리포트 | 1-Click Batch Retry, LLM 보고서용 Markdown 지원 |
-| **9. 정밀 재생 증빙 (PoP)** | 1초 단위 실제 송출 증빙, 완주 vs 중도 중단 분석, 단말 현지 시간대 분석, 엑셀 Export | 15분 주기 암호화 배치 보고, 광고 정산용 완주율(%) |
-| **10. 엔터프라이즈 보안** | 본사-지사-매장 조직 트리, CRUDX 매트릭스, 2FA(TOTP), 5-Strike 방어 | RFC 6238 TOTP, Argon2id, Ed25519 전자서명 라이선스 |
-| **11. 라이선스 & 오류 텔레메트리** | Ed25519 비대칭 서명 활성화, 비정상 오류 PII 마스킹, SHA-256 중복제거 커뮤니티 전송 | 관리자 Opt-in 동의 기반, GitHub 커뮤니티 이슈 직동 |
+| **1. 빌트인 AI 오퍼레이터 챗봇** | 우측 슬라이드 자연어 대화창(`Ctrl+J`), 마크다운 표 진단, HITL 승인형 제어 | UI 포커스 자동 인식, Strict Subsetting 오발송 원천 차단 |
+| **2. 5대 AI 인사이트 & 비전** | 모닝 브리핑, 장치 로그 해설, 비전 자동 태깅·만료 배너 차단, 3개국어 비상문안 | 10대 클라우드/중국/무료 로컬 Ollama 지원, AES-256 키 암호화 |
+| **3. 통합 대시보드** | 전역 가동률 요약, 실시간 활동 피드, 7일/30일 저가동 이상 장치 트리아지 | 멀티 테넌트 스코프 자동 분리, 원클릭 드릴다운 |
+| **4. 멀티 OS 플릿 관제** | 삼성 Tizen SSSP 특화 + Windows / Android / Linux / Web 통합 관제 및 7대 일괄 제어 | OS별 HAL 자동 라우팅, 서버 URL 스탬핑 설치팩 |
+| **5. 타임라인 스케줄링** | 4계층 우선순위 선점, Dayparting 다중 트랙, AI 편성·타이머 충돌 감사 | 로컬 자율 상태 머신, 무결점 폴백 복구 |
+| **6. 전 자동 SyncPlay** | 같은 그룹, 같은 스케줄, 같은 네트워크 시 100% 자동 프레임 동기화 및 동시 전환 | 인증 SSE `sync-stream` + 클럭 오프셋 보정 |
+| **7. 운영 관제 & 가동/PoP** | `BEFORE/AFTER` 상태 비교(`Op Diff`), 가동 세션 분석, 1초 단위 렌더링 완주율(%) | CSV/JSON/MD 정산 감사 내보내기, 180일 자동 보존 |
+| **8. 보안 · 감사 · 외부 MCP** | 조직 트리, CRUDX 매트릭스, 2FA(TOTP), 불변 감사 로그, 60+ REST API & 내장 MCP | RFC 6238 TOTP, Argon2id, Ed25519 전자서명 라이선스 |
 
 ---
 
-## 🚀 다중 클라우드 & AI 에이전트 자동 설치 가이드 (Deployment Guide)
+## 📖 공식 문서 및 매뉴얼 (Documentation)
 
-핑바오는 온프레미스 폐쇄망부터 주요 글로벌 클라우드(Oracle Cloud, AWS, GCP, Azure, Alibaba/Tencent)까지 완벽하게 지원하며, **Claude Code, Cursor, Antigravity, Gemini** 등 최신 AI 코딩 에이전트를 통한 **1-프롬프트 무인 자동 설치**를 제공합니다.
-
-### 1. 주요 지원 서버 환경
-* **☁️ 오라클 클라우드 (OCI)**: 평생 무료(Always Free) A1.Flex/E2.1 인스턴스 + Cloudflare Edge Proxy(무료 SSL/DDoS 방어) 연동
-* **☁️ AWS (Amazon Web Services)**: EC2 Ubuntu 22.04 + 탄력적 IP(Elastic IP) 바인딩
-* **☁️ GCP (Google Cloud)**: Compute Engine E2 VM + VPC 방화벽 자동 연동
-* **☁️ Microsoft Azure**: Virtual Machines B2s + NSG 포트(80, 443) 개방
-* **☁️ 알리바바/텐센트 클라우드**: ECS/CVM + 중국 본토 ICP 비안(备案) 및 홍콩/싱가포르 즉시 배포 지원
-* **🏢 온프레미스 & 시놀로지 NAS**: 매장 내부 폐쇄망 베어메탈 서버 및 Synology DSM 7+ Container Manager
-
-### 2. 🤖 AI 에이전트 원클릭 설치 (Golden Prompt)
-서버 터미널에서 선호하는 AI 에이전트(`claude`, `cursor`, `agy` 등)를 실행하고 아래 골든 프롬프트를 입력하면, OS 감지부터 Docker 환경 구성 및 핑바오 컨테이너 가동까지 100% 전자동으로 완료됩니다:
-
-```markdown
-당신은 엔터프라이즈 디지털 사이니지 "핑바오(Pingbao)"의 전문 데브옵스 엔지니어입니다.
-현재 리눅스 서버에 핑바오 최신 운영 환경을 완전히 구축하고 서비스 헬스체크까지 완료해 주세요:
-1. OS 환경을 점검하고 Docker Engine 및 Docker Compose v2가 없다면 공식 저장소로 무인 설치하세요.
-2. 80, 443번 포트를 확인하고 OS 방화벽(ufw, firewalld, iptables)에서 허용하세요.
-3. pingbaosignage/pingbao-community 릴리즈 패키지 디렉터리에서 `.env.example`을 복사하여 64자리 암호화 키가 포함된 `.env`를 생성하세요.
-4. `docker compose -f docker-compose.onprem.yml up -d`로 컨테이너 스택을 가동하세요.
-5. `curl -s http://localhost/api/v1/health`를 호출하여 정상 가동(status: ok) 여부를 검증하고 웹 콘솔 URL을 출력해 주세요.
-```
-
-👉 **환경별 상세 설정 및 문제 해결**: [📖 핑바오 관리자 및 다중 클라우드/AI 설치 가이드 전문 보기 (docs/ko/admin-guide.md)](docs/ko/admin-guide.md)
-
----
-
-## 📖 문서 및 매뉴얼 (Documentation)
-
-* 📘 [사용자 매뉴얼 (User Guide)](docs/ko/user-guide.md) - 디스플레이 등록, 미디어 업로드, 플레이리스트 편성, 스케줄링 방법
-* 🛠️ [관리자 및 설치 가이드 (Admin Guide)](docs/ko/admin-guide.md) - Docker 환경 구성, 환경변수 설정, 업그레이드 및 롤백
-* ❓ [자주 묻는 질문 (FAQ)](docs/ko/faq.md) - 오프라인 재생, 지원 규격 및 트러블슈팅
-* 📜 [변경 이력 (Changelog)](CHANGELOG.md) - 버전별 변경 사항 및 개선 내역
+* 📘 [사용자 통합 운영 매뉴얼 (User Guide)](docs/ko/user-guide.md) - AI 오퍼레이터 챗봇 활용법, 멀티 OS 등록, 비전 검수, 스케줄링 전 과정
+* 🛠️ [관리자 설치 및 AI/LLM 설정 가이드 (Admin Guide)](docs/ko/admin-guide.md) - Docker 구축, 클라우드/로컬 Ollama LLM 연동, 백업 및 업그레이드
+* ❓ [자주 묻는 질문 (FAQ)](docs/ko/faq.md) - AI 안전 제어 원리, 무료 폐쇄망 LLM, 오프라인 재생 및 SyncPlay
+* 📜 [변경 이력 (Changelog)](CHANGELOG.md) - 버전별 신기능 및 아키텍처 업데이트 내역
 
 ---
 

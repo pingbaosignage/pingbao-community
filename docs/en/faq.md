@@ -1,25 +1,20 @@
-# Pingbao (屏宝 / 핑바오) Frequently Asked Questions (FAQ)
+# Pingbao Frequently Asked Questions (FAQ)
 
-### Q1. Will screens go black or freeze if store internet disconnects?
-**A:** Not at all. Pingbao is built on an **Autonomous Offline Loop** architecture. All video and image assets are pre-cached to the display's local storage prior to playback. An embedded local state machine executes scheduled playlists based on the internal clock, guaranteeing 24/7/365 uninterrupted playback even during prolonged network outages.
+### Q1. What can the Built-In Pingbao AI Copilot Chatbot do, and how does it prevent accidental fleet-wide changes?
+**A:** Press **`Ctrl+J`** or click the top-right **`[AI Copilot]`** button from any workspace to open the resizable assistant. In plain language, you can: (1) inspect live server health and Multi-OS online device counts in Markdown tables, (2) detect offline displays and expired promotional banners, (3) interpret hardware diagnostic logs, and (4) request remote volume/brightness/power/reboot commands, power timers, or smart schedule drafts.  
+Every mutation is protected by a **Human-in-the-Loop (HITL) Approval Card (`APPROVAL REQUIRED`)** and **Strict Device Subsetting**—meaning commands are strictly locked to your selected/inspected screens (never accidentally broadcast to all stores) and only execute after you click **`[Approve & Execute]`**.
 
-### Q2. Which operating systems and commercial signage hardware are supported?
-**A:** Pingbao provides deep native `b2bapis` hardware integration for **Samsung Smart Signage Standalone displays** (Tizen 6.5+ / SSSP 6–10+), while also officially supporting **Windows 10/11 Kiosk PCs (`.exe`)**, **Android Signage / Tablets (`.apk`)**, **Linux Mini PCs (`.deb` / `.sh`)**, and **Zero-Install Web Launchers (`/player`)**. Its per-OS Hardware Abstraction Layer (HAL) automatically routes capabilities (hardware backlight vs. window dimming, panel power vs. DPMS sleep) across mixed-OS fleets.
+### Q2. Can we run Pingbao AI 100% offline/on-premise for free without external cloud API costs or data leaks?
+**A:** Yes! Under **`System Settings > AI / LLM Automation`**, select **`On-Premise / OpenAI-Compatible (Ollama · vLLM)`** to connect directly to your internal Ollama or vLLM server (`gemma4`, `qwen2.5`, `deepseek-r1`, `qwen2.5vl`, etc.) with **zero API cost and zero external data egress**. Pingbao also natively supports OpenAI, Google Gemini, Anthropic Claude, and China Mainland direct providers (Alibaba Qwen, DeepSeek, Zhipu GLM, Doubao, Kimi).
 
-### Q3. Do field technicians need to manually type the server IP on every device?
-**A:** No. Every installer downloaded from the **[Player Installer Download]** modal (Samsung Tizen USB `.zip`, Windows `.exe`, Android `.apk`, Linux `.deb`/`.sh`) is automatically stamped with your configured Server Access URL. Devices connect immediately upon launch and display a 6-digit PIN code for rapid pairing.
+### Q3. How does Pingbao AI prevent expired promotional banners from staying on store screens?
+**A:** Upon media upload (or 1-click re-analysis), **Multimodal Vision AI** automatically identifies menu items, OCR text/prices, recommended dayparting windows, and visible **campaign end dates (`detected_valid_until`)**. Any expired promotional banner still assigned to an active schedule is immediately flagged in `[AI Morning Briefing]`, `[AI Schedule & Timer Audit]`, and the AI Copilot.
 
-### Q4. Are there video file size limits? What codecs are recommended?
-**A:** H.264 / AAC encoded MP4 and WebM formats are recommended. The server enforces 64-byte magic-byte binary verification and direct-to-disk streaming uploads, effortlessly handling multi-gigabyte 4K Ultra-HD video assets without memory spikes.
+### Q4. Will screens go black if store internet disconnects?
+**A:** Never. Pingbao's **Autonomous Offline Loop** pre-caches all video/image assets and schedule timelines onto local storage so displays continue seamless dayparting playback indefinitely offline.
 
-### Q5. How does the 4-tier scheduling hierarchy and dayparting work?
-**A:** Pingbao enforces an automated preemption hierarchy: `EMERGENCY` (P:100~200) > `EVENT` (P:50~99) > `REGULAR` (P:10~49) > `DEFAULT` (P:0). When peak promotion windows conclude, screens gracefully fall back to base programming with zero flickering.
+### Q5. Which display operating systems and hardware are supported?
+**A:** Deep native hardware control (`b2bapis`) for **Samsung Smart Signage (Tizen 6.5+ / SSSP 6–10+)**, plus unified **Multi-OS Fleet Management** across **Windows 10/11 Kiosks (`.exe`)**, **Android Signage/Tablets (`.apk`)**, **Linux Mini-PCs (`.deb`/`.sh`)**, and **Web Browsers (`/player`)**. All installers downloaded from the console automatically embed your server URL for zero-typing 6-digit PIN pairing.
 
-### Q6. How does SyncPlay multi-screen synchronization work?
-**A:** No external hardware splitters or manual configuration are required. Whenever multiple displays share the **same device group, the same assigned schedule, and the same local network (LAN)**, real-time SSE SyncPlay streams and automatic clock-offset calibration activate millisecond-accurate frame synchronization automatically.
-
-### Q7. Does Pingbao support external integration via APIs and AI Agents (MCP)?
-**A:** Yes. Pingbao provides 60+ OpenAPI 3.0 RESTful endpoints and a built-in **Model Context Protocol (MCP)** server with scoped API Keys and hourly usage analytics. AI agents (Claude Desktop, Cursor, Antigravity, and custom LLM workflows) can diagnose displays, inspect uptime, and publish schedules via natural language.
-
-### Q8. How long are logs retained, and how is privacy safeguarded in Error Telemetry?
-**A:** Operations logs, Device Operating Times, Proof-of-Play (PoP) records, and Audit Logs follow a **6-month (180-day) default retention and auto-purge lifecycle** to maintain optimal storage health. Error Telemetry is strictly Opt-in (disabled by default) and masks all sensitive tokens, passwords, IPs, and paths (`***MASKED***`) with SHA-256 fingerprint deduplication before reporting to GitHub Community Issues.
+### Q6. How do 4-Tier Scheduling, Auto SyncPlay, External MCP, and Log Retention work?
+**A:** Schedules preempt in 4 tiers (`EMERGENCY > EVENT > REGULAR > DEFAULT`) and automatically synchronize to the millisecond (**SyncPlay**) whenever displays share the same **Group + Schedule + LAN**. External agents (Claude, Cursor, Antigravity) connect via the built-in `pingbao` **MCP server**, and all operational/uptime/PoP/audit logs follow a **6-month (180-day) auto-purge lifecycle**.
