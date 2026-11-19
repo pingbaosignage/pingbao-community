@@ -1,10 +1,10 @@
 <div align="center">
 
 # 📺 屏宝 (Pingbao / 핑바오)
-### 三星智能商用标牌企业级云端播控平台 (Samsung Smart Signage CMS)
+### 三星智能商用标牌与多系统企业级云端播控平台 (Enterprise Signage CMS)
 
-**屏宝 (Pingbao)** 是一款专为**三星智能商用标牌 (Samsung Smart Signage)** 量身打造的企业级数字标牌全域智能播控平台。  
-原生深度适配三星 Tizen SSSP (Samsung Smart Signage Platform) 硬件生态，支持数万台三星商用大屏的集中智控、24小时可视化时间轴时段编排、全自动多屏同步轮播（SyncPlay）、断网永续自主离线播放，并全面开放企业级 REST API 与 AI 智能体 MCP (Model Context Protocol) 协议支持。
+**屏宝 (Pingbao)** 是一款以**三星智能商用标牌 (Samsung Smart Signage · Tizen 6.5+ / SSSP 6~10+)** 底层原生硬件智控为核心，同时统一纳管 **Windows、Android、Linux 与 Web** 播放终端的企业级数字标牌全域智能播控平台。  
+内置多系统硬件抽象层（HAL）自适应远控、24 小时可视化时间轴四级分时编排、全自动多屏同步轮播（SyncPlay）、断网永续离线播放、设备开机时长（Uptime）与秒级播放凭据（PoP）双工作台，并全面开放企业级 REST API 与 AI 智能体 MCP (Model Context Protocol) 协议支持。
 
 [![Language](https://img.shields.io/badge/Language-简体中文%20|%20한국어%20|%20English-brightgreen.svg)](#)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-在线免登录体验-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
@@ -86,136 +86,96 @@
 
 ## 🌟 核心产品优势 (Core Value Propositions)
 
-1. **专注三星商用标牌·底层硬件深度智控**
-   * 专属深度适配**三星智能商用标牌 (Samsung Smart Signage / Tizen 6.5+ SSSP 10+)**。
-   * 支持三星液晶面板背光远程软硬件开关、音量动态调节、系统定时重启、内部运行温度监测及屏幕实际画面 1 秒级远程截屏回传。
+1. **专注三星商用标牌深控 · 五大系统统一纳管 (Multi-OS)**
+   * 深度适配**三星智能商用标牌 (Tizen 6.5+ / SSSP 6~10+)** 底层硬件控制（液晶背光开关、面板电源、遥控/按键锁、HDMI 信号切换、硬件 RTC 定时器）。
+   * 全面支持 **Windows (`.exe`) · Android (`.apk`) · Linux (`.deb`/`.sh`) · Web (`/player`)** 多系统统一管控、HAL 自动路由、自动内嵌服务器地址的一键安装包弹窗及 **7 大指令专属批量远控弹窗**。
 2. **断网无忧·永续自主离线轮播 (Autonomous Offline Loop)**
-   * 依托三星标牌本地高速存储预载与 SQLite 离线状态机，网络长期中断时终端依据排期计划 24/7/365 永续无缝轮播，告别黑屏与报错界面。
-   * 具备差分增量下载、断点续传与 MD5/SHA-256 双重二进制校验。
+   * 依托终端本地高速存储预载与内置状态机，网络长期中断时依然依据排期计划 24/7/365 永续无缝轮播，告别黑屏与报错界面。
 3. **四级优先级时间轴智能排期引擎 (4-Tier Smart Scheduling Engine)**
-   * 独家支持 `EMERGENCY`（紧急插播）> `EVENT`（分时营销活动）> `REGULAR`（日常分时轮播）> `DEFAULT`（24小时底图兜底）四级抢占体系。
-   * 智能分时时段（Dayparting: 早市/午市/下午茶/晚市/夜间）自动无缝切换，高优先时段结束后自动回落，零黑屏零闪烁。
+   * 支持 `EMERGENCY`（紧急插播）> `EVENT`（分时营销活动）> `REGULAR`（日常分时轮播）> `DEFAULT`（24小时底图兜底）四级抢占体系，零黑屏零闪烁自动回落。
 4. **全自动多屏同步播放技术 (SyncPlay)**
-   * **全自动零配置**：只需满足**【同一设备分组】、【相同节目排期】、【同一局域网】**三个条件，多台三星标牌无需任何额外拼接硬件或手动配置，即可全自动实现毫秒级帧同步与联屏同时翻页。
+   * **全自动零配置**：满足**【同一设备分组】、【相同节目排期】、【同一局域网】**三个条件时，通过认证 SSE `sync-stream` 与时钟偏移自动校准实现毫秒级帧同步与联屏同时翻页。
 5. **企业级 REST API 与 AI 智能体 MCP 支持**
-   * 全面开放标准化 OpenAPI 3.0 RESTful 接口与 **MCP (Model Context Protocol)** 协议服务器。
-   * 支持 Claude、Cursor、Antigravity 等各类大模型 AI 智能体直接调用工具进行设备巡检、排期下发、状态诊断与自动化运维，并提供精细化 API Key 权限与调用量监控。
-6. **企业级合规与精准播放证明 (Proof of Play - PoP)**
-   * 精确记录每台屏幕上每个视频与图片的实际开播时间、结束时间与完整播放率（Completion Rate %）。
-   * 具备防篡改签名，支持按门店、屏幕、广告主维度一键导出商业审计报表。
-7. **故障自愈与自动化社区错误遥测 (Automated Error Telemetry)**
-   * 生产环境异常自动捕获、脱敏脱密、指纹去重，经管理员授权后可一键或周期性将错误回传至 GitHub Community Issue，加速版本迭代。
+   * 全面开放 60+ OpenAPI 3.0 RESTful 接口、细粒度 API 密钥调用量分析看板与内置 **MCP (Model Context Protocol)** 服务，支持 Claude、Cursor、Antigravity 等 AI 智能体自然语言巡检与自动排期。
+6. **开机时长工作台 (Uptime) 与秒级精准播放证明 (PoP)**
+   * 自动筛查低开机率异常门店并支持每日开关机会话明细下钻（区分 `POWER_TIMER` 与 `MANUAL`）；真实硬件渲染秒级存证，精准核算完播率 (%) 并一键导出审计对账单。
+7. **远程自愈、6 个月日志自动清理与社区错误遥测**
+   * 多状态/分类筛选与 `BEFORE/AFTER` 变更对比（`Op Diff`），内置**默认 6 个月（180 天）日志自动清理生命周期**，以及 Opt-in 严格脱敏的 GitHub 社区错误遥测。
 
 ---
 
-## 📸 全功能工作台全景介绍与系统界面 (All 9 Workspaces)
-
-屏宝控制台针对企业复杂运营场景，提供清晰统一的 9 大核心功能工作台：
+## 📸 全功能工作台全景介绍与系统界面 (简体中文原生界面)
 
 ### 1. 运行仪表盘 (Dashboard)
-集团全网运营的一站式指挥中心。实时呈现全网三星商用显示屏在线/离线占比、当日排期同步完成率、存储桶资源消耗、设备地域分布图及系统异常即时告警卡片。
-
 <img src="docs/assets/zh/dashboard.png" alt="运行仪表盘" width="100%" />
-
-* **核心指标一览**：设备总数、在线率、活跃排期、素材总数与磁盘占用。
-* **快捷行动面板**：一键触达设备注册、素材上传、排期下发与系统审计日志。
+集团全网运营指挥中心：实时呈现终端在线率、已发布排期、近 7 天 / 30 天低开机率异常屏幕预警面板及实时事件动态流。
 
 ---
 
-### 2. 设备集中管理 (Device Management)
-数万台三星智能商用标牌的生命周期与物联网远程管控中枢。
-
+### 2. 多系统设备集中管理与一键安装包弹窗 (Device Management)
 <img src="docs/assets/zh/device-management.png" alt="设备管理" width="100%" />
+按组织、操作系统（TIZEN / WINDOWS / ANDROID / LINUX）、在线状态毫秒级筛选，支持 7 大指令批量远控及零跑店实时 1080P/4K 截屏监看。
 
-* **多维快速检索与状态过滤**：支持按所属组织（集团总部、大中华区、城市旗舰店）、在线状态（在线/离线/告警）、屏幕朝向（横屏/竖屏）及 IP/MAC 进行毫秒级筛选。
-* **硬件级远程指令**：屏幕背光开关、静音/音量滑块调节、远程重启播放器应用及系统冷重启。
-* **画面实时回传 (Live Screenshot)**：无需巡店人员拍照，随时获取三星标牌 1080P/4K 真实当前渲染画面。
-* **定时开关机计划**：按门店营业时间（如 09:30~22:00）配置自动关机节能策略，延长显示面板物理寿命。
+<img src="docs/assets/zh/player-installer.png" alt="多系统播放器安装包下载弹窗" width="100%" />
+所有播放器安装包（三星 Tizen U 盘 `.zip`、Windows `.exe`、Android `.apk`、Linux `.deb`/`.sh`）均自动内嵌当前服务器访问地址，现场装好即连。
 
 ---
 
 ### 3. 节目排期核心引擎 (Schedules) —— [核心特写]
-屏宝最强劲的商业播控调度引擎。支持基于 24 小时绝对时间轴与多时段分时编排（Dayparting）。
-
 <img src="docs/assets/zh/schedules.png" alt="节目排期总览" width="100%" />
-
-* **左右主从分栏布局 (Split Master-Detail)**：左侧清晰展示组织内所有排期草稿与已发布计划，右侧展开直观的 24 小时多轨道时间轴。
-* **四级优先级抢占机制**：支持将插播时段、营销时段与常态时段进行多层叠加，系统智能计算有效广播窗口（Effective Windows）。
-* **原子化草稿发布与回滚**：编辑排期不影响在线屏幕播放，编辑完成后一键点击“发布排期”，秒级差分推送到关联设备集群。
+左右主从分栏视图，左侧管理全部草稿与已发布计划，右侧展开直观的 24 小时多轨道时间轴并支持原子化发布。
 
 #### 详细时段编排与优先级矩阵 (Schedule Detail & Slots)
-点击任意排期条目，即可进入精准到秒的时段编排工作区：
-
 <img src="docs/assets/zh/schedule-detail.png" alt="排期时段编排详情" width="100%" />
-
-* **拖拽优先级调整 (Drag & Drop Priority)**：时段列表支持自由拖拽排序，系统自动重设权重值（Priority 10~100）。
-* **有效播放时段智能分析**：若高优先级时段存在时间覆盖，系统以绿色/橙色/虚线高亮显示实际有效播放区间，完全消除时间重叠冲突困惑。
-* **终端一键批量指派**：灵活勾选单台设备、门店分组或整栋楼宇，支持快速解绑与覆写。
+上下拖拽自由调整时段优先级，自动演算最终有效播发明细（Effective Windows），彻底消除重叠时段冲突。
 
 ---
 
 ### 4. 播放列表编排 (Playlists)
-多媒体素材的内容组合与视效编排中枢。
-
 <img src="docs/assets/zh/playlists.png" alt="播放列表管理" width="100%" />
-
-* **自由混排与秒级停留控制**：支持视频（MP4/WebM）与图片（PNG/JPG/SVG/WebP）在同一列表中任意混排，支持自定义每张图片的停留秒数（如 8s、15s、30s）。
-* **平滑视效转场**：内置无缝切换（Cut）、平滑淡入淡出（Crossfade）等多种硬件加速转场效果。
-* **总时长自动计算**：智能累加列表各素材时长，实时反馈单个循环的总耗时（如 04:15），方便精准契合商场广播时段。
+支持音视频与高清海报自由混排、独立停留秒数微调、GPU 平滑转场及单轮循环总时长自动核算。
 
 ---
 
 ### 5. 媒体素材智能管家 (Media Assets)
-海量高清多媒体资产的统一存储与合规验证空间。
-
 <img src="docs/assets/zh/media-assets.png" alt="媒体素材库" width="100%" />
-
-* **超大文件分片流式上传**：支持 4K 60fps 巨幅视频极速上传，支持断点续传。
-* **二进制魔数校验 (Magic Bytes Verification)**：严格验证文件真实格式，防止伪装扩展名的恶意文件注入。
-* **全景素材预览与元数据提取**：自动读取视频分辨率、编码格式（H.264/H.265/AV1）、时长及生成高清 SVG/WebP 缩略图。
-* **引用依赖删除保护**：被任何播放列表或排期引用的素材受智能锁保护，严防误删导致现场出现黑屏。
+支持 4K 超大视频磁盘直连流式上传、64 字节二进制魔数安全校验、编码元数据解析与防误删引用锁保护。
 
 ---
 
-### 6. 运维监控与故障诊断 (Operations Monitoring)
-为运维工程师和外包服务商打造的实时监看与自愈工作台。
-
+### 6. 运维监控与状态差异对比 (Operations Monitoring)
 <img src="docs/assets/zh/monitoring.png" alt="运维监控" width="100%" />
-
-* **单机通讯与指令队列实时追踪**：直观展示每台屏幕与控制台的长轮询心跳延迟（Ping RTT）、离线告警时间及未执行指令堆积数。
-* **一键故障重试 (1-Click Batch Retry)**：针对因网络抖动偶发失败的下发任务，提供一键批量重新分发功能。
-* **诊断日志与报告导出**：支持生成标准 Markdown 运维报告与 CSV 格式排障日志，便于提交运维支持分析。
+提供多状态（成功/进行中/失败）与任务分类筛选、实时指令同步队列追踪及 `BEFORE / AFTER` 配置差异对比（`Op Diff`）。
 
 ---
 
-### 7. 播放证明与商业对账报表 (Proof-of-Play & Analytics)
-数字标牌商业化运营与广告合规审计的权威数据凭证。
+### 7. 统计与分析：设备运行时间与播发合规证明 (Uptime & PoP)
 
-<img src="docs/assets/zh/reports.png" alt="播放证明报表" width="100%" />
-
-* **精确到秒级的事实日志**：终端在本地独立记录真实渲染帧数与起止时间戳，抗断网暂存，联网后通过 HMAC 校验上传。
-* **完整播放率与中断深度分析**：区分“全流程播放完成（100%）”与“因插播临时中断（Partial）”，提供合规计费依据。
-* **多维统计图表与数据导出**：支持按日期区间、品牌组织、播放列表及单台设备查看趋势图，支持 Excel / CSV 导出。
-
----
-
-### 8. 用户、多租户组织与 RBAC 权限矩阵 (Users & RBAC)
-满足集团多层级分权管理的政企级安全架构。
-
-<img src="docs/assets/zh/users.png" alt="用户与组织权限" width="100%" />
-
-* **多租户树形组织架构**：集团总部 ➔ 大中华区销售中心 ➔ 城市旗舰店 ➔ 单店部门，数据权限完全隔离。
-* **细粒度 RBAC 权限矩阵**：内建超级管理员（SuperAdmin）、运营总监（Operations Manager）、内容编排员（Content Editor）、现场运维（Field Tech）等角色，支持精确到模块 CRUDX（创建、读取、更新、删除、执行/发布）权限控制。
-* **企业双因子认证 (2FA / TOTP)**：全员支持基于 RFC 6238 的谷歌验证器 / 微软 Authenticator 动态口令，配备应急一次性备份码。
-
----
-
-### 9. 商业授权与错误自动遥测社区 (License & Error Telemetry)
-透明合规的商业授权凭据与敏捷的开源社区共建通道。
-
-| 商业授权概览 (Commercial License) | 错误自动遥测与社区工单 (Error Telemetry) |
+| 设备运行时间工作台 (`Operating Times`) | 播发合规证明报表 (`Proof-of-Play`) |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/telemetry.png" width="100%" /> |
+| <img src="docs/assets/zh/operating-times.png" width="100%" /> | <img src="docs/assets/zh/reports.png" width="100%" /> |
+
+主动定位低开机率异常门店并支持每日开关机会话明细下钻；基于终端真实渲染事实核算完播率 (%) 并一键导出 CSV / JSON / Markdown 审计报表。
+
+---
+
+### 8. 用户、多租户组织权限与不可篡改审计日志 (Users & Audit)
+
+| 多租户组织与 RBAC 权限 (`Users & RBAC`) | 全员操作不可篡改审计账本 (`Audit Logs`) |
+| :---: | :---: |
+| <img src="docs/assets/zh/users.png" width="100%" /> | <img src="docs/assets/zh/audit-logs.png" width="100%" /> |
+
+支持集团-区域-门店多级树形隔离、细粒度 CRUDX 角色矩阵、RFC 6238 双因子认证及全程留痕的不可篡改操作审计账本。
+
+---
+
+### 9. 系统设置 · 商业授权 · 6 个月日志清理 · MCP 联动
+
+| 商业授权概览 (`Ed25519 License`) | 环境设置与 6 个月日志自动清理 (`Preferences`) |
+| :---: | :---: |
+| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/admin-settings.png" width="100%" /> |
+| **远程诊断与社区门户 (`Diagnostics`)** | **API 与 AI 智能体联动 (`MCP`)** |
+| <img src="docs/assets/zh/telemetry.png" width="100%" /> | <img src="docs/assets/zh/connectivity-mcp.png" width="100%" /> |
 
 * **Ed25519 非对称电子签名授权**：支持离线私有化环境授权，防伪造、防窜改，清晰呈现已激活终端配额与有效期。
 * **自动化错误遥测与社区直连 (Community Issue Telemetry)**：

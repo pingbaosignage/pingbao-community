@@ -1,10 +1,10 @@
 <div align="center">
 
 # 📺 Pingbao (屏宝 / 핑바오)
-### Enterprise Smart Management Platform for Samsung Smart Signage (Samsung CMS)
+### Enterprise Samsung Smart Signage & Multi-OS Fleet Operations Platform
 
-**Pingbao (屏宝 / 핑바오)** is an enterprise-grade cloud digital signage management platform exclusively tailored for the **Samsung Smart Signage** ecosystem.  
-With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage Platform), Pingbao enables centralized IoT remote control for tens of thousands of Samsung commercial screens, 24-hour visual timeline dayparting, fully automated multi-screen synchronization (SyncPlay), and 100% autonomous offline playback. Furthermore, it provides comprehensive enterprise REST API and AI Agent MCP (Model Context Protocol) support.
+**Pingbao (屏宝 / 핑바오)** is an enterprise-grade cloud digital signage management platform optimized for **Samsung Smart Signage (Tizen 6.5+ / SSSP 6–10+)** while seamlessly unifying **Windows, Android, Linux, and Web** players in one console.  
+With OS-aware Hardware Abstraction Layer (HAL) remote control, Pingbao orchestrates tens of thousands of commercial screens, 24-hour multi-tier timeline dayparting, zero-config multi-screen synchronization (SyncPlay), 100% autonomous offline playback, Device Operating Time (Uptime) & Proof-of-Play (PoP) analytics, and built-in enterprise REST API and AI Agent MCP (Model Context Protocol) support.
 
 [![Language](https://img.shields.io/badge/Language-English%20|%20简体中文%20|%20한국어-brightgreen.svg)](#)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20Experience-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
@@ -77,8 +77,8 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 
 <br/>
 
-<img src="docs/assets/zh/dashboard.png" alt="Pingbao Operations Dashboard" width="100%" />
-<sub><b>▲ Pingbao Operations Dashboard: Samsung Signage Fleet Availability, Schedule Deployment Progress, Storage Consumption, and Fleet Health (Live Oracle Cloud Cluster Metrics)</b></sub>
+<img src="docs/assets/en/dashboard.png" alt="Pingbao Operations Dashboard" width="100%" />
+<sub><b>▲ Pingbao Operations Dashboard: Multi-OS Fleet Availability, Schedule Deployment Progress, Low-Uptime Anomaly Triage, and Live Event Feed (Live Oracle Cloud Cluster Metrics)</b></sub>
 
 </div>
 
@@ -86,85 +86,96 @@ With native deep optimization for Samsung Tizen 6.5+ SSSP (Samsung Smart Signage
 
 ## 🌟 Core Value Propositions
 
-1. **Dedicated to Samsung Smart Signage & Deep IoT Control**
-   * Exclusively engineered for **Samsung Smart Signage (Tizen 6.5+ / SSSP 10+)** standalone displays.
-   * Remote LCD backlight panel On/Off, volume control, scheduled reboot, operating temperature tracking, and 1-second live screen capture retrieval.
-2. **Autonomous Offline Playback (No Duration Limits)**
-   * Powered by local edge pre-caching and an embedded SQLite state engine on Samsung displays, screens seamlessly continue scheduled 24/7/365 broadcasting even during prolonged network outages without black screens or crashes.
+1. **Samsung Smart Signage Specialization & 5-Platform Multi-OS Fleet Control**
+   * Deep native hardware integration for **Samsung Smart Signage (Tizen 6.5+ / SSSP 6–10+)** (panel backlight, power, IR/key locks, HDMI input switching, hardware RTC timers).
+   * Unified Multi-OS management for **Windows (`.exe`), Android (`.apk`), Linux (`.deb`/`.sh`), and Web (`/player`)** with per-OS HAL routing, URL-stamped Player Installer modal, and **7-command Bulk Remote Control**.
+2. **Autonomous Offline Playback (Zero Blackouts)**
+   * Local pre-caching and embedded state machines keep scheduled 24/7/365 broadcasting running smoothly during extended network outages.
 3. **4-Tier Priority Timeline Scheduling Engine**
-   * Hierarchical preemption architecture: `EMERGENCY` (instant disaster/VIP takeover) > `EVENT` (dayparted peak promotions) > `REGULAR` (daily schedule) > `DEFAULT` (24/7 fallback base playlist).
-   * Dayparting (Breakfast / Lunch / Tea / Dinner / Night) auto-transitions smoothly without screen blinks or glitches.
-4. **Fully Automated Multi-Screen Synchronization (SyncPlay)**
-   * **100% Automatic**: When multiple Samsung signage displays share the **same device group, same assigned schedule, and same local network (LAN)**, SyncPlay automatically activates millisecond-accurate frame synchronization and simultaneous transitions without specialized hardware matrix switchers or manual pairing.
+   * Hierarchical preemption: `EMERGENCY` (instant takeover) > `EVENT` (dayparted promotions) > `REGULAR` (daily schedule) > `DEFAULT` (24/7 fallback base loop).
+4. **Zero-Config Multi-Screen Synchronization (SyncPlay)**
+   * Displays sharing the **same group, same schedule, and same LAN** automatically synchronize transitions to the millisecond via authenticated SSE `sync-stream` and EMA clock calibration.
 5. **Standard REST API & AI Agent MCP (Model Context Protocol) Support**
-   * 60+ OpenAPI 3.0 RESTful endpoints with API Key scoped permissions and usage telemetry.
-   * Built-in standardized **MCP server (`pingbao`)** empowering modern AI agents (Claude, Cursor, Antigravity, LLM-based autonomous operations) to manage devices, distribute schedules, and diagnose fleet health via natural language.
-6. **Auditable Proof-of-Play (PoP) & Business Settlement Reports**
-   * Exact second-level playback audit logs, Completion Rate (%) computation, tamper-evident signatures, and one-click Excel/CSV export.
-7. **Self-Healing Operations & Automated Community Error Telemetry**
-   * Automatically captures backend exceptions, sanitizes sensitive data (PII/secrets), deduplicates by SHA-256 fingerprint, and dispatches error reports directly to GitHub Community Issues.
+   * 60+ OpenAPI 3.0 endpoints with scoped API Keys, hourly traffic analytics, and built-in **MCP server (`pingbao`)** for Claude Desktop, Cursor, Antigravity, and LLM agents.
+6. **Device Operating Time (Uptime) Workbench & Precision Proof-of-Play (PoP)**
+   * Low-uptime anomaly triage with session-level `ON/OFF` drilldowns (`POWER_TIMER` vs `MANUAL`), plus hardware-verified PoP Completion Rate (%) and one-click settlement exports.
+7. **Self-Healing Operations, 6-Month Log Auto-Purge & Error Telemetry**
+   * Multi-status/category triage with `BEFORE/AFTER` state diffs, automated **6-month (180-day) log retention & purge lifecycle**, and Opt-in PII-masked community error reporting.
 
 ---
 
-## 📸 Comprehensive Workspace Overview & Live Screens (All 9 Workspaces)
+## 📸 Comprehensive Workspace Overview & Live Screens (English UI)
 
 ### 1. Operations Dashboard (Dashboard)
-<img src="docs/assets/zh/dashboard.png" alt="Dashboard" width="100%" />
-Consolidated fleet metrics: Samsung display online/offline percentages, schedule synchronization rate, object storage usage, and active alert ribbons.
+<img src="docs/assets/en/dashboard.png" alt="Dashboard" width="100%" />
+Consolidated fleet KPIs, schedule synchronization health, 7d/30d low-uptime anomaly triage, and live activity feed.
 
 ---
 
-### 2. Samsung Signage Fleet Management (Device Management)
-<img src="docs/assets/zh/device-management.png" alt="Device Management" width="100%" />
-Control thousands of Samsung screens across hierarchical organizations (HQ, Retail Center, Flagship Stores) with backlight control, volume adjustment, remote reboot, and live screenshot feedback.
+### 2. Multi-OS Fleet Management & Pre-Stamped Player Installers (Devices)
+<img src="docs/assets/en/device-management.png" alt="Device Management" width="100%" />
+Filter Samsung Tizen SSSP, Windows, Android, and Linux displays by organization, OS, or status, execute 7-command bulk remote actions, and inspect live remote screen captures.
+
+<img src="docs/assets/en/player-installer.png" alt="Multi-OS Player Installer Modal" width="100%" />
+One-click Multi-OS Player Installer bundles pre-stamped with your Server Access URL (Samsung Tizen USB `.zip`, Windows `.exe`, Android `.apk`, Linux `.deb`/`.sh`).
 
 ---
 
 ### 3. Timeline Scheduling Engine (Schedules) —— [Core Specialization]
-<img src="docs/assets/zh/schedules.png" alt="Schedules Overview" width="100%" />
-Master-detail view combining organization schedule plans with an interactive 24-hour multi-track timeline, visual priority indicators, and one-click atomic publishing.
+<img src="docs/assets/en/schedules.png" alt="Schedules Overview" width="100%" />
+Master-detail view combining schedule plans with an interactive 24-hour multi-track timeline and atomic publishing.
 
 #### Detailed Slot Orchestration & Priority Matrix (Schedule Detail & Slots)
-<img src="docs/assets/zh/schedule-detail.png" alt="Schedule Detail & Slots" width="100%" />
-Drag-and-drop priority slot ordering (Priority 10 to 100), visual Effective Broadcast Windows calculation, and automatic preemption overlay.
+<img src="docs/assets/en/schedule-detail.png" alt="Schedule Detail & Slots" width="100%" />
+Drag-and-drop priority slot ordering and visual Effective Broadcast Windows calculation.
 
 ---
 
 ### 4. Playlist Authoring (Playlists)
-<img src="docs/assets/zh/playlists.png" alt="Playlists" width="100%" />
-Combine video (MP4/WebM) and images (PNG/JPG), configure individual image exposure duration (e.g. 8s, 15s), apply GPU-accelerated crossfades, and calculate full loop cycle durations.
+<img src="docs/assets/en/playlists.png" alt="Playlists" width="100%" />
+Combine video (MP4/WebM) and images (PNG/JPG) with per-item durations, GPU-accelerated crossfades, and automatic loop cycle calculation.
 
 ---
 
-### 5. Media Asset Management (Media Assets)
-<img src="docs/assets/zh/media-assets.png" alt="Media Assets" width="100%" />
-Chunked streaming uploads for 4K 60fps video, binary magic bytes validation, automatic metadata extraction, and delete-protection locks for in-use assets.
+### 5. Media Asset Management (Media Library)
+<img src="docs/assets/en/media-assets.png" alt="Media Assets" width="100%" />
+Direct-to-disk 4K streaming uploads, 64-byte magic-byte verification, metadata extraction, and referential delete-protection locks.
 
 ---
 
-### 6. Operations Monitoring & Diagnostics (Operations Monitoring)
-<img src="docs/assets/zh/monitoring.png" alt="Operations Monitoring" width="100%" />
-Real-time long-polling latency (Ping RTT), command queue inspection, 1-Click Batch Retry for network timeouts, and exportable Markdown technical diagnostic reports.
+### 6. Operations Monitoring & State Diff (Operations)
+<img src="docs/assets/en/monitoring.png" alt="Operations Monitoring" width="100%" />
+Multi-status (`Success` / `In Progress` / `Failed`) and category triage filters, command sync tracking, and `BEFORE / AFTER` desired-state diff modals.
 
 ---
 
-### 7. Proof-of-Play & Settlement Reports (Proof-of-Play & Analytics)
-<img src="docs/assets/zh/reports.png" alt="Proof-of-Play Reports" width="100%" />
-1-second precision device playback audit logs, Completion Rate (%) metrics distinguishing Full vs. Partial plays, and multi-tenant Excel/CSV export.
+### 7. Analytics & Reports: Operating Times & Proof-of-Play (Uptime & PoP)
 
----
-
-### 8. Multi-Tenant Organizations & RBAC (Users & RBAC)
-<img src="docs/assets/zh/users.png" alt="Users and Permissions" width="100%" />
-Hierarchical multi-tenant organization trees, granular CRUDX permission matrix, and RFC 6238 TOTP two-factor authentication with backup codes.
-
----
-
-### 9. Commercial License & Error Telemetry (License & Telemetry)
-
-| Commercial License (Ed25519) | Error Telemetry & Community Portal |
+| Device Operating Times Workbench (`Uptime`) | Proof-of-Play Settlement Reports (`PoP`) |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/telemetry.png" width="100%" /> |
+| <img src="docs/assets/en/operating-times.png" width="100%" /> | <img src="docs/assets/en/reports.png" width="100%" /> |
+
+Proactive low-uptime anomaly detection with daily `ON/OFF` session drilldowns alongside hardware-verified Completion Rate (%) and CSV/JSON/Markdown settlement exports.
+
+---
+
+### 8. Multi-Tenant Organizations, RBAC & Immutable Audit Logs
+
+| Users & Organization Directory (`Users & Access`) | Immutable User Audit Ledger (`Audit Logs`) |
+| :---: | :---: |
+| <img src="docs/assets/en/users.png" width="100%" /> | <img src="docs/assets/en/audit-logs.png" width="100%" /> |
+
+Hierarchical multi-tenant organization trees, granular CRUDX permission matrices, RFC 6238 TOTP 2FA, and permanent operator audit trails.
+
+---
+
+### 9. System Settings · Commercial License · 6-Month Retention · MCP
+
+| Commercial License (`Ed25519`) | Preferences & 6-Month Log Retention |
+| :---: | :---: |
+| <img src="docs/assets/en/license.png" width="100%" /> | <img src="docs/assets/en/admin-settings.png" width="100%" /> |
+| **Remote Diagnostics & Community (`Telemetry`)** | **API & AI Connectivity (`MCP`)** |
+| <img src="docs/assets/en/telemetry.png" width="100%" /> | <img src="docs/assets/en/connectivity-mcp.png" width="100%" /> |
 
 * **Ed25519 Asymmetric Digital Signature**: Secure license activation verifying fleet quotas in air-gapped enterprise environments.
 * **Automated Error Telemetry & Community Issue Reporting**:

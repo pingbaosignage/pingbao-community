@@ -1,10 +1,10 @@
 <div align="center">
 
 # 📺 핑바오 (Pingbao / 屏宝)
-### 삼성 스마트 사이니지 엔터프라이즈 스마트 통합 관제 플랫폼 (Samsung Smart Signage CMS)
+### 삼성 스마트 사이니지 & 멀티 OS 엔터프라이즈 통합 관제 플랫폼 (Enterprise Signage CMS)
 
-**핑바오(Pingbao)**는 **삼성 스마트 사이니지(Samsung Smart Signage)** 디스플레이 생태계에 최적화된 엔터프라이즈 디지털 사이니지 전역 스마트 통합 관제 플랫폼입니다.  
-삼성 Tizen 6.5+ SSSP(Samsung Smart Signage Platform)를 네이티브로 지원하여 수만 대의 삼성 상용 디스플레이를 원격으로 제어하고, 24시간 타임라인 드래그 앤 드롭으로 콘텐츠를 무중단 자율 스케줄링하며, 전 자동 다중 화면 싱크(SyncPlay) 및 오프라인 영구 자율 재생을 완벽하게 보장합니다. 나아가 표준 REST API 및 AI 에이전트를 위한 MCP(Model Context Protocol) 지원을 전면 제공합니다.
+**핑바오(Pingbao)**는 **삼성 스마트 사이니지(Samsung Smart Signage · Tizen 6.5+ / SSSP 6~10+)** 심층 하드웨어 제어를 주력으로 **Windows, Android, Linux, Web** 플레이어까지 단일 콘솔에서 통합 제어하는 엔터프라이즈 디지털 사이니지 플랫폼입니다.  
+OS별 맞춤형 하드웨어 추상화 계층(HAL) 원격 제어, 24시간 멀티 티어 타임라인 스케줄링, 전 자동 다중 화면 싱크(SyncPlay), 오프라인 영구 자율 재생, 장치 가동 시간(Uptime) 및 초정밀 재생 증빙(PoP) 분석, 나아가 표준 REST API 및 AI 에이전트용 MCP(Model Context Protocol)를 전면 제공합니다.
 
 [![Language](https://img.shields.io/badge/Language-한국어%20|%20简体中文%20|%20English-brightgreen.svg)](#)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-온라인%20체험하기-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
@@ -77,8 +77,8 @@
 
 <br/>
 
-<img src="docs/assets/zh/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
-<sub><b>▲ 핑바오(Pingbao) 실시간 관제 대시보드: 삼성 사이니지 가동률, 스케줄 배포 진척률, 스토리지 점유율 및 시스템 헬스 관제 (오라클 클라우드 운영 환경 실측 데이터)</b></sub>
+<img src="docs/assets/ko/dashboard.png" alt="핑바오 대시보드 화면" width="100%" />
+<sub><b>▲ 핑바오(Pingbao) 실시간 관제 대시보드: 전역 디스플레이 가동률, 스케줄 배포 현황, 저가동 이상 징후 트리아지 및 시스템 헬스 관제 (오라클 클라우드 운영 환경 실측 데이터)</b></sub>
 
 </div>
 
@@ -86,87 +86,101 @@
 
 ## 🌟 핵심 제품 특징 (Core Value Propositions)
 
-1. **삼성 스마트 사이니지 전용·심층 IoT 하드웨어 제어**
-   * **삼성 스마트 사이니지 (Samsung Smart Signage / Tizen 6.5+ SSSP 10+)** 네이티브 하드웨어 완벽 지원.
-   * 원격 패널 On/Off(백라이트 절전), 볼륨 조절, 단말 재부팅, 동작 온도 모니터링 및 실시간 송출 화면 1초 단위 캡처 회신.
+1. **삼성 스마트 사이니지 심층 특화 & 5대 멀티 OS 통합 관제**
+   * **삼성 스마트 사이니지 (Tizen 6.5+ / SSSP 6~10+)** 네이티브 하드웨어 제어(패널 백라이트, 전원, 리모컨/패널 잠금, HDMI 입력 전환, 하드웨어 RTC 타이머) 완벽 지원.
+   * **Windows(`.exe`) · Android(`.apk`) · Linux(`.deb`/`.sh`) · Web(`/player`)** 멀티 OS 통합 관제, OS별 HAL 자동 라우팅, 서버 URL 자동 내장 설치 패키지 모달 및 **7대 명령 전용 일괄 원격 제어** 지원.
 2. **단절 무관·영구 자율 오프라인 재생 (Autonomous Offline Loop)**
-   * 단말 로컬 스토리지 사전 프리캐싱과 SQLite 상태 머신을 통해 현장 네트워크가 장기간 단절되어도 스케줄에 맞춰 24/7/365 무중단 무결점 재생 보장.
+   * 단말 로컬 스토리지 사전 프리캐싱과 내장 상태 머신을 통해 현장 네트워크가 장기간 단절되어도 스케줄에 맞춰 24/7/365 무중단 무결점 재생 보장.
 3. **4계층 우선순위 타임라인 스케줄링 엔진 (4-Tier Smart Scheduling)**
    * `EMERGENCY`(비상 재난/VIP 의전) > `EVENT`(피크 타임 프로모션) > `REGULAR`(일상 타임파팅) > `DEFAULT`(24시간 배경 폴백) 4단계 자동 선점 구조.
    * Dayparting(조식/중식/티타임/석식/야간) 시각 도달 시 자동 무결점 전환 및 선점 종료 후 자연스러운 자동 복귀.
 4. **전 자동 멀티스크린 싱크 재생 (SyncPlay)**
-   * **조건 충족 시 100% 자동 동작**: 복수의 삼성 사이니지가 **【같은 그룹】, 【같은 스케줄】, 【같은 네트워크(동일 LAN)】** 환경에 있으면, 복잡한 하드웨어 분배기나 수동 설정 없이 **자동으로 밀리초 단위 프레임 동기화 및 동시 화면 전환**이 작동합니다.
+   * 복수의 디스플레이가 **【같은 그룹】, 【같은 스케줄】, 【같은 네트워크(동일 LAN)】** 환경에 있으면, 실시간 SSE `sync-stream`과 시계 오프셋 보정으로 **100% 무설정 밀리초 단위 프레임 동기화 및 동시 화면 전환**이 작동합니다.
 5. **표준 REST API 및 AI 에이전트 MCP (Model Context Protocol) 지원**
-   * 60개 이상의 RESTful OpenAPI 3.0 엔드포인트 제공.
-   * **MCP 서버 (`pingbao`)** 표준 내장으로 Claude, Cursor, Antigravity 등 차세대 LLM 기반 AI 에이전트가 직접 디바이스 조회, 스케줄 변경, 이상 진단 도구를 자율적으로 호출할 수 있습니다.
-6. **정밀 재생 증빙 (Proof-of-Play - PoP)**
-   * 1초 단위 실제 렌더링 프레임 및 시작/종료 타임스탬프 기록, 완주율(Completion Rate %) 산출 및 엑셀 감사 리포트 내보내기 지원.
-7. **장애 자율 치유 및 자동화 커뮤니티 이슈 텔레메트리 (Automated Error Telemetry)**
-   * 런타임 오류 자동 수집, PII/비밀키 마스킹, SHA-256 지문 중복 제거 후 GitHub 커뮤니티 이슈로 자동 리포팅하여 신속한 패치 수령 지원.
+   * 60개 이상의 RESTful OpenAPI 3.0 엔드포인트 및 스코프 제한 API 키 호출량 모니터링 제공.
+   * **MCP 서버 (`pingbao`)** 기본 내장으로 Claude, Cursor, Antigravity 등 LLM 에이전트가 자연어로 장치 진단, 가동시간 조회, 스케줄 편성을 자율 수행합니다.
+6. **장치 가동 시간(Uptime) 워크벤치 & 초정밀 재생 증빙 (Proof-of-Play)**
+   * 매장별 일일 가동시간·저가동 급감 이상 장치 트리아지 및 회차별 켜짐/꺼짐(`POWER_TIMER`/`MANUAL`) 세션 드릴다운 분석.
+   * 1초 단위 실제 렌더링 프레임 기반 완주율(Completion Rate %) 산출 및 정산 감사 리포트 내보내기 지원.
+7. **무방문 자가 복구, 6개월 로그 자동 보존 & 커뮤니티 에러 텔레메트리**
+   * 상태/분류별 운영 관제 트리아지 및 `BEFORE/AFTER` 상태 비교(`Op Diff`), 기본 **6개월(180일) 로그 자동 정리 라이프사이클**, PII 마스킹 커뮤니티 이슈 자동 리포팅 지원.
 
 ---
 
-## 📸 9대 전 기능 워크스페이스 소개 및 공식 운영 화면
+## 📸 9대 전 기능 워크스페이스 소개 및 공식 운영 화면 (한국어 UI)
 
 핑바오 관리 콘솔은 엔터프라이즈 운영에 필수적인 9개 독립 워크스페이스를 제공합니다:
 
 ### 1. 통합 대시보드 (Dashboard)
-<img src="docs/assets/zh/dashboard.png" alt="대시보드" width="100%" />
-전국 및 글로벌 매장 삼성 사이니지의 가동률, 스케줄 동기화 완료율, 스토리지 사용량 및 이상 징후 알림을 한 화면에서 관제합니다.
+<img src="docs/assets/ko/dashboard.png" alt="대시보드" width="100%" />
+전국 및 글로벌 매장의 가동률, 스케줄 배포 현황, 7일/30일 가동시간 최저 이상 징후 장치 및 실시간 활동 피드를 한 화면에서 관제합니다.
 
 ---
 
-### 2. 삼성 사이니지 장치 관리 (Device Management)
-<img src="docs/assets/zh/device-management.png" alt="장치 관리" width="100%" />
-수만 대의 삼성 스크린을 조직별(본사/지사/매장), 방향(가로/세로), 온라인 상태별로 즉시 필터링하고 백라이트 On/Off, 원격 재부팅, 볼륨 조절 및 실시간 송출 캡처를 수행합니다.
+### 2. 멀티 OS 장치 관리 & 플레이어 원클릭 설치 (Device Management)
+<img src="docs/assets/ko/device-management.png" alt="장치 관리" width="100%" />
+삼성 Tizen SSSP 및 Windows·Android·Linux 디스플레이를 조직·OS·상태별로 필터링하고, 7대 일괄 원격 제어 및 무방문 실시간 라이브 화면 캡처를 수행합니다.
+
+<img src="docs/assets/ko/player-installer.png" alt="멀티 OS 플레이어 설치 패키지 모달" width="100%" />
+서버 접속 주소가 자동 내장된 삼성 Tizen USB(`.zip`), Windows(`.exe`), Android(`.apk`), Linux(`.deb`/`.sh`) 설치 패키지를 원클릭으로 배포합니다.
 
 ---
 
 ### 3. 스케줄 편성 관리 (Schedules) —— [핵심 특화 엔진]
-<img src="docs/assets/zh/schedules.png" alt="스케줄 관리" width="100%" />
-좌측 마스터 스케줄 목록과 우측 24시간 타임라인이 결합된 직관적인 뷰를 통해, 일상 방송과 프로모션 방송을 시각적으로 결합하고 원클릭으로 현장에 즉시 배포합니다.
+<img src="docs/assets/ko/schedules.png" alt="스케줄 관리" width="100%" />
+좌측 마스터 스케줄 목록과 우측 24시간 타임라인이 결합된 직관적인 뷰를 통해 일상 방송과 프로모션 방송을 시각적으로 결합하고 원클릭 배포합니다.
 
 #### 상세 타임슬롯 편성 및 우선순위 매트릭스 (Schedule Detail & Slots)
-<img src="docs/assets/zh/schedule-detail.png" alt="스케줄 상세 편성" width="100%" />
-드래그 앤 드롭으로 슬롯 우선순위(Priority 10~100)를 재배치하고, 시간대 중복 시 실제 송출되는 유효 방송 윈도우(Effective Windows)를 시각적으로 검증합니다.
+<img src="docs/assets/ko/schedule-detail.png" alt="스케줄 상세 편성" width="100%" />
+위·아래 드래그로 슬롯 우선순위를 변경하고, 시간대 중복 시 실제 송출되는 최종 송출 명세(Effective Windows)를 즉시 검증합니다.
 
 ---
 
 ### 4. 재생목록 저작 (Playlists)
-<img src="docs/assets/zh/playlists.png" alt="재생목록 관리" width="100%" />
-비디오(MP4/WebM)와 이미지(PNG/JPG)를 자유롭게 혼합하고 이미지별 노출 초(예: 8초, 15초)와 부드러운 페이드(Crossfade) 전환 효과를 적용합니다.
+<img src="docs/assets/ko/playlists.png" alt="재생목록 관리" width="100%" />
+비디오(MP4/WebM)와 이미지(PNG/JPG)를 자유롭게 혼합하고 항목별 노출 초 및 하드웨어 가속 전환 효과를 적용합니다.
 
 ---
 
 ### 5. 미디어 에셋 라이브러리 (Media Assets)
-<img src="docs/assets/zh/media-assets.png" alt="미디어 에셋" width="100%" />
-4K 60fps 대용량 영상의 분할 스트리밍 업로드, 바이너리 매직 바이트 위변조 검증, 자동 썸네일 생성 및 스케줄 사용 중 에셋에 대한 삭제 방지 락을 지원합니다.
+<img src="docs/assets/ko/media-assets.png" alt="미디어 에셋" width="100%" />
+4K 대용량 영상의 디스크 직결 스트리밍 업로드, 바이너리 매직 바이트 위변조 검증 및 참조 무결성 삭제 방지 락을 지원합니다.
 
 ---
 
-### 6. 실시간 운영 모니터링 (Operations Monitoring)
-<img src="docs/assets/zh/monitoring.png" alt="운영 관제" width="100%" />
-장치별 롱폴링 응답 지연(RTT), 명령 대기 큐 및 전송 실패 항목을 실시간 추적하고, 원클릭 일괄 재전송(1-Click Batch Retry)을 통해 네트워크 장애를 신속히 극복합니다.
+### 6. 실시간 운영 관제 (Operations Monitoring)
+<img src="docs/assets/ko/monitoring.png" alt="운영 관제" width="100%" />
+상태별(`성공`/`진행중`/`실패`) 및 작업 분류별 다중 필터, 명령 동기화 큐 추적 및 `BEFORE / AFTER` 변경 내역 상세 비교(`Op Diff`)를 제공합니다.
 
 ---
 
-### 7. 정밀 재생 증빙 리포트 (Proof-of-Play & Analytics)
-<img src="docs/assets/zh/reports.png" alt="재생 증빙 리포트" width="100%" />
-단말 현지 시간 기준 1초 단위 실제 송출 사실 로그를 기반으로 완주율(Completion Rate %)을 집계하여 광고주 정산 및 감사용 엑셀 보고서를 생성합니다.
+### 7. 통계 및 분석: 장치 가동 시간 & 방송 송출 증빙 (Uptime & PoP)
 
----
-
-### 8. 사용자 및 다중 테넌트 조직 권한 (Users & RBAC)
-<img src="docs/assets/zh/users.png" alt="사용자 및 권한 관리" width="100%" />
-그룹 본사-리테일 센터-도시 플래그십-매장으로 이어지는 트리형 조직 구조와 CRUDX 단위 세분화 역할, RFC 6238 TOTP 기업 2단계 인증을 제공합니다.
-
----
-
-### 9. 상용 라이선스 & 오류 보고 커뮤니티 (License & Error Telemetry)
-
-| 상용 라이선스 (Commercial License) | 오류 보고 & 커뮤니티 (Error Telemetry) |
+| 장치 가동 시간 워크벤치 (`Operating Times`) | 방송 송출 증빙 리포트 (`Proof-of-Play`) |
 | :---: | :---: |
-| <img src="docs/assets/zh/license.png" width="100%" /> | <img src="docs/assets/zh/telemetry.png" width="100%" /> |
+| <img src="docs/assets/ko/operating-times.png" width="100%" /> | <img src="docs/assets/ko/reports.png" width="100%" /> |
+
+저가동 급감 이상 매장 조기 포착 및 회차별 가동 세션 드릴다운 분석과 함께, 실제 렌더링 사실 기반 완주율(Completion Rate %) 및 정산 감사 리포트를 생성합니다.
+
+---
+
+### 8. 사용자 권한(RBAC) & 불변 감사 로그 (Users & Audit Logs)
+
+| 다중 테넌트 조직 및 권한 (`Users & RBAC`) | 사용자별 전수 불변 감사 로그 (`Audit Logs`) |
+| :---: | :---: |
+| <img src="docs/assets/ko/users.png" width="100%" /> | <img src="docs/assets/ko/audit-logs.png" width="100%" /> |
+
+본사-본부-매장 계층형 조직 트리, 역할별 권한 매트릭스, RFC 6238 TOTP 2단계 인증 및 전 운영자 활동에 대한 불변 감사 원장을 제공합니다.
+
+---
+
+### 9. 시스템 설정 · 상용 라이선스 · 6개월 로그 보존 · MCP 연동
+
+| 상용 라이선스 (`License`) | 환경설정 & 6개월 로그 보존 (`Preferences`) |
+| :---: | :---: |
+| <img src="docs/assets/ko/license.png" width="100%" /> | <img src="docs/assets/ko/admin-settings.png" width="100%" /> |
+| **원격 진단 & 커뮤니티 (`Diagnostics`)** | **API & AI 연동 (`MCP Connectivity`)** |
+| <img src="docs/assets/ko/telemetry.png" width="100%" /> | <img src="docs/assets/ko/connectivity-mcp.png" width="100%" /> |
 
 * **Ed25519 전자서명 기반 상용 라이선스**: 에어갭(폐쇄망) 환경에서도 단말 활성화 쿼터를 안전하게 검증합니다.
 * **오류 보고 & 커뮤니티 포털**:
