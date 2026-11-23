@@ -5,6 +5,26 @@
 
 ---
 
+## [v1.5.0] - 2026-11-23
+### 대화형 외부연동 AI 에이전트 스튜디오 · AI 컨텐츠 수정 스튜디오 · 스마트 레시피 탑재 (Conversational External Sync Agents, Decoupled Data-Feed Studio & AI Smart Recipes)
+* **신규 10번째 핵심 워크스페이스 — 외부연동 에이전트 (`External Sync Agents` · `SUPER_ADMIN` 전용 · Zero-Shell Sandbox)**:
+  * **대화형 AI 외부연동 컨시어지 스튜디오 (`STUDIO` 탭)**: 코딩이나 JSON 스키마 지식 없이 자연어 대화만으로 실시간 기상·초미세먼지, 국내/중국/글로벌 증시(코스피·코스닥·후선 A주 4대 지수), 실시간 환율(KRW·RMB·USD), 법정공휴일, 뉴스 및 사내 ERP/HR API를 탐색·연결하는 제로코드 스튜디오 탑재 (**한국 `KR` · 중국 본토 `CN` · 글로벌 `GLOBAL` 지역별 엄선 카탈로그** 및 무인증 즉시 연결 폴백 지원)
+  * **학습된 API 스킬 카드 (`Learned API Skills`)**: 한 번 연동에 성공한 외부 API의 엔드포인트, 인증 방식, JSONPath 매핑, 위젯 레이아웃을 자동 기억하여 다음 작업 시 **원클릭 재사용** 지원
+  * **실시간 16:9 인터랙티브 HTML5 위젯 자동 생성**: 순수 JSON 데이터 API 연결 즉시 6종 레이아웃(`HERO_DASHBOARD`, `TREND_CHART_BOARD`, `SPLIT_PROMO`, `TICKER_GRID`, `MINIMAL_POSTER`, `AI_BESPOKE`)과 **10종 프리미엄 컬러 테마**를 갖춘 1920×1080 반응형 HTML5 사이니지 앱 실시간 렌더링
+  * **엔터프라이즈 보안 가드레일 (`AGENTS` · `QUARANTINE` · `ALLOWLIST` 탭)**: 외부 API 인증키(`BEARER`, `API_KEY_HEADER`, `API_KEY_QUERY`, `BASIC`, `OAUTH2_CLIENT_CREDENTIALS`) **AES-256-GCM 암호화 볼트 보관**(평문 로그 무노출), 내부 루프백·클라우드 메타데이터·DB 포트 접근을 원천 차단하는 **Anti-SSRF 방어 및 사내망 호스트/CIDR Allowlist**, 대량 변경·비활성화 임계치 초과 시 자동 중단 후 관리자 승인 시에만 반영하는 **서킷브레이커 격리 승인함(Quarantine Inbox)** 및 `SUPER_ADMIN` 권한 상승 하드블록 적용
+* **분리형 데이터 피드 스토어 (`Decoupled Data-Feed Store`) & 2단 분할 ‘AI 컨텐츠 수정 스튜디오’ (`NL Content Studio`)**:
+  * 크론(Cron) 에이전트가 수집한 최신 스냅샷 및 시계열 이력을 독립 데이터 스토어(`/api/v1/public/data-feeds/:jobId/latest`, ETag 지원)에 축적하여, 단일 데이터 소스 위에서 **서로 다른 디자인의 다수 HTML5 미디어 컨텐츠가 독립 구독(15초/30초/60초 폴링)** 가능하도록 아키텍처 고도화 (인사/조직 `USER_ORG` PII 데이터 외부 피드 노출 원천 차단)
+  * 에이전트 상세 인스펙터(`+ 이 데이터로 새 컨텐츠 만들기`) 및 미디어 라이브러리(`데이터 피드 컨텐츠 생성` / `✨ AI로 수정`)에서 호출되는 **2단 분할 AI 컨텐츠 수정 스튜디오** 신설: 원본 API 필드 원클릭 삽입 칩, 10종 테마 스와치, 배지·시계·추세 차트·하단바 토글, 멀티턴 자연어 프롬프트 편집 및 덮어쓰기/복제 저장 시 활성 스케줄 자동 갱신 지원
+* **빌트인 AI 오퍼레이터 챗봇 고도화 — 반복 작업 기억 ‘AI 스마트 레시피’ (`AI Smart Recipes`)**:
+  * 우측 슬라이드 AI 챗봇(`Ctrl+J`) 상단에 `☀️ 주말 매장 모드`, `🌙 야간 마감 절전`, `🔄 전체 단말 재부팅`, `⚡ 모닝 오픈 세팅` 등 엔터프라이즈 기본 레시피와 최근 실행 작업을 원클릭 런북으로 저장하는 **`[+ 최근 작업 기억]`** 기능 추가 (한·영·중 3개 국어 완벽 현지화 및 HITL 승인 가드·RBAC 권한 검증 동일 적용)
+* **인터랙티브 HTML5 키오스크 패키지(`.zip`/`.html`) 업로드 & 멀티 OS 플레이어 `v2.2.0` 라이브 화면 캡처**:
+  * 미디어 업로드 모달에 Zip-Slip 경로 이탈·심볼릭 링크·100MB 초과 압축 폭탄·실행 파일이 차단된 **인터랙티브 HTML5 키오스크 패키지(`.zip`/`.html`) 업로드**, **`+ 원클릭 샘플 키오스크 앱 생성`**, **실시간 웹 URL 등록** 탑재
+  * 멀티 OS 플레이어 런타임 **`v2.2.0`** 업그레이드: 삼성 SSSP 하드웨어 프레임버퍼 캡처와 더불어 **동적 HTML5 데이터 위젯·키오스크 화면의 실시간 DOM/Canvas 고해상도 원격 캡처** 지원
+* **11대 LLM 프로바이더 확장 및 멀티테넌트 프랜차이즈 보안 강화**:
+  * `AI / LLM 자동화`에 **`FreeLLMAPI` 무료 통합 게이트웨이** 프리셋 추가(중국 본토 직결 5종 + 글로벌 클라우드 4종 + FreeLLMAPI + 무료 사내 로컬 Ollama/vLLM 총 **11종 프리셋** 완성), 다점포 가맹점별 차등 가격·메뉴 격리 검증 및 외부 데이터 간접 프롬프트 인젝션 방어 강화
+
+---
+
 ## [v1.4.0] - 2026-11-20
 ### 빌트인 AI 오퍼레이터 챗봇(AI Copilot) 및 5대 자율 관제 지능 전면 탑재 (Built-In AI Operator Copilot & Autonomous Signage Intelligence)
 * **우측 슬라이드 핑바오 AI 오퍼레이터 챗봇 (`Ctrl+J` · Resizable Drawer & Context-Aware Copilot)**:

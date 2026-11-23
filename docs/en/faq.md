@@ -1,20 +1,25 @@
-# Pingbao Frequently Asked Questions (FAQ)
+# Pingbao (屏宝 / 핑바오) Frequently Asked Questions (FAQ)
 
-### Q1. What can the Built-In Pingbao AI Copilot Chatbot do, and how does it prevent accidental fleet-wide changes?
-**A:** Press **`Ctrl+J`** or click the top-right **`[AI Copilot]`** button from any workspace to open the resizable assistant. In plain language, you can: (1) inspect live server health and Multi-OS online device counts in Markdown tables, (2) detect offline displays and expired promotional banners, (3) interpret hardware diagnostic logs, and (4) request remote volume/brightness/power/reboot commands, power timers, or smart schedule drafts.  
-Every mutation is protected by a **Human-in-the-Loop (HITL) Approval Card (`APPROVAL REQUIRED`)** and **Strict Device Subsetting**—meaning commands are strictly locked to your selected/inspected screens (never accidentally broadcast to all stores) and only execute after you click **`[Approve & Execute]`**.
+### Q1. How do ‘Conversational External Sync Agents’ and the ‘AI NL Content Studio’ work together?
+**A:** Pingbao cleanly decouples **live external data collection** from **visual HTML5 presentation**:
+* **Conversational External Sync Agents (`External Sync Agents`)**: Ask in plain language (e.g., *"Connect live USD FX rates"* or *"Add live city weather"*) to configure the API connection, encrypt credentials in the AES-256 vault, and accumulate verified snapshots in the **Data-Feed Store**. Connected APIs are saved as **Learned API Skill Cards** for 1-click reuse.
+* **AI NL Content Studio (`+ Build New Content from This Data` / `✨ Edit with AI`)**: Subscribe multiple independent 16:9 HTML5 signage widgets—such as a lobby fullscreen dashboard, a VIP lounge 7-day trend chart, and an elevator summary card—to the exact same Data Feed and customize each in plain English.
 
-### Q2. Can we run Pingbao AI 100% offline/on-premise for free without external cloud API costs or data leaks?
-**A:** Yes! Under **`System Settings > AI / LLM Automation`**, select **`On-Premise / OpenAI-Compatible (Ollama · vLLM)`** to connect directly to your internal Ollama or vLLM server (`gemma4`, `qwen2.5`, `deepseek-r1`, `qwen2.5vl`, etc.) with **zero API cost and zero external data egress**. Pingbao also natively supports OpenAI, Google Gemini, Anthropic Claude, and China Mainland direct providers (Alibaba Qwen, DeepSeek, Zhipu GLM, Doubao, Kimi).
+### Q2. Can we safely connect internal corporate ERP/HR APIs? What happens if an external API malfunctions?
+**A:** Yes. Pingbao enforces **Anti-SSRF protection** by default and allows internal corporate endpoints only when explicitly added to the **`Private Network Allowlist`** by a Super Admin. If an upstream API returns an anomalous spike in deletions or updates, the **Mass-Change Circuit Breaker** holds the batch in the **`Quarantine Inbox`** until an administrator reviews the diff and approves it.
 
-### Q3. How does Pingbao AI prevent expired promotional banners from staying on store screens?
-**A:** Upon media upload (or 1-click re-analysis), **Multimodal Vision AI** automatically identifies menu items, OCR text/prices, recommended dayparting windows, and visible **campaign end dates (`detected_valid_until`)**. Any expired promotional banner still assigned to an active schedule is immediately flagged in `[AI Morning Briefing]`, `[AI Schedule & Timer Audit]`, and the AI Copilot.
+### Q3. What are ‘AI Smart Recipes’ inside the AI Copilot, and can AI accidentally broadcast to all stores?
+**A:** At the top of **`[AI Copilot]` (`Ctrl+J`)**, **AI Smart Recipes** provide 1-click runbooks (`Weekend Store Mode`, `Night Sleep Mode`, `Morning Open Prep`) and **`[+ Learn Recent Tasks]`** to memorize your recurring multi-step routines.  
+Every control action and Smart Recipe is **Human-in-the-Loop (HITL) gated**—requiring explicit **`[Approve & Execute]`** confirmation—and **Strict Device Subsetting** locks execution exclusively to your selected displays.
 
-### Q4. Will screens go black if store internet disconnects?
-**A:** Never. Pingbao's **Autonomous Offline Loop** pre-caches all video/image assets and schedule timelines onto local storage so displays continue seamless dayparting playback indefinitely offline.
+### Q4. Can we run all AI features completely free on an air-gapped corporate network?
+**A:** 100% yes. In **`[System Settings > AI / LLM Automation]`**, select **`On-Premise / Self-Hosted (Ollama · vLLM)`** to connect directly to local open-weights models (`gemma4`, `qwen2.5`, `deepseek-r1`, `qwen2.5vl`) with zero API fees and zero external data egress, alongside 10 cloud/gateway presets (`OpenAI`, `Gemini`, `Claude`, `FreeLLMAPI`, `Qwen`, `DeepSeek`, `GLM`, `Doubao`, `Kimi`).
 
-### Q5. Which display operating systems and hardware are supported?
-**A:** Deep native hardware control (`b2bapis`) for **Samsung Smart Signage (Tizen 6.5+ / SSSP 6–10+)**, plus unified **Multi-OS Fleet Management** across **Windows 10/11 Kiosks (`.exe`)**, **Android Signage/Tablets (`.apk`)**, **Linux Mini-PCs (`.deb`/`.sh`)**, and **Web Browsers (`/player`)**. All installers downloaded from the console automatically embed your server URL for zero-typing 6-digit PIN pairing.
+### Q5. Does remote live screen capture also work on dynamic HTML5 widgets and `.zip` kiosk apps?
+**A:** Yes! **Multi-OS Player `v2.2.0`** captures both native Samsung SSSP hardware framebuffers and live dynamic HTML5 / touch-kiosk DOM & Canvas screens in full HD for zero-visit visual verification.
 
-### Q6. How do 4-Tier Scheduling, Auto SyncPlay, External MCP, and Log Retention work?
-**A:** Schedules preempt in 4 tiers (`EMERGENCY > EVENT > REGULAR > DEFAULT`) and automatically synchronize to the millisecond (**SyncPlay**) whenever displays share the same **Group + Schedule + LAN**. External agents (Claude, Cursor, Antigravity) connect via the built-in `pingbao` **MCP server**, and all operational/uptime/PoP/audit logs follow a **6-month (180-day) auto-purge lifecycle**.
+### Q6. How does Pingbao prevent expired promotions from airing or blackouts during internet outages?
+**A:** **Multimodal Vision AI** automatically extracts campaign end dates (`detected_valid_until`) on upload and alerts operators via Morning Briefings and Schedule Audits if an expired promo remains scheduled. Meanwhile, **Autonomous Offline Loop** pre-caches all videos, images, and HTML5 bundles locally so playback continues uninterrupted offline.
+
+### Q7. How do 4-Tier Scheduling, SyncPlay, and External AI Agent MCP integration work?
+**A:** Schedules preempt automatically across `EMERGENCY > EVENT > REGULAR > DEFAULT`, while displays in the **same group, same schedule, and same LAN** synchronize transitions to the millisecond via **SSE SyncPlay**. External agents (`Claude Desktop`, `Cursor`, `Antigravity`, `Dify`) connect directly via Pingbao’s built-in `pingbao` MCP server and scoped API keys.

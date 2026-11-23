@@ -1,13 +1,13 @@
 <div align="center">
 
 # 📺 Pingbao (屏宝 / 핑바오)
-### AI-Native Enterprise Samsung Smart Signage & Multi-OS Fleet Operations Platform
+### AI-Native Enterprise Signage Platform with Copilot, Smart Recipes & Conversational External Sync Studio
 
-**Pingbao (屏宝 / 핑바오)** is a next-generation Enterprise Digital Signage CMS supercharged with a **Built-In AI Operator Copilot Chatbot (`Ctrl+J`) and 5 Autonomous Intelligences**, purpose-built around deep native hardware control for **Samsung Smart Signage (Tizen 6.5+ / SSSP 6–10+)** while unifying **Windows, Android, Linux, and Web** players in one console.  
-Diagnose nationwide fleets in crisp Markdown tables, execute **zero-accident Human-in-the-Loop (HITL) natural language controls**, block expired promotional banners via Multimodal Vision QA, connect 10 cloud or **100% free air-gapped local Ollama/vLLM models**, and automate 4-tier dayparting, SyncPlay, and 1-second Proof-of-Play (PoP) billing.
+**Pingbao (屏宝 / 핑바오)** is a next-generation Enterprise Digital Signage CMS supercharged with a **Built-In AI Operator Copilot (`Ctrl+J`) & AI Smart Recipes** plus a zero-code **Conversational External Sync Studio & Live HTML5 Content Studio**, purpose-built around deep native hardware control for **Samsung Smart Signage (Tizen 6.5+ / SSSP 6–10+)** while unifying **Windows, Android, Linux, and Web** players (`v2.2.0`) in one console.  
+Diagnose nationwide fleets in crisp Markdown tables, execute **zero-accident Human-in-the-Loop (HITL) controls**, and connect live weather, FX, stock market, or internal ERP APIs purely through conversation into **bespoke 16:9 interactive HTML5 signage widgets**.
 
 [![Language](https://img.shields.io/badge/Language-English%20|%20简体中文%20|%20한국어-brightgreen.svg)](#)
-[![AI Copilot](https://img.shields.io/badge/Built--In%20AI-Operator%20Copilot%20%26%20Vision%20QA-7c3aed?style=flat-square)](#)
+[![AI Copilot](https://img.shields.io/badge/Built--In%20AI-Copilot%20%C2%B7%20Smart%20Recipes%20%C2%B7%20Sync%20Studio-7c3aed?style=flat-square)](#)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20Experience-2563eb?style=flat-square&logo=google-chrome&logoColor=white)](https://cms.pingbao.workers.dev)
 [![Release](https://img.shields.io/github/v/release/pingbaosignage/pingbao-community?color=blue)](https://github.com/pingbaosignage/pingbao-community/releases)
 [![Issues](https://img.shields.io/github/issues/pingbaosignage/pingbao-community)](https://github.com/pingbaosignage/pingbao-community/issues)
@@ -28,8 +28,8 @@ Diagnose nationwide fleets in crisp Markdown tables, execute **zero-accident Hum
         🚀 Pingbao Enterprise AI Interactive Live Demo
       </h2>
       <p style="font-size: 16px; margin: 0 0 20px 0; color: #f1f5f9; line-height: 1.6;">
-        <b>No installation, no signup required.</b> Experience all enterprise workspaces and the AI Automation Hub live in your browser.<br/>
-        <span style="color: #94a3b8; font-size: 14px;">(119 Multi-OS displays, Built-In AI Intelligence Hub, 24-hr 4-Tier schedule matrix, PoP billing, and IoT remote control)</span>
+        <b>No installation, no signup required.</b> Experience all 10 enterprise workspaces, AI Copilot, and External Sync Studio live in your browser.<br/>
+        <span style="color: #94a3b8; font-size: 14px;">(119 Multi-OS v2.2 displays, AI Copilot & Smart Recipes, Conversational External Sync Studio, NL Content Studio, 4-Tier schedules & PoP billing)</span>
       </p>
       <a href="https://cms.pingbao.workers.dev" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/▶_Launch_Interactive_Live_Demo-https%3A%2F%2Fcms.pingbao.workers.dev-2563eb?style=for-the-badge&logo=google-chrome&logoColor=white" height="42" alt="Live Demo Button" />
@@ -45,11 +45,11 @@ Diagnose nationwide fleets in crisp Markdown tables, execute **zero-accident Hum
 <br/>
 
 <!-- ============================================================================== -->
-<!-- 🎬 OFFICIAL AI SPOTLIGHT VIDEO & HIGHLIGHTS -->
+<!-- 🎬 OFFICIAL AI & SYNC STUDIO DEMO VIDEO & HIGHLIGHTS -->
 <!-- ============================================================================== -->
 <div align="center">
 
-### 🎬 Pingbao Official AI Spotlight Demo Video
+### 🎬 Pingbao Official AI & External Sync Studio Demo Video
 
 * 🇺🇸 **English Voiceover Video**: [▶ Watch Video (pingbao_smart_operations_demo_en.mp4)](docs/assets/videos/pingbao_smart_operations_demo_en.mp4)
 * 🇰🇷 **한국어 음성 데모 영상**: [▶ 영상 보기 (pingbao_smart_operations_demo_ko.mp4)](docs/assets/videos/pingbao_smart_operations_demo_ko.mp4)
@@ -58,20 +58,20 @@ Diagnose nationwide fleets in crisp Markdown tables, execute **zero-accident Hum
 <br/>
 
 <a href="docs/assets/videos/pingbao_smart_operations_demo_en.mp4">
-  <img src="docs/assets/demo/en/en_scene_02.png" alt="Pingbao AI Copilot English Demo Video" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
+  <img src="docs/assets/demo/en/en_scene_04.png" alt="Pingbao AI Copilot & Conversational External Sync Studio English Demo Video" width="95%" style="border-radius: 10px; border: 1px solid #cbd5e1; box-shadow: 0 12px 28px rgba(0,0,0,0.12);" />
 </a>
 
 <br/><br/>
 
-#### ⚡ 6 Game-Changing AI & Enterprise Breakthroughs (Why Pingbao?)
+#### ⚡ 6 Game-Changing AI & Live Data Integration Breakthroughs (Why Pingbao?)
 
-| 01. ★ Slide-Out AI Copilot & Table Reports | 02. ★ Zero-Accident HITL AI Control | 03. ★ Vision AI Promo Guard & Free Local LLMs |
+| 01. ★ AI Copilot & ‘Smart Recipes’ | 02. ★ Zero-Accident HITL AI Control | 03. ★ Conversational External Sync Concierge (NEW) |
 | :---: | :---: | :---: |
 | <img src="docs/assets/demo/en/en_scene_02.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_03.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_04.png" width="100%" /> |
-| **Built-In AI Operator Copilot (`Ctrl+J`)**<br/>Live server & Multi-OS Markdown diagnostic tables | **Approval-Gated & Strict Subsetting**<br/>Locks strictly to selected screens until approved | **Multimodal Vision & Air-Gapped Ollama**<br/>Blocks expired promos · Zero API cost local AI |
-| **04. AI Device Diagnosis & Live SSSP View** | **05. Self-Healing Op Diff & Uptime SLA** | **06. Immutable Audit & Sub-Second PoP** |
-| <img src="docs/assets/demo/en/en_scene_05.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_06.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_08.png" width="100%" /> |
-| **Plain-Language Root Cause + Live Capture**<br/>Instant log explanation & remote framebuffer proof | **Desired-State Diff & Session Timelines**<br/>Auto-retries transient drops & cuts night power waste | **AI Security Summary & Frame-Accurate PoP**<br/>Full IP audit ledger & CSV/JSON/MD billing exports |
+| **Slide-Out AI Copilot (`Ctrl+J`)**<br/>1-click task-memory runbooks & Multi-OS tables | **Approval-Gated & Strict Subsetting**<br/>Locks strictly to selected screens until approved | **Zero-Code Weather, FX, Stock & ERP Sync**<br/>Learned API skills + live 16:9 HTML5 widgets |
+| **04. ★ Decoupled Data Feeds & NL Studio (NEW)** | **05. HTML5 Kiosk ZIP · Vision QA & Free Ollama** | **06. v2.2 Live HTML5 Capture · MCP · Precision PoP** |
+| <img src="docs/assets/demo/en/en_scene_05.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_06.png" width="100%" /> | <img src="docs/assets/demo/en/en_scene_07.png" width="100%" /> |
+| **Shared Cron Snapshots & Split-Screen Studio**<br/>Derive multiple custom HTML5 boards via plain text | **Blocks Expired Promos & 11 LLM Presets**<br/>Zero API cost, zero data egress local Ollama | **SSSP + Dynamic HTML5 Remote Frame Proof**<br/>Native Claude/Cursor MCP & sub-second PoP |
 
 </div>
 
@@ -79,12 +79,36 @@ Diagnose nationwide fleets in crisp Markdown tables, execute **zero-accident Hum
 
 ---
 
-## 🧠 Flagship Spotlight: Built-In ‘Pingbao AI Operator Copilot’ & 5 Autonomous Intelligences
+## 🌐 Flagship Spotlight ①: Zero-Code ‘External Sync Agents’ & ‘AI NL Content Studio’
 
-Without installing any external client, click the top-right **`[AI Copilot]` button (`Ctrl+J`)** from any workspace to diagnose, govern, and control hundreds of commercial screens through natural conversation.
+Simply ask in chat—*"Connect live USD foreign exchange rates for our hotel lobby"* or *"Build a live city weather board"*—and Pingbao’s **Conversational External Sync Concierge** discovers the right API, maps fields automatically, and renders a **16:9 interactive HTML5 signage widget** in real time.
 
-<img src="docs/assets/en/ai-copilot-table.png" alt="Pingbao AI Operator Copilot Markdown Table" width="100%" />
-<sub><b>▲ Resizable Slide-Out ‘Pingbao AI Copilot’: Drag left border to resize, run 1-click quick prompts, view live Multi-OS Markdown tables, and jump directly to target screens</b></sub>
+<img src="docs/assets/en/sync-concierge-studio.png" alt="Conversational External Sync Concierge & Live 16:9 HTML5 Widget Preview" width="100%" />
+<sub><b>▲ [External Sync Agents > Conversational Studio]: 1-click Learned API Skill reuse cards, regional keyless/commercial catalog, 10 color themes, and real-time 16:9 HTML5 widget preview</b></sub>
+
+<br/><br/>
+
+| ① Cron Sync Agents & Accumulated Data-Feed Store (`AGENTS`) | ② 2-Column ‘AI Content Modification Studio’ (`NL Studio`) |
+| :---: | :---: |
+| <img src="docs/assets/en/sync-agents-list.png" width="100%" /> | <img src="docs/assets/en/nl-content-studio.png" width="100%" /> |
+| **One Verified Data Feed, Unlimited Independent Displays**<br/>Cron agents accumulate rolling snapshots shared safely across multiple independent HTML5 signage assets | **Reshape Layouts, Themes & 7-Day Trend Charts via Plain English**<br/>Insert raw API field chips, toggle elements, and save/clone independent HTML5 media with auto schedule refresh |
+| **③ Interactive HTML5 Kiosk Bundles (`.zip`) & Live Web URLs** | **④ Data-Feed Badges & 1-Click `[✨ Edit with AI]`** |
+| <img src="docs/assets/en/media-html5-upload.png" width="100%" /> | <img src="docs/assets/en/media-assets.png" width="100%" /> |
+| **Hardened Against Zip-Slip, Symlinks & Executables**<br/>Upload touch-ready `.zip`/`.html` kiosk bundles, generate 1-click sample apps, or register live web URLs | **Seamless Media Library Integration**<br/>Inspect bound feed intervals and refine live HTML5 widgets anytime with `[✨ Edit with AI]` |
+
+### 🛡️ Zero-Shell Enterprise Security Guardrails
+* **AES-256-GCM Secret Vault**: Encrypts Bearer tokens, API Keys (Header/Query), Basic credentials, and OAuth2 Client Credentials at rest—never exposed in plaintext logs or API responses.
+* **Anti-SSRF Defense & Private Network Allowlist**: Hard-blocks loopback (`127.0.0.1`), cloud metadata (`169.254.169.254`), and internal DB/Redis ports while allowing explicitly approved corporate ERP/HR hosts or CIDRs.
+* **Mass-Change Circuit Breaker & Quarantine Inbox**: Automatically halts sync runs exceeding mutation or deactivation caps for human diff review, with hard-blocks against `SUPER_ADMIN` privilege escalation.
+
+---
+
+## 🧠 Flagship Spotlight ②: Built-In ‘Pingbao AI Operator Copilot’ & ‘AI Smart Recipes’ (`Ctrl+J`)
+
+Click the top-right **`[AI Copilot]` button (`Ctrl+J`)** from any workspace to diagnose fleets in Markdown tables and automate recurring daily workflows using **AI Smart Recipes**.
+
+<img src="docs/assets/en/ai-copilot-table.png" alt="Pingbao AI Operator Copilot & Smart Recipes" width="100%" />
+<sub><b>▲ Resizable Slide-Out ‘Pingbao AI Copilot’: Top ‘AI Smart Recipes’ 1-click runbook strip, live Multi-OS v2.2 Markdown diagnostic tables, and instant jump links</b></sub>
 
 <br/><br/>
 
@@ -92,37 +116,22 @@ Without installing any external client, click the top-right **`[AI Copilot]` but
 | :---: | :---: |
 | <img src="docs/assets/en/ai-copilot-chat.png" width="100%" /> | <img src="docs/assets/en/ai-morning-briefing.png" width="100%" /> |
 | **100% Protection Against Accidental Fleet Broadcasts**<br/>Strictly locks commands to checked displays (`3 selected`) and dispatches only when you click **`[Approve & Execute]`** | **All-Workspace 1-Click AI Insights + Chat Convergence**<br/>Morning briefings, device diagnostics, schedule conflict audits, and security summaries automatically converge into chat |
-| **③ Multimodal Vision Auto-Tagging & Promo Expiry Guard** | **④ 10 Global/China Cloud & 100% Free On-Prem Ollama** |
+| **③ Multimodal Vision Auto-Tagging & Promo Expiry Guard** | **④ 11 Global/China/FreeLLMAPI & Free On-Prem Ollama** |
 | <img src="docs/assets/en/ai-vision-media.png" width="100%" /> | <img src="docs/assets/en/ai-settings.png" width="100%" /> |
-| **Stop Expired Promotional Banners Before They Air**<br/>Automatically extracts menu items, OCR prices, dayparting windows, and **campaign end dates (`2026-12-31`)** | **Zero API Cost · Zero Data Egress Air-Gapped AI**<br/>Supports OpenAI, Gemini, Claude, Qwen, DeepSeek, GLM, Doubao, Kimi, and **free self-hosted Ollama/vLLM** |
+| **Stop Expired Promotional Banners Before They Air**<br/>Automatically extracts menu items, OCR prices, dayparting windows, and **campaign end dates (`2026-12-31`)** | **Zero API Cost · Zero Data Egress Air-Gapped AI**<br/>Supports OpenAI, Gemini, Claude, Qwen, DeepSeek, GLM, Doubao, Kimi, FreeLLMAPI, and **free local Ollama/vLLM** |
 
 ---
 
-## 🌟 Core Value Propositions
-
-1. **Built-In AI Operator Copilot (`Ctrl+J`) & Multimodal Vision Automation**
-   * Active UI Focus awareness, Rolling Memory compaction, HITL approval cards with Strict Device Subsetting, Vision promo-expiry guard, instant 3-language emergency copywriting, and 10 Cloud/China/Free Local Ollama presets.
-2. **Samsung Smart Signage Specialization & 5-Platform Multi-OS Fleet Control**
-   * Native `b2bapis` control for **Samsung Tizen 6.5+ / SSSP 6–10+** plus unified management for **Windows (`.exe`), Android (`.apk`), Linux (`.deb`/`.sh`), and Web (`/player`)** with URL-stamped installers and **7-command Bulk Remote Control**.
-3. **Autonomous Offline Playback & 4-Tier Smart Scheduling**
-   * Local pre-caching guarantees zero blackouts offline; `EMERGENCY > EVENT > REGULAR > DEFAULT` priority preemption with `[AI Schedule & Timer Audit]`.
-4. **Zero-Config Multi-Screen Synchronization (SyncPlay)**
-   * Displays sharing the **same group, same schedule, and same LAN** automatically achieve millisecond frame sync via SSE `sync-stream`.
-5. **Uptime Workbench, Precision PoP, 6-Month Auto-Purge & Built-In MCP**
-   * Daily power session timelines, 1s hardware-verified PoP exports, 180-day log auto-purge, and 60+ REST APIs + native `pingbao` MCP server.
-
----
-
-## 📸 Comprehensive Workspace Overview & Native English UI
+## 📸 Complete 10-Workspace Overview & Native English UI
 
 ### 1. Operations Dashboard & AI Morning Briefing (Dashboard)
 <img src="docs/assets/en/dashboard.png" alt="Dashboard" width="100%" />
 
 ---
 
-### 2. Multi-OS Fleet · AI Device Diagnosis · URL-Stamped Installers (Devices)
+### 2. Multi-OS Fleet (v2.2) · AI Device Diagnosis · Live HTML5 Screen Capture (Devices)
 
-| Multi-OS Fleet & Live Remote Screen Capture | Right Inspector (`Control` Tab) — AI Device Diagnosis |
+| Multi-OS Fleet & Live Remote Screen Capture (`v2.2.0`) | Right Inspector (`Control` Tab) — AI Device Diagnosis |
 | :---: | :---: |
 | <img src="docs/assets/en/device-management.png" width="100%" /> | <img src="docs/assets/en/ai-device-diagnosis.png" width="100%" /> |
 | **Multi-OS Player Installer Modal (`Auto-Stamped URL`)** | **7-Command Dedicated Bulk Remote Control Modal** |
@@ -141,20 +150,28 @@ Without installing any external client, click the top-right **`[AI Copilot]` but
 
 ---
 
-### 5. Media Assets Library & Multimodal Vision QA (Media Library)
+### 5. Media Library · HTML5 Kiosk Bundles · Multimodal Vision QA (Media Library)
 
-| Media Assets Library (`4K Streaming & Magic-Byte Guard`) | AI Vision Metadata & Promo Expiry Detection |
+| Media Library (`Data-Feed HTML5 & Edit with AI`) | Interactive HTML5 Kiosk (`.zip`) & Live Web URL Modal |
 | :---: | :---: |
-| <img src="docs/assets/en/media-assets.png" width="100%" /> | <img src="docs/assets/en/ai-vision-media.png" width="100%" /> |
+| <img src="docs/assets/en/media-assets.png" width="100%" /> | <img src="docs/assets/en/media-html5-upload.png" width="100%" /> |
 
 ---
 
-### 6. Operations Monitoring & Desired-State Diff (Operations)
+### 6. External Sync Agents & AI Content Studio (External Sync Agents · NEW)
+
+| Conversational Sync Studio (`STUDIO`) | Cron Sync Agents & Data-Feed Store (`AGENTS`) |
+| :---: | :---: |
+| <img src="docs/assets/en/sync-concierge-studio.png" width="100%" /> | <img src="docs/assets/en/sync-agents-list.png" width="100%" /> |
+
+---
+
+### 7. Operations Monitoring & Desired-State Diff (Operations)
 <img src="docs/assets/en/monitoring.png" alt="Operations Monitoring" width="100%" />
 
 ---
 
-### 7. Analytics & Reports: Operating Times & Proof-of-Play (Uptime & PoP)
+### 8. Analytics & Reports: Operating Times & Proof-of-Play (Uptime & PoP)
 
 | Device Operating Times Workbench (`Uptime + AI Power Tip`) | Proof-of-Play Settlement Reports (`PoP`) |
 | :---: | :---: |
@@ -162,7 +179,7 @@ Without installing any external client, click the top-right **`[AI Copilot]` but
 
 ---
 
-### 8. Multi-Tenant Organizations, RBAC & Immutable Audit Logs
+### 9. Multi-Tenant Organizations, RBAC & Immutable Audit Logs
 
 | Users & Organization Directory (`Users & Access`) | Immutable User Audit Ledger (`[AI Security Summary]`) |
 | :---: | :---: |
@@ -170,9 +187,9 @@ Without installing any external client, click the top-right **`[AI Copilot]` but
 
 ---
 
-### 9. System Settings · AI/LLM Automation · 6-Month Retention · MCP
+### 10. System Settings · 11 AI/LLM Providers · 6-Month Retention · External Agent MCP
 
-| `AI / LLM Automation` (10 Cloud, China & Ollama Presets) | Preferences & 6-Month Log Auto-Purge |
+| `AI / LLM Automation` (11 Cloud, China, FreeLLMAPI & Ollama) | Preferences & 6-Month Log Auto-Purge |
 | :---: | :---: |
 | <img src="docs/assets/en/ai-settings.png" width="100%" /> | <img src="docs/assets/en/admin-settings.png" width="100%" /> |
 | **Commercial License (`Ed25519`)** | **Open REST API & External AI Agent (`MCP`)** |
@@ -180,25 +197,33 @@ Without installing any external client, click the top-right **`[AI Copilot]` but
 
 ---
 
+## 🤖 Open REST API & External AI Agent MCP Hub
+
+Alongside inbound **External Sync Agents**, Pingbao embeds a native **MCP (Model Context Protocol)** server (`pingbao` toolkit) and scoped API keys (`pb_live_...`), enabling **Claude Desktop, Cursor, Antigravity, Dify, and custom LLM agents** to upload banners, author playlists, and publish schedules autonomously.
+
+---
+
 ## 📋 Full Feature Matrix
 
 | Functional Module | Key Capabilities | Architecture & Differentiators |
 | :--- | :--- | :--- |
-| **1. Built-In AI Copilot** | Slide-out chat (`Ctrl+J`), Markdown tables, HITL approval cards, jump links | Active UI focus awareness, Strict Subsetting broadcast guard |
-| **2. Vision & Domain AI** | Morning briefing, device log interpreter, Vision auto-tagging & promo expiry guard | 10 Cloud/China/Free Ollama presets, AES-256 key encryption |
-| **3. Multi-OS Fleet Control** | Samsung Tizen SSSP native + Windows / Android / Linux / Web + 7-cmd bulk modal | OS-tailored HAL routing, URL-stamped installers |
-| **4. 4-Tier Scheduling & Sync** | Emergency/Event/Regular/Default preemption, AI conflict audit, auto SyncPlay | SSE `sync-stream` + EMA clock offset calibration |
-| **5. Self-Healing & Uptime/PoP** | `BEFORE/AFTER` Op Diff, daily power sessions, 1s frame-verified PoP exports | CSV/JSON/MD billing exports, 180-day auto-purge |
-| **6. Security, Audit & MCP** | TOTP 2FA, RBAC, immutable audit ledger, 60+ REST APIs & built-in MCP server | Argon2id, Ed25519 air-gap license, Claude/Cursor ready |
+| **1. Built-In AI Copilot & Recipes** | Slide-out chat (`Ctrl+J`), **AI Smart Recipes (`+ Learn Recent Tasks`)**, Markdown tables, HITL cards | Active UI focus awareness, Strict Subsetting broadcast guard |
+| **2. External Sync Agents** | Conversational API discovery (weather, FX, stocks, ERP), **Learned API Skills**, 16:9 HTML5 generation | AES-256 vault, Anti-SSRF & private Allowlist, Quarantine inbox |
+| **3. Data-Feed & NL Studio** | Accumulated Cron Data-Feed Store, **2-column AI NL Content Modification Studio** | 10 color themes, 7-day trend charts, multi-content feed sharing |
+| **4. HTML5 Kiosk & Vision AI** | Hardened `.zip`/`.html` kiosk bundles, live Web URLs, Vision auto-tagging & promo expiry guard | Zip-Slip protection, 11 Cloud/China/FreeLLMAPI/Ollama presets |
+| **5. Multi-OS Fleet (`v2.2.0`)** | Samsung Tizen SSSP native + Windows / Android / Linux / Web + 7-command bulk modal | SSSP hardware + **dynamic HTML5 live capture**, URL-stamped installers |
+| **6. 4-Tier Scheduling & Sync** | Emergency/Event/Regular/Default preemption, AI conflict audit, zero-config SyncPlay | SSE `sync-stream` + EMA clock offset calibration |
+| **7. Self-Healing & Uptime/PoP** | `BEFORE/AFTER` Op Diff, daily power sessions, 1s frame-verified PoP exports | CSV/JSON/MD billing exports, 180-day auto-purge |
+| **8. Security, Audit & MCP** | TOTP 2FA, RBAC, immutable audit ledger, 60+ REST APIs & built-in MCP server | Argon2id, Ed25519 air-gap license, Claude/Cursor/Antigravity ready |
 
 ---
 
 ## 📖 Documentation
 
-* 📘 [User Operations Guide](docs/en/user-guide.md) - AI Operator Copilot workflows, Multi-OS pairing, Vision QA, and 4-Tier scheduling
-* 🛠️ [Admin & AI/LLM Deployment Guide](docs/en/admin-guide.md) - Docker setup, Cloud/Ollama LLM configuration, backup, and upgrades
-* ❓ [FAQ](docs/en/faq.md) - HITL AI safety guard, air-gapped free LLMs, offline playback, and SyncPlay
-* 📜 [Changelog](CHANGELOG.md) - Release history and version updates
+* 📘 [User Operations Guide](docs/en/user-guide.md) - AI Copilot & Smart Recipes, Conversational External Sync Agents, NL Content Studio, and 4-Tier scheduling
+* 🛠️ [Admin & Security/AI Deployment Guide](docs/en/admin-guide.md) - Docker setup, 11 Cloud/Ollama LLM presets, Anti-SSRF & Quarantine governance
+* ❓ [FAQ](docs/en/faq.md) - Conversational External Sync, decoupled data-feed HTML5 contents, air-gapped free LLMs, and SyncPlay
+* 📜 [Changelog](CHANGELOG.md) - Full `v1.5.0` release notes and version history
 
 ---
 
